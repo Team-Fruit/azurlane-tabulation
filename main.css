@@ -62,3 +62,9 @@ input {
     max-height: 46px;
     opacity: 1;
 }
+
+.footer {
+    width: 150px;
+    position: fixed;
+    bottom: 10px;
+}
