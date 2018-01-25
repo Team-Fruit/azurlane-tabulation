@@ -1,5 +1,3 @@
-'use strict';
-
 const electron = require('electron');
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
@@ -14,7 +12,8 @@ app.on('window-all-closed', function () {
 
 app.on('ready', function () {
     win = new BrowserWindow({ width: 750, height: 675 });
-    win.loadURL('file://' + __dirname + '/app/normal.html');
+    win.loadURL('file://' + __dirname + '/app/index.html');
+    win.webContents.openDevTools()
     Menu.setApplicationMenu(null);
 
     win.on('unresponsive', function () {
@@ -51,3 +50,4 @@ app.on('ready', function () {
         win = null;
     });
 });
+
