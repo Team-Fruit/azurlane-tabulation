@@ -1,0 +1,64 @@
+body {  
+    margin-top: 25px;
+    background-image: url("resources/background.png");
+    background-attachment: fixed;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.menu {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    line-height: 1;
+}
+
+label {
+    display: block;
+    margin: 0 0 4px 0;
+    padding :18px;
+    line-height: 1;
+    color :#fff;
+    background :#007bbb;
+    cursor :pointer;
+}
+
+input {
+    display: none;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    background :#f4f4f4;
+    list-style: none;
+}
+
+.menu li {
+    max-height: 0;
+    overflow-y: hidden;
+    transition: all 0.5s;
+}
+
+#menu_bar1:checked ~ #links1 li,
+#menu_bar2:checked ~ #links2 li,
+#menu_bar3:checked ~ #links3 li,
+#menu_bar4:checked ~ #links4 li,
+#menu_bar5:checked ~ #links5 li,
+#menu_bar6:checked ~ #links6 li,
+#menu_bar7:checked ~ #links7 li,
+#menu_bar8:checked ~ #links8 li,
+#menu_bar9:checked ~ #links9 li,
+#menu_bar10:checked ~ #links10 li {
+    max-height: 46px;
+    opacity: 1;
+}
