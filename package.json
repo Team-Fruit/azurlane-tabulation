@@ -8,5 +8,20 @@
   },
   "keywords": [],
   "author": "sjcl",
-  "license": "MIT"
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "electron-prebuilt": "^1.4.13",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1"
+  },
+  "dependencies": {
+    "node-soundcloud": "0.0.5",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "react-loading": "0.0.9",
+    "react-soundplayer": "^0.3.6"
+  }
 }
