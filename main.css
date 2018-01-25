@@ -28,8 +28,15 @@ label {
     padding :18px;
     line-height: 1;
     color :#fff;
-    background :#007bbb;
     cursor :pointer;
+}
+
+.normal label {
+    background: #007bbb;
+}
+
+.hard label {
+    background: #c61018; 
 }
 
 input {
@@ -63,7 +70,7 @@ input {
     opacity: 1;
 }
 
-.footer {
+.bottombutton {
     width: 150px;
     position: fixed;
     bottom: 10px;
