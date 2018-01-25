@@ -23,14 +23,12 @@ class Main extends React.Component {
     }
 
     render() {
-        if (this.state.area == null)
+        const component = this.state.area == null ? <OceanArea onChooseArea={this.onChooseArea} /> : <Submit area={this.state.area} isHard={this.state.isHard} />
         return(
             <div>
-                <OceanArea onChooseArea={this.onChooseArea} />
+                {component}
             </div>
         );
-        else
-        return (<div></div>)
     }
 }
 
