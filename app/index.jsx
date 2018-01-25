@@ -11,6 +11,10 @@ class Main extends React.Component {
         }
     }
 
+    componentDidCatch(error, info) {
+        console.log(error);
+    }
+
     render() {
         return(
             <div>

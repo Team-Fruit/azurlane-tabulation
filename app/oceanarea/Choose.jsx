@@ -10,10 +10,6 @@ export default class Choose extends React.Component {
         }
     }
 
-    componentDidCatch(error, info) {
-        console.log(error);
-    }
-
     toggleHard() {
         this.setState({ isHard: !this.state.isHard });
     }
