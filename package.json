@@ -26,6 +26,7 @@
     "browserify": "^15.2.0"
   },
   "dependencies": {
+    "google-spreadsheet": "^2.0.4",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-loading": "1.0.3"
