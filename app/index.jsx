@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import OceanArea from './oceanarea/OceanArea.jsx';
+import Submit from './submit/Submit.jsx';
 
 class Main extends React.Component {
     constructor(props) {
