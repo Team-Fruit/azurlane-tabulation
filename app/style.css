@@ -14,12 +14,18 @@ body {
     padding: 0;
 }
 
-.menu a {
+.menu span {
     display: block;
     padding: 10px;
     text-decoration: none;
     color: #000;
     line-height: 1;
+    cursor : pointer;
+}
+
+.menu span:hover {
+    background-color: #184552;
+    color: #fff;
 }
 
 label {

@@ -1,26 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Choose from './oceanarea/Choose.jsx';
+import OceanArea from './oceanarea/OceanArea.jsx';
 
 class Main extends React.Component {
     constructor(props) {
-        super();
+        super(props);
         this.state = {
-            choosing: true,
-            area: null
+            area: null,
+            isHard: false
         }
+
+        this.onChooseArea = this.onChooseArea.bind(this);
     }
 
     componentDidCatch(error, info) {
         console.log(error);
     }
 
+    onChooseArea(area, hard) {
+        this.setState({area: area, isHard: hard});
+    }
+
     render() {
+        if (this.state.area == null)
         return(
             <div>
-                <Choose />
+                <OceanArea onChooseArea={this.onChooseArea} />
             </div>
         );
+        else
+        return (<div></div>)
     }
 }
 
