@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import OceanArea from './oceanarea/OceanArea.jsx';
+import Chapter from './chapter/Chapter.jsx';
 import Submit from './submit/Submit.jsx';
 
 class Main extends React.Component {
@@ -23,7 +23,7 @@ class Main extends React.Component {
     }
 
     render() {
-        const component = this.state.area == null ? <OceanArea onChooseArea={this.onChooseArea} /> : <Submit area={this.state.area} isHard={this.state.isHard} />
+        const component = this.state.area == null ? <Chapter onChooseArea={this.onChooseArea} /> : <Submit area={this.state.area} isHard={this.state.isHard} />
         return(
             <div>
                 {component}

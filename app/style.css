@@ -13,14 +13,14 @@ input {
     display: none;
 }
 
-.oceanArea {
+.chapter {
     max-width: 400px;
     margin: 0 auto;
     margin-top: 25px;
     padding: 0;
 }
 
-.oceanArea span {
+.chapter span {
     display: block;
     padding: 10px;
     text-decoration: none;
@@ -29,12 +29,12 @@ input {
     cursor : pointer;
 }
 
-.oceanArea span:hover {
+.chapter span:hover {
     background-color: #184552;
     color: #fff;
 }
 
-.oceanLabel {
+.chapterLabel {
     display: block;
     margin: 0 0 4px 0;
     padding :18px;
@@ -43,22 +43,22 @@ input {
     cursor :pointer;
 }
 
-.normal .oceanLabel {
+.normal .chapterLabel {
     background: #007bbb;
 }
 
-.hard .oceanLabel {
+.hard .chapterLabel {
     background: #c61018; 
 }
 
-.oceanArea ul {
+.chapter ul {
     margin: 0;
     padding: 0;
     background :#f4f4f4;
     list-style: none;
 }
 
-.oceanArea li {
+.chapter li {
     max-height: 0;
     overflow-y: hidden;
     transition: all 0.5s;

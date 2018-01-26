@@ -2,7 +2,7 @@ import React from 'react';
 import Hard from './Hard.jsx';
 import Normal from './Normal.jsx';
 
-export default class OceanArea extends React.Component {
+export default class Chapter extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -25,7 +25,7 @@ export default class OceanArea extends React.Component {
         const component = isHard ? <Hard onChoose={this.onChoose} /> : <Normal onChoose={this.onChoose} />;
         return (
             <div>
-                <div className={isHard ? "oceanArea hard" : "oceanArea normal"}>
+                <div className={isHard ? "chapter hard" : "chapter normal"}>
                     {component}
                 </div>
                 <img className="bottombutton" src={isHard ? "img/normal.png" : "img/hard.png"} onClick={() => this.toggleHard()} />
