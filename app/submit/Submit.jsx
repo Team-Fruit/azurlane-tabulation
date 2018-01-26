@@ -6,7 +6,7 @@ export default class Submit extends React.Component {
     constructor(props) {
         super(props);
 
-        const data = JSON.parse(fs.readFileSync('./app/areadata/' + this.props.area + '.json', 'utf8'));
+        const data = JSON.parse(fs.readFileSync('./app/chapter/' + this.props.area + '.json', 'utf8'));
         this.state = {
             num: data.num,
             name: data.name,
