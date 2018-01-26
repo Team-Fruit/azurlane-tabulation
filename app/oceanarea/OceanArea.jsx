@@ -21,13 +21,14 @@ export default class OceanArea extends React.Component {
     }
 
     render() {
-        const component = this.state.isHard ? <Hard onChoose={this.onChoose} /> : <Normal onChoose={this.onChoose} />;
+        const isHard = this.state.isHard;
+        const component = isHard ? <Hard onChoose={this.onChoose} /> : <Normal onChoose={this.onChoose} />;
         return (
             <div>
-                <div className={this.state.isHard ? "menu hard" : "menu normal"}>
+                <div className={isHard ? "oceanArea hard" : "oceanArea normal"}>
                     {component}
                 </div>
-                <img className="bottombutton" src={this.state.isHard ? "img/normal.png" : "img/hard.png"} onClick={() => this.toggleHard()}></img>
+                <img className="bottombutton" src={isHard ? "img/normal.png" : "img/hard.png"} onClick={() => this.toggleHard()} />
             </div>
         );
     }
