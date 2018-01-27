@@ -1,6 +1,7 @@
 import React from 'react';
 import * as fs from 'fs';
 import Header from './Header.jsx';
+import Character from './Character.jsx';
 
 export default class Submit extends React.Component {
     constructor(props) {
@@ -18,11 +19,15 @@ export default class Submit extends React.Component {
     }
 
     render() {
-        const {area, isHard} = this.props;
-        const {num, name, description, box, blueprint, character} = this.state;
+        const { area, isHard } = this.props;
+        const { num, name, description, box, blueprint, character } = this.state;
         return (
-            <div>
+            <div className="submit">
                 <Header area={area} name={name} description={description} />
+                <div className="submitContent">
+                    <h3>ドロップ艦</h3>
+                    <Character character={character}/>
+                </div>
             </div>
         );
     }

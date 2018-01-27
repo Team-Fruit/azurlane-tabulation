@@ -8,7 +8,7 @@ export default class Header extends React.Component {
     render() {
         const { area, name, description } = this.props;
         return (
-            <div className="submitHeader">
+            <div>
                 <div className="submitTitle">
                     <span className="submitArea">{area}</span>
                     <span className="submitAreaName">{name}</span>
