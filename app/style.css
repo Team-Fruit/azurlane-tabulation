@@ -20,7 +20,7 @@ input {
     padding: 0;
 }
 
-.chapter span {
+.chapter a {
     display: block;
     padding: 10px;
     text-decoration: none;
@@ -29,7 +29,7 @@ input {
     cursor : pointer;
 }
 
-.chapter span:hover {
+.chapter a:hover {
     background-color: #184552;
     color: #fff;
 }
