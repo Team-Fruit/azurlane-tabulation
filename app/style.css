@@ -187,7 +187,9 @@ input {
 }
 
 .characterItemSelected {
+    display: inline;
     position: relative;
+    margin: 5px;
 }
 
 .characterItemSelected p {
