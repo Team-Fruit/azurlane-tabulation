@@ -181,6 +181,7 @@ input {
 
 .characterItem {
     display: inline;
+    position: relative;
     margin: 5px;
 }
 
@@ -190,9 +191,9 @@ input {
 
 .characterSelected p {
     position: absolute;
-    top: 50%;
+    /* top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     margin:0;
-    padding:0;
+    padding:0; */
 }
