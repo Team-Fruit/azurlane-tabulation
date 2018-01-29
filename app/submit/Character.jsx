@@ -4,7 +4,8 @@ export default class Character extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            rarity: Object.getOwnPropertyNames(this.props.character)[0]
+            rarity: Object.getOwnPropertyNames(this.props.character)[0],
+            character: null
         }
     }
 
@@ -12,18 +13,27 @@ export default class Character extends React.Component {
         this.setState({ rarity: k });
     }
 
+    _onSelectCharacter(name) {
+        const c = name === this.state.character ? null : name;
+        this.setState({character: c});
+        this.props.onSelectCharacter(c);
+    }
+
     render() {
-        console.log(__dirname)
         const character = this.props.character;
 
         const rarityList = [];
         for (let k in character) {
-            rarityList.push(<li className={"rarityItem " + k} key={k}><a onClick={() => this.onChangeRatity(k)}>{k.toUpperCase()}</a></li>);
+            rarityList.push(<li className={this.state.rarity === k ? "rarityItem rarityItemSelected " + k : "rarityItem " + k} key={k}><a onClick={() => this.onChangeRatity(k)}>{k.toUpperCase()}</a></li>);
         }
 
         const iconList = [];
         for (let k of character[this.state.rarity]) {
-            iconList.push(<li className="characterItem" key={k}><img src={'./img/character/' + k + '.png'} width="80" height="80" alt={k} /></li>);
+            const icon = <img src={'./img/character/' + k + '.png'} width="75" height="75" alt={k} className="characterItem" key={k} onClick={() => this._onSelectCharacter(k)} draggable="false" />;
+            if (this.state.character === k)
+                iconList.push(<div className="characterSelected" key={k}>{icon}<p>-選択中-</p></div>);
+            else
+                iconList.push(icon);
         }
 
         return (
@@ -31,9 +41,9 @@ export default class Character extends React.Component {
                 <ul className="rarity">
                     {rarityList}
                 </ul>
-                <ul className="characterIcons">
+                <div className="characterIcons">
                     {iconList}
-                </ul>
+                </div>
             </div>
         );
     }

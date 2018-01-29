@@ -3,6 +3,8 @@ body {
     background-attachment: fixed;
     margin: 0px;
     padding: 0px;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
 }
 
 ::-webkit-scrollbar {
@@ -139,7 +141,7 @@ input {
 
 .rarity {
     display: table;
-    table-layout:fixed;
+    table-layout: fixed;
     box-sizing: border-box;
     width: 100%;
     margin: 0;
@@ -150,7 +152,14 @@ input {
 .rarityItem {
     display: table-cell;
     text-align: center;
-    vertical-align: middle;
+    border-bottom: 3px solid #ccc;
+    opacity: 0.8;
+}
+
+.rarityItemSelected {
+    border: 3px solid #ccc;
+    border-bottom: hidden;
+    opacity: 1;
 }
 
 .rarityItem a {
@@ -162,13 +171,28 @@ input {
 }
 
 .characterIcons {
+    display: inline-block;
+    box-sizing: border-box;
     width: 100%;
-    padding: 0 10px;
-    margin: 10px 0;
+    padding: 8px 10px 5px 10px;
+    border: 3px solid #ccc;
+    border-top: hidden;
 }
 
 .characterItem {
+    display: inline;
     margin: 5px;
-	float: left;
-	list-style: none;
+}
+
+.characterSelected {
+    position: relative;
+}
+
+.characterSelected p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
 }
