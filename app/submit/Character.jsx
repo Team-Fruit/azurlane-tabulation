@@ -31,7 +31,7 @@ export default class Character extends React.Component {
         for (let k of character[this.state.rarity]) {
             const icon = <img src={'./img/character/' + k + '.png'} width="75" height="75" alt={k} onClick={() => this._onSelectCharacter(k)} draggable="false" />;
             if (this.state.character === k)
-                iconList.push(<div className="characterItemSelected" key={k}>{icon}<p>-選択中-</p></div>);
+                iconList.push(<div className="characterItemSelected" key={k}>{icon}<p onClick={() => this._onSelectCharacter(k)}>-選択中-</p></div>);
             else
                 iconList.push(<div className="characterItem" key={k}>{icon}</div>);
         }

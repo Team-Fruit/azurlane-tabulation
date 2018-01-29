@@ -155,12 +155,14 @@ input {
     text-align: center;
     border-bottom: 3px solid #ccc;
     opacity: 0.8;
+    cursor :pointer;
 }
 
 .rarityItemSelected {
     border: 3px solid #ccc;
     border-bottom: hidden;
     opacity: 1;
+    cursor :pointer;
 }
 
 .rarityItem a {
@@ -180,16 +182,18 @@ input {
     border-top: hidden;
 }
 
-.characterItem {
-    display: inline;
+.characterIcons>div {
+    display: inline-block;
     position: relative;
     margin: 5px;
 }
 
+.characterItem {
+    cursor :pointer;
+}
+
 .characterItemSelected {
-    display: inline;
-    position: relative;
-    margin: 5px;
+    cursor :pointer;
 }
 
 .characterItemSelected p {
@@ -201,4 +205,6 @@ input {
     padding:0;
     width: 100%;
     text-align: center;
+    font-weight: 700;
+    -webkit-text-stroke: 0.8px #000;
 }
