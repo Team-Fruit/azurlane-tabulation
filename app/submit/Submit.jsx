@@ -19,10 +19,15 @@ export default class Submit extends React.Component {
                 character: data.character
             },
             character: null,
-            blueprint: null
+            blueprint: null,
+            count: 0,
+            tier: 0
         }
 
         this.onSelectCharacter = this.onSelectCharacter.bind(this);
+        this.onSelectBlueprint = this.onSelectBlueprint.bind(this);
+        this.onChangeBlueprintCount = this.onChangeBlueprintCount.bind(this);
+        this.onSelectBoxTier = this.onSelectBoxTier.bind(this);
     }
 
     shouldComponentUpdate(nextProps, nextState) {
@@ -38,6 +43,14 @@ export default class Submit extends React.Component {
         this.setState({ blueprint: name });
     }
 
+    onChangeBlueprintCount(count) {
+        this.setState({ count: count });
+    }
+    
+    onSelectBoxTier(tier) {
+        this.setState({ tier: tier });
+    }
+
     render() {
         const { area, isHard } = this.props;
         const { num, name, description, box, blueprint, character } = this.state.data;
@@ -48,7 +61,7 @@ export default class Submit extends React.Component {
                     <h3>ドロップ艦</h3>
                     <Character character={character} onSelectCharacter={this.onSelectCharacter} />
                     <h3>設計図</h3>
-                    <Blueprint blueprint={blueprint} onSelectBlueprint={this.onSelectBlueprint} />
+                    <Blueprint blueprint={blueprint} onSelectBlueprint={this.onSelectBlueprint} onChangeBlueprintCount={this.onChangeBlueprintCount} />
                 </div>
             </div>
         );

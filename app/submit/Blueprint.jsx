@@ -18,16 +18,24 @@ export default class Blueprint extends React.Component {
         this.setState({ rarity: k });
     }
 
-    onIncrement() {
+    _onIncrement() {
         if (this.state.count < 2) {
             this.setState({ count: this.state.count + 1 });
+            this.props.onChangeBlueprintCount(this.state.count);
         }
     }
 
-    onDecrement() {
+    _onDecrement() {
         if (this.state.count > 0) {
             this.setState({ count: this.state.count - 1 });
+            this.props.onChangeBlueprintCount(this.state.count);
         }
+    }
+
+    _onSelectBlueprint(name) {
+        const c = name === this.state.character ? null : name;
+        this.setState({ blueprint: c });
+        this.props.onSelectBlueprint(c);
     }
 
     render() {
@@ -42,18 +50,23 @@ export default class Blueprint extends React.Component {
             );
         }
 
+        const iconList = [];
+
+
         return (
             <div>
                 <ul className="rarity">
                     {rarityList}
                     <li className="rarityItem counter" key="counter">
                         <div className="count">
-                            <img src="./img/arrowleft.png" className="arrow" height="20px" onClick={() => this.onDecrement()} />
+                            <img src="./img/arrowleft.png" className="arrow" height="20px" onClick={() => this._onDecrement()} />
                             {this.state.count}
-                            <img src="./img/arrowright.png" className="arrow" height="20px" onClick={() => this.onIncrement()} />
+                            <img src="./img/arrowright.png" className="arrow" height="20px" onClick={() => this._onIncrement()} />
                         </div>
                     </li>
                 </ul>
+                <div className="iconList">
+                </div>
             </div>
         );
     }
