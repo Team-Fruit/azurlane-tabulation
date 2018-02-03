@@ -124,19 +124,19 @@ input {
     overflow: hidden;
 }
 
-.ssr {
+.ssr, .gold {
     background-color: #ffd966;
 }
 
-.sr {
+.sr, .purple {
     background-color: #8e7cc3;
 }
 
-.r {
+.r, .blue {
     background-color: #6d9eeb;
 }
 
-.n {
+.n, .white {
     background-color: #fff;
 }
 
@@ -188,12 +188,7 @@ input {
     margin: 5px;
 }
 
-.characterItem {
-    cursor :pointer;
-    height: 75px;
-}
-
-.characterItemSelected {
+.characterItem, .characterItemSelected {
     cursor :pointer;
     height: 75px;
 }
@@ -235,4 +230,22 @@ input {
     100% {
         opacity: 0;
     }
+}
+
+.counter {
+    cursor: default;
+}
+
+.arrow {
+    vertical-align: middle;
+    margin: 0 10px;
+    cursor :pointer;
+}
+
+.count {
+    vertical-align: middle;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    -webkit-text-stroke: 1px #000;
 }

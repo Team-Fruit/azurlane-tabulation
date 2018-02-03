@@ -2,6 +2,7 @@ import React from 'react';
 import * as fs from 'fs';
 import Header from './Header.jsx';
 import Character from './Character.jsx';
+import Blueprint from './Blueprint.jsx';
 
 export default class Submit extends React.Component {
     constructor(props) {
@@ -17,18 +18,24 @@ export default class Submit extends React.Component {
                 blueprint: data.blueprint,
                 character: data.character
             },
-            character: null
+            character: null,
+            blueprint: null
         }
 
         this.onSelectCharacter = this.onSelectCharacter.bind(this);
     }
 
     shouldComponentUpdate(nextProps, nextState) {
-        return !this.state.character === nextState.character;
+        return !(this.state.character === nextState.character &&
+            this.state.blueprint === nextState.blueprint);
     }
 
     onSelectCharacter(name) {
-        this.setState({character: name});
+        this.setState({ character: name });
+    }
+
+    onSelectBlueprint(name) {
+        this.setState({ blueprint: name });
     }
 
     render() {
@@ -40,6 +47,8 @@ export default class Submit extends React.Component {
                 <div className="submitContent">
                     <h3>ドロップ艦</h3>
                     <Character character={character} onSelectCharacter={this.onSelectCharacter} />
+                    <h3>設計図</h3>
+                    <Blueprint blueprint={blueprint} onSelectBlueprint={this.onSelectBlueprint} />
                 </div>
             </div>
         );
