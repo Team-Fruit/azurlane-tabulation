@@ -51,7 +51,23 @@ export default class Blueprint extends React.Component {
         }
 
         const iconList = [];
-
+        for (let k of blueprint[this.state.rarity]) {
+            const icon = <img src={'./img/blueprint/' + k + '.png'} width="75px" alt={k} onClick={() => this._onSelectBlueprint(k)} draggable="false" />;
+            if (this.state.blueprint === k)
+                iconList.push(
+                    <div className="iconListItemSelected" key={k}>
+                        {icon}
+                        <div className="itemSelected" onClick={() => this._onSelectBlueprint(k)} />
+                        <p onClick={() => this._onSelectBlueprint(k)}>-選択中-</p>
+                    </div>
+                );
+            else
+                iconList.push(
+                    <div className="iconListItem" key={k}>
+                        {icon}
+                    </div>
+                );
+        }
 
         return (
             <div>
@@ -66,6 +82,7 @@ export default class Blueprint extends React.Component {
                     </li>
                 </ul>
                 <div className="iconList">
+                    {iconList}
                 </div>
             </div>
         );
