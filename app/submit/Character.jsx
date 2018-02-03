@@ -36,7 +36,7 @@ export default class Character extends React.Component {
             const icon = <img src={'./img/character/' + k + '.png'} width="75" height="75" alt={k} onClick={() => this._onSelectCharacter(k)} draggable="false" />;
             if (this.state.character === k)
                 iconList.push(
-                    <div className="characterItemSelected" key={k}>
+                    <div className="iconListItemSelected" key={k}>
                         {icon}
                         <div className="itemSelected" onClick={() => this._onSelectCharacter(k)} />
                         <p onClick={() => this._onSelectCharacter(k)}>-選択中-</p>
@@ -44,7 +44,7 @@ export default class Character extends React.Component {
                 );
             else
                 iconList.push(
-                    <div className="characterItem" key={k}>
+                    <div className="iconListItem" key={k}>
                         {icon}
                     </div>
                 );
@@ -55,7 +55,7 @@ export default class Character extends React.Component {
                 <ul className="rarity">
                     {rarityList}
                 </ul>
-                <div className="characterIcons">
+                <div className="iconList">
                     {iconList}
                 </div>
             </div>

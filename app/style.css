@@ -173,7 +173,7 @@ input {
     font-size: 16px;
 }
 
-.characterIcons {
+.iconList {
     display: inline-block;
     box-sizing: border-box;
     width: 100%;
@@ -182,18 +182,18 @@ input {
     border-top: hidden;
 }
 
-.characterIcons>div {
+.iconList>div {
     display: inline-block;
     position: relative;
     margin: 5px;
 }
 
-.characterItem, .characterItemSelected {
+.iconListItem, .iconListItemSelected {
     cursor :pointer;
     height: 75px;
 }
 
-.characterItemSelected p {
+.iconListItemSelected p {
     position: absolute;
     top: 50%;
     left: 50%;
