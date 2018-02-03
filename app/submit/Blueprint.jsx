@@ -35,7 +35,11 @@ export default class Blueprint extends React.Component {
 
         const rarityList = [];
         for (let k in blueprint) {
-            rarityList.push(<li className={this.state.rarity === k ? "rarityItem rarityItemSelected " + k : "rarityItem " + k} key={k}><a onClick={() => this.onChangeRatity(k)}>{this.capitalizeFirstLetter(k)}</a></li>);
+            rarityList.push(
+                <li className={this.state.rarity === k ? "rarityItem rarityItemSelected " + k : "rarityItem " + k} key={k}>
+                    <a onClick={() => this.onChangeRatity(k)}>{this.capitalizeFirstLetter(k)}</a>
+                </li>
+            );
         }
 
         return (
