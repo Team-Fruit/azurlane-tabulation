@@ -46,11 +46,11 @@ input {
     cursor :pointer;
 }
 
-.normal .chapterLabel {
+.chapterNormal .chapterLabel {
     background: #007bbb;
 }
 
-.hard .chapterLabel {
+.chapterHard .chapterLabel {
     background: #c61018; 
 }
 
@@ -88,13 +88,20 @@ input {
     bottom: 10px;
 }
 
+.normal {
+    background: #007bbb;
+}
+
+.hard {
+    background: #c61018; 
+}
+
 .submit {
     color :#fff;
     margin: 0 30px;
 }
 
 .submitTitle {
-    background: #007bbb;
     margin-top: 20px;
     padding: 5px 0 5px 10px;
     font-weight: 700;

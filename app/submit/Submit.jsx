@@ -56,7 +56,7 @@ export default class Submit extends React.Component {
         const { num, name, description, box, blueprint, character } = this.state.data;
         return (
             <div className="submit">
-                <Header area={area} name={name} description={description} />
+                <Header area={area} isHard={isHard} name={name} description={description} />
                 <div className="submitContent">
                     <h3>ドロップ艦</h3>
                     <Character character={character} onSelectCharacter={this.onSelectCharacter} />

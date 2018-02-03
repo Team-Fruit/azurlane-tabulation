@@ -25,7 +25,7 @@ export default class Chapter extends React.Component {
         const component = isHard ? <Hard onChoose={this.onChoose} /> : <Normal onChoose={this.onChoose} />;
         return (
             <div>
-                <div className={isHard ? "chapter hard" : "chapter normal"}>
+                <div className={isHard ? "chapter chapterHard" : "chapter chapterNormal"}>
                     {component}
                 </div>
                 <img className="bottombutton" src={isHard ? "img/normal.png" : "img/hard.png"} onClick={() => this.toggleHard()} />
