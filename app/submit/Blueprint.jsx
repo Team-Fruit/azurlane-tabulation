@@ -57,7 +57,7 @@ export default class Blueprint extends React.Component {
                 iconList.push(
                     <div className="iconListItemSelected" key={k}>
                         {icon}
-                        <div className="itemSelected" onClick={() => this._onSelectBlueprint(k)} />
+                        <div className="itemSelected blueprintSelected" onClick={() => this._onSelectBlueprint(k)} />
                         <p onClick={() => this._onSelectBlueprint(k)}>-選択中-</p>
                     </div>
                 );

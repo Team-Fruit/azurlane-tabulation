@@ -221,6 +221,7 @@ input {
     left: 0;
     margin: 0;
     background-color: #fff;
+    border-radius: 5px;
     animation: select 1050ms infinite;
 }
 
@@ -255,4 +256,10 @@ input {
     font-size: 18px;
     font-weight: bold;
     -webkit-text-stroke: 1px #000;
+}
+
+.blueprintSelected {
+    height: 70px;
+    width: 70px;
+    left: 2px;
 }
