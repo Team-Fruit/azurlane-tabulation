@@ -46,7 +46,7 @@ export default class Submit extends React.Component {
     onChangeBlueprintCount(count) {
         this.setState({ count: count });
     }
-    
+
     onSelectBoxTier(tier) {
         this.setState({ tier: tier });
     }
@@ -54,16 +54,25 @@ export default class Submit extends React.Component {
     render() {
         const { area, isHard } = this.props;
         const { num, name, description, box, blueprint, character } = this.state.data;
+
         return (
             <div className="submit">
                 <Header area={area} isHard={isHard} name={name} description={description} />
                 <div className="submitContent">
                     <h3>ドロップ艦</h3>
                     <Character character={character} onSelectCharacter={this.onSelectCharacter} />
-                    <h3>設計図</h3>
-                    <Blueprint blueprint={blueprint} onSelectBlueprint={this.onSelectBlueprint} onChangeBlueprintCount={this.onChangeBlueprintCount} />
+                    {(() => {
+                        if (blueprint) {
+                            return (
+                                <div>
+                                    <h3>設計図</h3>
+                                    <Blueprint blueprint={blueprint} onSelectBlueprint={this.onSelectBlueprint} onChangeBlueprintCount={this.onChangeBlueprintCount} />
+                                </div>
+                            );
+                        }
+                    })()}
                 </div>
-                <img className="bottombutton" src="img/back.png" width="120px" onClick={() => this.props.back()} />
+                <img className="bottombutton" src="img/back.png" width="120px" onClick={() => this.props.back()} draggable="false" />
             </div>
         );
     }
