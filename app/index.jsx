@@ -12,6 +12,7 @@ class Main extends React.Component {
         }
 
         this.onChooseArea = this.onChooseArea.bind(this);
+        this.back = this.back.bind(this);
     }
 
     componentDidCatch(error, info) {
@@ -22,8 +23,12 @@ class Main extends React.Component {
         this.setState({area: area, isHard: hard});
     }
 
+    back() {
+        this.setState({area: null});
+    }
+
     render() {
-        const component = this.state.area == null ? <Chapter onChooseArea={this.onChooseArea} /> : <Submit area={this.state.area} isHard={this.state.isHard} />
+        const component = this.state.area == null ? <Chapter onChooseArea={this.onChooseArea} /> : <Submit area={this.state.area} isHard={this.state.isHard} back={this.back} />
         return(
             <div>
                 {component}

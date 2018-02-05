@@ -63,6 +63,7 @@ export default class Submit extends React.Component {
                     <h3>設計図</h3>
                     <Blueprint blueprint={blueprint} onSelectBlueprint={this.onSelectBlueprint} onChangeBlueprintCount={this.onChangeBlueprintCount} />
                 </div>
+                <img className="bottombutton" src="img/back.png" width="120px" onClick={() => this.props.back()} />
             </div>
         );
     }

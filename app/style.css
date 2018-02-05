@@ -82,10 +82,10 @@ input {
 }
 
 .bottombutton {
-    width: 150px;
     position: fixed;
     left: 10px;
     bottom: 10px;
+    cursor: pointer;
 }
 
 .normal {
@@ -124,7 +124,7 @@ input {
 .submitContent {
     background: #444444;
     margin: 0 10px;
-    padding: 2px 15px 2px 15px;
+    padding: 2px 15px 20px 15px;
 }
 
 .character {
