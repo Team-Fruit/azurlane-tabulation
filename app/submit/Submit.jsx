@@ -3,6 +3,7 @@ import * as fs from 'fs';
 import Header from './Header.jsx';
 import Character from './Character.jsx';
 import Blueprint from './Blueprint.jsx';
+import Box from './Box.jsx';
 
 export default class Submit extends React.Component {
     constructor(props) {
@@ -21,13 +22,13 @@ export default class Submit extends React.Component {
             character: null,
             blueprint: null,
             count: 0,
-            tier: 0
+            tech: 0
         }
 
         this.onSelectCharacter = this.onSelectCharacter.bind(this);
         this.onSelectBlueprint = this.onSelectBlueprint.bind(this);
         this.onChangeBlueprintCount = this.onChangeBlueprintCount.bind(this);
-        this.onSelectBoxTier = this.onSelectBoxTier.bind(this);
+        this.onSelectBoxTech = this.onSelectBoxTech.bind(this);
     }
 
     shouldComponentUpdate(nextProps, nextState) {
@@ -47,8 +48,8 @@ export default class Submit extends React.Component {
         this.setState({ count: count });
     }
 
-    onSelectBoxTier(tier) {
-        this.setState({ tier: tier });
+    onSelectBoxTech(tech) {
+        this.setState({ tech: tech });
     }
 
     render() {
@@ -71,6 +72,8 @@ export default class Submit extends React.Component {
                             );
                         }
                     })()}
+                    <h3>装備箱</h3>
+                    <Box box={box} onSelectBoxTech={this.onSelectBoxTech} />
                 </div>
                 <img className="bottombutton" src="img/back.png" width="120px" onClick={() => this.props.back()} draggable="false" />
             </div>
