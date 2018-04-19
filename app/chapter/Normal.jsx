@@ -10,14 +10,6 @@ export default class Normal extends React.Component {
         return (
             <div>
                 <Hard onChoose={this.props.onChoose}/>
-                <label className="chapterLabel" htmlFor="menu_bar7">第7章  混沌の夜</label>
-                <input type="checkbox" id="menu_bar7" className="accordion" />
-                <ul id="links7">
-                    <li><a onClick={() => this._onChoose('7-1')}>7-1 増援阻止</a></li>
-                    <li><a onClick={() => this._onChoose('7-2')}>7-2 乱戦</a></li>
-                    <li><a onClick={() => this._onChoose('7-3')}>7-3 奇襲</a></li>
-                    <li><a onClick={() => this._onChoose('7-4')}>7-4 予想外の混乱</a></li>
-                </ul>
                 <label className="chapterLabel" htmlFor="menu_bar8">第8章  極北の海戦</label>
                 <input type="checkbox" id="menu_bar8" className="accordion" />
                 <ul id="links8">
