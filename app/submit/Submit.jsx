@@ -4,6 +4,7 @@ import Header from './Header.jsx';
 import Character from './Character.jsx';
 import Blueprint from './Blueprint.jsx';
 import Box from './Box.jsx';
+import Confirm from './Confirm.jsx';
 
 export default class Submit extends React.Component {
     constructor(props) {
@@ -11,6 +12,7 @@ export default class Submit extends React.Component {
 
         const data = JSON.parse(fs.readFileSync('./app/chapterdata/' + this.props.area + '.json', 'utf8'));
         this.state = {
+            popup: false,
             data: {
                 num: data.num,
                 name: data.name,
@@ -21,19 +23,20 @@ export default class Submit extends React.Component {
             },
             character: null,
             blueprint: null,
-            count: 0,
-            tech: 0
+            blueprintcount: 0,
+            boxtech: null
         }
 
-        this.onSelectCharacter = this.onSelectCharacter.bind(this);
         this.onSelectBlueprint = this.onSelectBlueprint.bind(this);
+        this.onSelectCharacter = this.onSelectCharacter.bind(this);
         this.onChangeBlueprintCount = this.onChangeBlueprintCount.bind(this);
         this.onSelectBoxTech = this.onSelectBoxTech.bind(this);
+        this.onForward = this.onForward.bind(this);
+        this.onSubmit = this.onSubmit.bind(this);
     }
 
     shouldComponentUpdate(nextProps, nextState) {
-        return !(this.state.character === nextState.character &&
-            this.state.blueprint === nextState.blueprint);
+        return !(this.state.popup === nextState.popup);
     }
 
     onSelectCharacter(name) {
@@ -45,11 +48,19 @@ export default class Submit extends React.Component {
     }
 
     onChangeBlueprintCount(count) {
-        this.setState({ count: count });
+        this.setState({ blueprintcount: count });
     }
 
     onSelectBoxTech(tech) {
-        this.setState({ tech: tech });
+        this.setState({ boxtech: tech });
+    }
+
+    onForward() {
+        this.setState({ popup: !this.state.popup });
+    }
+
+    onSubmit() {
+
     }
 
     render() {
@@ -62,20 +73,24 @@ export default class Submit extends React.Component {
                 <div className="submitContent">
                     <h3>ドロップ艦</h3>
                     <Character character={character} onSelectCharacter={this.onSelectCharacter} />
-                    {(() => {
-                        if (blueprint) {
-                            return (
-                                <div>
-                                    <h3>設計図</h3>
-                                    <Blueprint blueprint={blueprint} onSelectBlueprint={this.onSelectBlueprint} onChangeBlueprintCount={this.onChangeBlueprintCount} />
-                                </div>
-                            );
-                        }
-                    })()}
+                    {
+                        blueprint ?
+                            <div>
+                                <h3>設計図</h3>
+                                <Blueprint blueprint={blueprint} onSelectBlueprint={this.onSelectBlueprint} onChangeBlueprintCount={this.onChangeBlueprintCount} />
+                            </div>
+                            : null
+                    }
                     <h3>装備箱</h3>
                     <Box box={box} onSelectBoxTech={this.onSelectBoxTech} />
                 </div>
-                <img className="bottombutton" src="img/back.png" width="120px" onClick={() => this.props.back()} draggable="false" />
+                <img className="bottomButton buttonLeft" src="img/back.png" width="120px" onClick={() => this.props.back()} draggable="false" />
+                <img className="bottomButton buttonRight" src="img/forward.png" width="120px" onClick={this.onForward} draggable="false" />
+                {
+                    this.state.popup ?
+                        <Confirm character={this.state.character} blueprint={this.state.blueprint} count={this.state.blueprintcount} boxtech={this.state.boxtech} onClose={this.onForward} />
+                        : null
+                }
             </div>
         );
     }
