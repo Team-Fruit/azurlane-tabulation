@@ -16,7 +16,9 @@ export default class Confirm extends React.Component {
         return (
             <div className="popup" onClick={this.handleClick}>
                 <div className="popupInner">
-                    <p>HI!SUSHI!</p>
+                    <div className="confirmList">
+                    </div>
+                    <img className="confirmButton" src="img/forward.png" width="120px" onClick={this.onForward} draggable="false" />
                 </div>
             </div>
         );

@@ -31,7 +31,7 @@ export default class Submit extends React.Component {
         this.onSelectCharacter = this.onSelectCharacter.bind(this);
         this.onChangeBlueprintCount = this.onChangeBlueprintCount.bind(this);
         this.onSelectBoxTech = this.onSelectBoxTech.bind(this);
-        this.onForward = this.onForward.bind(this);
+        this.next = this.next.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
     }
 
@@ -55,7 +55,7 @@ export default class Submit extends React.Component {
         this.setState({ boxtech: tech });
     }
 
-    onForward() {
+    next() {
         this.setState({ popup: !this.state.popup });
     }
 
@@ -85,10 +85,10 @@ export default class Submit extends React.Component {
                     <Box box={box} onSelectBoxTech={this.onSelectBoxTech} />
                 </div>
                 <img className="bottomButton buttonLeft" src="img/back.png" width="120px" onClick={() => this.props.back()} draggable="false" />
-                <img className="bottomButton buttonRight" src="img/forward.png" width="120px" onClick={this.onForward} draggable="false" />
+                <img className="bottomButton buttonRight" src="img/next.png" width="120px" onClick={this.next} draggable="false" />
                 {
                     this.state.popup ?
-                        <Confirm character={this.state.character} blueprint={this.state.blueprint} count={this.state.blueprintcount} boxtech={this.state.boxtech} onClose={this.onForward} />
+                        <Confirm character={this.state.character} blueprint={this.state.blueprint} count={this.state.blueprintcount} boxtech={this.state.boxtech} onClose={this.next} />
                         : null
                 }
             </div>

@@ -281,15 +281,35 @@ input {
     right: 0;
     bottom: 0;
     margin: auto;
-    background-color: rgba(0,0,0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   .popupInner {
     position: absolute;
-    left: 25%;
-    right: 25%;
-    top: 25%;
-    bottom: 25%;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     margin: auto;
-    background: white;
   }
+
+  .confirmList {
+      position: absolute;
+      width: 100%;
+      height: 150px;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .confirmButton {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        cursor: pointer;
+    }
