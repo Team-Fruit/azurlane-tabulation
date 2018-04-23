@@ -20,15 +20,17 @@ export default class Blueprint extends React.Component {
 
     _onIncrement() {
         if (this.state.count < 2) {
-            this.setState({ count: this.state.count + 1 });
-            this.props.onChangeBlueprintCount(this.state.count);
+            const count = this.state.count + 1;
+            this.setState({ count: count });
+            this.props.onChangeBlueprintCount(count);
         }
     }
 
     _onDecrement() {
         if (this.state.count > 0) {
-            this.setState({ count: this.state.count - 1 });
-            this.props.onChangeBlueprintCount(this.state.count);
+            const count = this.state.count - 1;
+            this.setState({ count: count });
+            this.props.onChangeBlueprintCount(count);
         }
     }
 
