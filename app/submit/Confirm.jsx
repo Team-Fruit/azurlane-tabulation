@@ -8,8 +8,17 @@ export default class Confirm extends React.Component {
     }
 
     handleClick(e) {
-        if (e.target.className === "popup")
+        if (e.target.className === "popup" || e.target.className === "popupInner")
             this.props.onClose();
+    }
+
+    componentDidMount() {
+        if (this.characterEl)
+            this.characterEl.scrollIntoView();
+        if (this.blueprintEl)
+            this.blueprintEl.scrollIntoView();
+        if (this.boxEl)
+            this.boxEl.scrollIntoView();
     }
 
     render() {
@@ -19,21 +28,33 @@ export default class Confirm extends React.Component {
             itemList.push(
                 <figure className="confirmListItem" key="character">
                     <img src={"./img/character/" + character + ".png"} />
-                    <figcaption>{character}</figcaption>
+                    <figcaption>
+                        1
+                        <hr />
+                        <div ref={el => { this.characterEl = el }}>{character}</div>
+                    </figcaption>
                 </figure>
             );
-        if (blueprint)
+        if (blueprint && count > 0)
             itemList.push(
                 <figure className="confirmListItem" key="blueprint">
                     <img src={"./img/blueprint/" + blueprint + ".png"} />
-                    <figcaption>{blueprint}</figcaption>
+                    <figcaption>
+                        {count}
+                        <hr />
+                        <div ref={el => { this.blueprintEl = el }}>{blueprint}</div>
+                    </figcaption>
                 </figure>
             );
         if (boxtech)
             itemList.push(
                 <figure className="confirmListItem" key="box">
                     <img src={"./img/box/" + boxtech + ".png"} />
-                    <figcaption>{"装備箱T" + boxtech}</figcaption>
+                    <figcaption>
+                        1
+                        <hr />
+                        <div ref={el => { this.boxEl = el }}>{"装備箱T" + boxtech}</div>
+                    </figcaption>
                 </figure>
             );
 

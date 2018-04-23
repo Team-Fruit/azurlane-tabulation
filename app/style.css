@@ -323,9 +323,21 @@ input {
 
     .confirmListItem {
         display: inline-block;
+        width: 75px;
         margin: 5px;
     }
 
-    .confirmListItem>img {
+    .confirmListItem>figcaption>hr {
+        width: 85px;
+        margin: 1px;
+    }
+
+    .confirmListItem>figcaption>div {
+        white-space: nowrap;
+        overflow: scroll;
+        margin: 0;
+    }
+
+    .confirmListItem img {
         height: 75px;
     }
