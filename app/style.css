@@ -332,12 +332,15 @@ input {
         margin: 1px;
     }
 
-    .confirmListItem>figcaption>div {
-        white-space: nowrap;
-        overflow: scroll;
+    .confirmListItem>figcaption {
         margin: 0;
     }
 
     .confirmListItem img {
         height: 75px;
+    }
+
+    .horizontalInfiniteScroll {
+        white-space: nowrap;
+        overflow: scroll;
     }

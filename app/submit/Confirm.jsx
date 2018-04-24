@@ -1,4 +1,5 @@
 import React from 'react';
+import HorizontalInfiniteScroll from './HorizontalInfiniteScroll.jsx';
 
 export default class Confirm extends React.Component {
     constructor(props) {
@@ -12,15 +13,6 @@ export default class Confirm extends React.Component {
             this.props.onClose();
     }
 
-    componentDidMount() {
-        if (this.characterEl)
-            this.characterEl.scrollIntoView();
-        if (this.blueprintEl)
-            this.blueprintEl.scrollIntoView();
-        if (this.boxEl)
-            this.boxEl.scrollIntoView();
-    }
-
     render() {
         const { character, blueprint, count, boxtech } = this.props;
         const itemList = [];
@@ -31,7 +23,9 @@ export default class Confirm extends React.Component {
                     <figcaption>
                         1
                         <hr />
+                        <HorizontalInfiniteScroll>
                         <div ref={el => { this.characterEl = el }}>{character}</div>
+                        </HorizontalInfiniteScroll>
                     </figcaption>
                 </figure>
             );
@@ -42,7 +36,9 @@ export default class Confirm extends React.Component {
                     <figcaption>
                         {count}
                         <hr />
+                        <HorizontalInfiniteScroll>
                         <div ref={el => { this.blueprintEl = el }}>{blueprint}</div>
+                        </HorizontalInfiniteScroll>
                     </figcaption>
                 </figure>
             );
@@ -53,7 +49,9 @@ export default class Confirm extends React.Component {
                     <figcaption>
                         1
                         <hr />
+                        <HorizontalInfiniteScroll>
                         <div ref={el => { this.boxEl = el }}>{"装備箱T" + boxtech}</div>
+                        </HorizontalInfiniteScroll>
                     </figcaption>
                 </figure>
             );
