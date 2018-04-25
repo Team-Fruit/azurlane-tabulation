@@ -24,7 +24,7 @@ export default class Confirm extends React.Component {
                         1
                         <hr />
                         <HorizontalInfiniteScroll>
-                        <div ref={el => { this.characterEl = el }}>{character}</div>
+                            {character}
                         </HorizontalInfiniteScroll>
                     </figcaption>
                 </figure>
@@ -37,7 +37,7 @@ export default class Confirm extends React.Component {
                         {count}
                         <hr />
                         <HorizontalInfiniteScroll>
-                        <div ref={el => { this.blueprintEl = el }}>{blueprint}</div>
+                            {blueprint}設計図
                         </HorizontalInfiniteScroll>
                     </figcaption>
                 </figure>
@@ -50,7 +50,7 @@ export default class Confirm extends React.Component {
                         1
                         <hr />
                         <HorizontalInfiniteScroll>
-                        <div ref={el => { this.boxEl = el }}>{"装備箱T" + boxtech}</div>
+                            {"装備箱T" + boxtech}
                         </HorizontalInfiniteScroll>
                     </figcaption>
                 </figure>
