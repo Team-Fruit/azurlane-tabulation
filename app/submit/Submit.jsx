@@ -88,7 +88,7 @@ export default class Submit extends React.Component {
                 <img className="bottomButton buttonRight" src="img/next.png" width="120px" onClick={this.next} draggable="false" />
                 {
                     this.state.popup ?
-                        <Confirm character={this.state.character} blueprint={this.state.blueprint} count={this.state.blueprintcount} boxtech={this.state.boxtech} onClose={this.next} />
+                        <Confirm character={this.state.character} blueprint={this.state.blueprint} count={this.state.blueprintcount} boxtech={this.state.boxtech} onClose={this.next} onSubmit={this.onSubmit} />
                         : null
                 }
             </div>

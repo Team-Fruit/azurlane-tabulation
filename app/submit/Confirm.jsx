@@ -64,7 +64,7 @@ export default class Confirm extends React.Component {
                             {itemList}
                         </div>
                     </div>
-                    <img className="confirmButton" src="img/forward.png" width="120px" onClick={this.props.onClose} draggable="false" />
+                    <img className="confirmButton" src="img/forward.png" width="120px" onClick={this.props.onSubmit} draggable="false" />
                 </div>
             </div>
         );

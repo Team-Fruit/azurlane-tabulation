@@ -1,4 +1,4 @@
-body {  
+body {
     background-image: url("img/background.png");
     background-attachment: fixed;
     background-size: cover;
@@ -30,7 +30,7 @@ input {
     text-decoration: none;
     color: #000;
     line-height: 1;
-    cursor : pointer;
+    cursor: pointer;
 }
 
 .chapter a:hover {
@@ -41,10 +41,10 @@ input {
 .chapterLabel {
     display: block;
     margin: 0 0 2px 0;
-    padding :18px;
+    padding: 18px;
     line-height: 1;
-    color :#fff;
-    cursor :pointer;
+    color: #fff;
+    cursor: pointer;
 }
 
 .chapterNormal .chapterLabel {
@@ -52,13 +52,13 @@ input {
 }
 
 .chapterHard .chapterLabel {
-    background: #c61018; 
+    background: #c61018;
 }
 
 .chapter ul {
     margin: 0 0 3px 0;
     padding: 0;
-    background :#f4f4f4;
+    background: #f4f4f4;
     list-style: none;
 }
 
@@ -68,16 +68,7 @@ input {
     transition: all 0.5s;
 }
 
-#menu_bar1:checked ~ #links1 li,
-#menu_bar2:checked ~ #links2 li,
-#menu_bar3:checked ~ #links3 li,
-#menu_bar4:checked ~ #links4 li,
-#menu_bar5:checked ~ #links5 li,
-#menu_bar6:checked ~ #links6 li,
-#menu_bar7:checked ~ #links7 li,
-#menu_bar8:checked ~ #links8 li,
-#menu_bar9:checked ~ #links9 li,
-#menu_bar10:checked ~ #links10 li {
+#menu_bar1:checked~#links1 li, #menu_bar2:checked~#links2 li, #menu_bar3:checked~#links3 li, #menu_bar4:checked~#links4 li, #menu_bar5:checked~#links5 li, #menu_bar6:checked~#links6 li, #menu_bar7:checked~#links7 li, #menu_bar8:checked~#links8 li, #menu_bar9:checked~#links9 li, #menu_bar10:checked~#links10 li {
     max-height: 46px;
     opacity: 1;
 }
@@ -101,11 +92,11 @@ input {
 }
 
 .hard {
-    background: #c61018; 
+    background: #c61018;
 }
 
 .submit {
-    color :#fff;
+    color: #fff;
     margin: 0 30px;
 }
 
@@ -170,14 +161,14 @@ input {
     text-align: center;
     border-bottom: 3px solid #ccc;
     opacity: 0.8;
-    cursor :pointer;
+    cursor: pointer;
 }
 
 .rarityItemSelected {
     border: 3px solid #ccc;
     border-bottom: hidden;
     opacity: 1;
-    cursor :pointer;
+    cursor: pointer;
 }
 
 .rarityItem a {
@@ -204,7 +195,7 @@ input {
 }
 
 .iconListItem, .iconListItemSelected {
-    cursor :pointer;
+    cursor: pointer;
     height: 75px;
 }
 
@@ -212,9 +203,9 @@ input {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    margin:0;
-    padding:0;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
     width: 100%;
     text-align: center;
     font-weight: 700;
@@ -255,7 +246,7 @@ input {
 .arrow {
     vertical-align: middle;
     margin: 0 10px;
-    cursor :pointer;
+    cursor: pointer;
 }
 
 .count {
@@ -282,9 +273,9 @@ input {
     bottom: 0;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.5);
-  }
+}
 
-  .popupInner {
+.popupInner {
     position: absolute;
     width: 100%;
     height: 300px;
@@ -293,54 +284,55 @@ input {
     left: 0;
     right: 0;
     margin: auto;
-  }
+}
 
-  .confirmList {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
-      margin: 75px 0;
-      background: rgba(0, 0, 0, 0.5);
-    }
+.confirmList {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin: 75px 0;
+    background: rgba(0, 0, 0, 0.5);
+}
 
-    .confirmButton {
-        position: absolute;
-        right: 20px;
-        bottom: 20px;
-        cursor: pointer;
-    }
+.confirmButton {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    cursor: pointer;
+}
 
-    .confirmFigures {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        text-align: center;
-        width: 100%;
-    }
+.confirmFigures {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+}
 
-    .confirmListItem {
-        display: inline-block;
-        width: 75px;
-        margin: 5px;
-    }
+.confirmListItem {
+    display: inline-block;
+    width: 75px;
+    margin: 5px;
+}
 
-    .confirmListItem>figcaption>hr {
-        width: 85px;
-        margin: 1px;
-    }
+.confirmListItem>figcaption>hr {
+    width: 85px;
+    margin: 1px;
+}
 
-    .confirmListItem>figcaption {
-        margin: 0;
-    }
+.confirmListItem>figcaption {
+    margin: 0;
+}
 
-    .confirmListItem img {
-        height: 75px;
-    }
+.confirmListItem img {
+    height: 75px;
+}
 
-    .horizontalInfiniteScroll {
-        white-space: nowrap;
-        overflow: scroll;
-    }
+.horizontalInfiniteScroll {
+    white-space: nowrap;
+    overflow: scroll;
+}
