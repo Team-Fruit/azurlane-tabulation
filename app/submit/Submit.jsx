@@ -61,7 +61,14 @@ export default class Submit extends React.Component {
     }
 
     onSubmit() {
-        Spreadsheets.submit();
+        Spreadsheets.submit(
+            this.props.area,
+            this.props.isHard,
+            this.state.character,
+            this.state.blueprint,
+            this.state.blueprintcount,
+            this.state.boxtech
+        );
     }
 
     render() {
