@@ -5,6 +5,7 @@ import Character from './Character.jsx';
 import Blueprint from './Blueprint.jsx';
 import Box from './Box.jsx';
 import Confirm from './Confirm.jsx';
+const Spreadsheets = require('electron').remote.require('./app/Spreadsheets');
 
 export default class Submit extends React.Component {
     constructor(props) {
@@ -60,7 +61,7 @@ export default class Submit extends React.Component {
     }
 
     onSubmit() {
-
+        Spreadsheets.submit();
     }
 
     render() {

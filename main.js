@@ -1,7 +1,6 @@
 const electron = require('electron');
-const app = electron.app;
-const BrowserWindow = electron.BrowserWindow;
-const Menu = electron.Menu;
+const {app, BrowserWindow, Menu} = electron;
+const Spreadsheet = require('./app/Spreadsheets');
 
 let win = null;
 
@@ -15,6 +14,7 @@ app.on('ready', function () {
     win.loadURL('file://' + __dirname + '/app/index.html');
     win.webContents.openDevTools()
     Menu.setApplicationMenu(null);
+    Spreadsheet.init();
 
     win.on('unresponsive', function () {
         const options = {
