@@ -70,6 +70,7 @@ export default class Submit extends React.Component {
             this.state.boxtech,
             (res) => {
                 this.setState({popup: false});
+                this.props.back();
             }
         );
     }
