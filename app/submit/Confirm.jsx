@@ -1,16 +1,28 @@
 import React from 'react';
 import HorizontalInfiniteScroll from './HorizontalInfiniteScroll.jsx';
+import ReactLoading from 'react-loading';
 
 export default class Confirm extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            loading: false
+        }
 
         this.handleClick = this.handleClick.bind(this);
+        this.onSubmit = this.onSubmit.bind(this);
     }
 
     handleClick(e) {
-        if (e.target.className === "popup" || e.target.className === "popupInner")
+        if (!this.state.loading && (e.target.className === "popup" || e.target.className === "popupInner"))
             this.props.onClose();
+    }
+
+    onSubmit() {
+        if (!this.state.loading) {
+            this.setState({ loading: true });
+            this.props.onSubmit();
+        }
     }
 
     render() {
@@ -64,7 +76,15 @@ export default class Confirm extends React.Component {
                             {itemList}
                         </div>
                     </div>
-                    <img className="confirmButton" src="img/forward.png" width="120px" onClick={this.props.onSubmit} draggable="false" />
+                    {
+                        this.state.loading ?
+                            <div className="confirmLoading">
+                                <ReactLoading type={"bubbles"} color={"#2196F3"} height={100} width={300} />
+                            </div>
+                            : null
+
+                    }
+                    <img className="confirmButton" src="img/forward.png" width="120px" onClick={this.onSubmit} draggable="false" />
                 </div>
             </div>
         );

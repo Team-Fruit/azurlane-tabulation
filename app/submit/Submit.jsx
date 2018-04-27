@@ -67,7 +67,10 @@ export default class Submit extends React.Component {
             this.state.character,
             this.state.blueprint,
             this.state.blueprintcount,
-            this.state.boxtech
+            this.state.boxtech,
+            (res) => {
+                this.setState({popup: false});
+            }
         );
     }
 
