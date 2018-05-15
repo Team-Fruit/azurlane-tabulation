@@ -13,6 +13,7 @@ const readFileAsync = promisify(fs.readFile);
 const writeFileAsync = promisify(fs.writeFile);
 const credentialsPath = path.join(app.getPath('userData'), 'credentials.json');
 
+let mainWindow;
 let userAuthRequired = false;
 let oAuth2Client;
 
@@ -20,7 +21,8 @@ exports.userAuthRequired = () => {
     return userAuthRequired;
 }
 
-exports.init = async () => {
+exports.init = async (window) => {
+    mainWindow = window;
     const credentials = JSON.parse(await readFileAsync('./app/client_secret.json', 'utf-8'));
     const { client_secret, client_id, redirect_uris } = credentials.installed;
     oAuth2Client = new OAuth2Client(client_id, client_secret, redirect_uris[0]);
@@ -34,8 +36,9 @@ exports.init = async () => {
         opn(authUrl);
         prompt({
             title: "Google認証",
-            label: "認証コードを入力してください"
-        }).then((r) => {
+            label: "認証コードを入力してください",
+            alwaysOnTop: true
+        }, mainWindow).then((r) => {
             this.setCode(r);
         });
     } else {
@@ -45,8 +48,10 @@ exports.init = async () => {
 
 exports.setCode = async (code) => {
     oAuth2Client.getToken(code, (err, token) => {
-        oAuth2Client.setCredentials(token);
-        fs.writeFileSync(credentialsPath, JSON.stringify(token));
+        if (token) {
+            oAuth2Client.setCredentials(token);
+            fs.writeFileSync(credentialsPath, JSON.stringify(token));
+        }
     });
 }
 

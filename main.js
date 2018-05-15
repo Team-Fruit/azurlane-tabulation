@@ -14,7 +14,7 @@ app.on('ready', function () {
     win.loadURL('file://' + __dirname + '/app/index.html');
     win.webContents.openDevTools()
     Menu.setApplicationMenu(null);
-    Spreadsheet.init();
+    Spreadsheet.init(win);
 
     win.on('unresponsive', function () {
         const options = {
