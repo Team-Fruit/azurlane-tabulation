@@ -7,6 +7,7 @@ const opn = require('opn');
 const { promisify } = require('util');
 const { google } = require('googleapis');
 const OAuth2Client = google.auth.OAuth2;
+const prompt = require('electron-prompt');
 
 const readFileAsync = promisify(fs.readFile);
 const writeFileAsync = promisify(fs.writeFile);
@@ -31,16 +32,22 @@ exports.init = async () => {
             scope: ['https://www.googleapis.com/auth/spreadsheets'],
         });
         opn(authUrl);
+        prompt({
+            title: "Google認証",
+            label: "認証コードを入力してください"
+        }).then((r) => {
+            this.setCode(r);
+        });
     } else {
         oAuth2Client.setCredentials(JSON.parse(await readFileAsync(credentialsPath, 'utf-8')));
     }
 }
 
 exports.setCode = async (code) => {
-    const getToken = promisify(oAuth2Client.getToken);
-    const token = await getToken(code);
-    oAuth2Client.setCredentials(token);
-    await writeFileAsync(credentialsPath, JSON.stringify(token));
+    oAuth2Client.getToken(code, (err, token) => {
+        oAuth2Client.setCredentials(token);
+        fs.writeFileSync(credentialsPath, JSON.stringify(token));
+    });
 }
 
 exports.submit = async (area, hard, character, blueprint, bpcount, boxtech, callback) => {
