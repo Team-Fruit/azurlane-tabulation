@@ -68,7 +68,7 @@ input {
     transition: all 0.5s;
 }
 
-#menu_bar1:checked~#links1 li, #menu_bar2:checked~#links2 li, #menu_bar3:checked~#links3 li, #menu_bar4:checked~#links4 li, #menu_bar5:checked~#links5 li, #menu_bar6:checked~#links6 li, #menu_bar7:checked~#links7 li, #menu_bar8:checked~#links8 li, #menu_bar9:checked~#links9 li, #menu_bar10:checked~#links10 li {
+#menu_bar1:checked~#links1 li, #menu_bar2:checked~#links2 li, #menu_bar3:checked~#links3 li, #menu_bar4:checked~#links4 li, #menu_bar5:checked~#links5 li, #menu_bar6:checked~#links6 li, #menu_bar7:checked~#links7 li, #menu_bar8:checked~#links8 li, #menu_bar9:checked~#links9 li, #menu_bar10:checked~#links10 li, #menu_bar11:checked~#links11 li {
     max-height: 46px;
     opacity: 1;
 }

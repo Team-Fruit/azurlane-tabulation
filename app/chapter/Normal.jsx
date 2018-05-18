@@ -34,6 +34,14 @@ export default class Normal extends React.Component {
                     <li><a onClick={() => this._onChoose('10-3')}>10-3 勝利に乗じて</a></li>
                     <li><a onClick={() => this._onChoose('10-4')}>10-4 釣り野伏</a></li>
                 </ul>
+                <label className="chapterLabel" htmlFor="menu_bar11">第11章  エンプレスオーガスタ</label>
+                <input type="checkbox" id="menu_bar11" className="accordion" />
+                <ul id="links11">
+                    <li><a onClick={() => this._onChoose('11-1')}>11-1 夜明けの上陸作戦</a></li>
+                    <li><a onClick={() => this._onChoose('11-2')}>11-2 嵐の夜</a></li>
+                    <li><a onClick={() => this._onChoose('11-3')}>11-3 海上騎士団</a></li>
+                    <li><a onClick={() => this._onChoose('11-4')}>11-4 夜を切り裂いて</a></li>
+                </ul>
             </div>
         );
     }
