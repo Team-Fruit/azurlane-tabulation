@@ -6,7 +6,6 @@ let win = null;
 let forceQuit = false;
 
 app.on('window-all-closed', function () {
-    console.log('allclosed');
     if (process.platform != 'darwin')
         app.quit();
 });
@@ -18,7 +17,6 @@ app.on('ready', function () {
     Spreadsheet.init(win);
 
     win.on('close', function (e) {
-        console.log(process.platform);
         if (forceQuit || process.platform != 'darwin') {
             win = null;
         } else {
