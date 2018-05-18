@@ -23,7 +23,9 @@ export default class Submit extends React.Component {
                 character: data.character
             },
             character: null,
+            characterRarity: null,
             blueprint: null,
+            blueprintRarity: null,
             blueprintcount: 0,
             boxtech: null
         }
@@ -40,12 +42,12 @@ export default class Submit extends React.Component {
         return !(this.state.popup === nextState.popup);
     }
 
-    onSelectCharacter(name) {
-        this.setState({ character: name });
+    onSelectCharacter(name, rarity) {
+        this.setState({ character: name, characterRarity: rarity });
     }
 
-    onSelectBlueprint(name) {
-        this.setState({ blueprint: name });
+    onSelectBlueprint(name, rarity) {
+        this.setState({ blueprint: name, blueprintRarity: rarity });
     }
 
     onChangeBlueprintCount(count) {
@@ -62,14 +64,22 @@ export default class Submit extends React.Component {
 
     onSubmit() {
         Spreadsheets.submit(
-            this.props.area,
-            this.props.isHard,
-            this.state.character,
-            this.state.blueprint,
-            this.state.blueprintcount,
-            this.state.boxtech,
+            {
+                area: this.props.area,
+                hard: this.props.isHard,
+                character: {
+                    name: this.state.character,
+                    rarity: this.state.characterRarity
+                },
+                blueprint: {
+                    name: this.state.blueprint,
+                    rarity: this.state.blueprintRarity,
+                    count: this.state.blueprintcount
+                },
+                boxtech: this.state.boxtech
+            },
             (res) => {
-                this.setState({popup: false});
+                this.setState({ popup: false });
                 this.props.back();
             }
         );

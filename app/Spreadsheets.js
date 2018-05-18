@@ -12,14 +12,43 @@ const prompt = require('electron-prompt');
 const readFileAsync = promisify(fs.readFile);
 const writeFileAsync = promisify(fs.writeFile);
 const credentialsPath = path.join(app.getPath('userData'), 'credentials.json');
+const rangeReg = /\d+/;
+const sheetIds = new Map();
+const colors = {
+    gold: {
+        red: 1,
+        green: 0.851,
+        blue: 0.4
+    },
+    purple: {
+        red: 0.5569,
+        green: 0.4863,
+        blue: 0.7686
+    },
+    blue: {
+        red: 0.4275,
+        green: 0.6235,
+        blue: 0.9216
+    },
+    ssr: {
+        red: 1,
+        green: 0.851,
+        blue: 0.4
+    },
+    sr: {
+        red: 0.5569,
+        green: 0.4863,
+        blue: 0.7686
+    },
+    r: {
+        red: 0.4275,
+        green: 0.6235,
+        blue: 0.9216
+    }
+};
 
 let mainWindow;
-let userAuthRequired = false;
 let oAuth2Client;
-
-exports.userAuthRequired = () => {
-    return userAuthRequired;
-}
 
 exports.init = async (window) => {
     mainWindow = window;
@@ -27,7 +56,7 @@ exports.init = async (window) => {
     const { client_secret, client_id, redirect_uris } = credentials.installed;
     oAuth2Client = new OAuth2Client(client_id, client_secret, redirect_uris[0]);
 
-    userAuthRequired = !fs.existsSync(credentialsPath);
+    const userAuthRequired = !fs.existsSync(credentialsPath);
     if (userAuthRequired) {
         const authUrl = oAuth2Client.generateAuthUrl({
             access_type: 'offline',
@@ -43,6 +72,7 @@ exports.init = async (window) => {
         });
     } else {
         oAuth2Client.setCredentials(JSON.parse(await readFileAsync(credentialsPath, 'utf-8')));
+        fetchSheetIds();
     }
 }
 
@@ -51,25 +81,113 @@ exports.setCode = async (code) => {
         if (token) {
             oAuth2Client.setCredentials(token);
             fs.writeFileSync(credentialsPath, JSON.stringify(token));
+            fetchSheetIds();
         }
     });
 }
 
-exports.submit = async (area, hard, character, blueprint, bpcount, boxtech, callback) => {
+const fetchSheetIds = async () => {
     const sheets = google.sheets({ version: 'v4', oAuth2Client });
-    const res = await sheets.spreadsheets.values.append(
+    await sheets.spreadsheets.get(
+        {
+            auth: oAuth2Client,
+            spreadsheetId: '1rTlsLRcEveAwA8-AdE_Slz4h_bje3ceh7628dnv_9rg',
+            includeGridData: false
+        },
+        (err, res) => {
+            if (err) {
+                console.error(err);
+                return;
+            }
+            res.data.sheets.forEach((line) => {
+                sheetIds.set(line.properties.title, line.properties.sheetId);
+            });
+        }
+    );
+}
+
+exports.submit = async (data, callback) => {
+    const sheets = google.sheets({ version: 'v4', oAuth2Client });
+    await sheets.spreadsheets.values.append(
         {
             auth: oAuth2Client,
             spreadsheetId: '1rTlsLRcEveAwA8-AdE_Slz4h_bje3ceh7628dnv_9rg',
             valueInputOption: 'USER_ENTERED',
-            range: "'" + (hard == true ? "H" + area : area) + "'",
+            range: "'" + (data.hard == true ? "H" + data.area : data.area) + "'",
             resource: {
                 values: [
-                    [character, blueprint ? blueprint + '*' + bpcount : null, boxtech],
+                    [
+                        null,
+                        data.character.name,
+                        data.blueprint.name ? data.blueprint.count > 1 ? data.blueprint.name + '*' + data.blueprint.count : data.blueprint.name : null,
+                        data.boxtech
+                    ],
                 ]
             }
+        },
+        async (err, res) => {
+            if (err) {
+                callback(err);
+                return;
+            }
+            if (data.character.rarity === 'n') {
+                callback(res);
+                return;
+            }
+
+            const updates = res.data.updates;
+            const row = updates.updatedRange.split("'!")[1].match(rangeReg)[0];
+            await sheets.spreadsheets.batchUpdate(
+                {
+                    auth: oAuth2Client,
+                    spreadsheetId: '1rTlsLRcEveAwA8-AdE_Slz4h_bje3ceh7628dnv_9rg',
+                    resource: {
+                        requests: [
+                            {
+                                repeatCell: {
+                                    range: {
+                                        sheetId: sheetIds.get(data.hard == true ? "H" + data.area : data.area),
+                                        startRowIndex: row - 1,
+                                        endRowIndex: row,
+                                        startColumnIndex: 1,
+                                        endColumnIndex: 2
+                                    },
+                                    cell: {
+                                        userEnteredFormat: {
+                                            backgroundColor: colors[data.character.rarity]
+                                        },
+                                    },
+                                    fields: "userEnteredFormat(backgroundColor)"
+                                }
+                            },
+                            {
+                                repeatCell: {
+                                    range: {
+                                        sheetId: sheetIds.get(data.hard == true ? "H" + data.area : data.area),
+                                        startRowIndex: row - 1,
+                                        endRowIndex: row,
+                                        startColumnIndex: 2,
+                                        endColumnIndex: 3
+                                    },
+                                    cell: {
+                                        userEnteredFormat: {
+                                            backgroundColor: colors[data.blueprint.rarity]
+                                        },
+                                    },
+                                    fields: "userEnteredFormat(backgroundColor)"
+                                },
+                            }
+                        ]
+                    }
+                }, (err, res) => {
+                    if (err) {
+                        console.error(err);
+                        callback(err);
+                        return;
+                    }
+                    callback(res);
+                }
+            );
         }
     );
-    console.log(res);
-    callback(res);
 }

@@ -16,7 +16,7 @@ export default class Character extends React.Component {
     _onSelectCharacter(name) {
         const c = name === this.state.character ? null : name;
         this.setState({ character: c });
-        this.props.onSelectCharacter(c);
+        this.props.onSelectCharacter(c, this.state.rarity);
     }
 
     render() {

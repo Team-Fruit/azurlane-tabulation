@@ -37,7 +37,7 @@ export default class Blueprint extends React.Component {
     _onSelectBlueprint(name) {
         const c = name === this.state.blueprint ? null : name;
         this.setState({ blueprint: c });
-        this.props.onSelectBlueprint(c);
+        this.props.onSelectBlueprint(c, this.state.rarity);
     }
 
     render() {
