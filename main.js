@@ -20,36 +20,6 @@ app.on('ready', function () {
     Menu.setApplicationMenu(null);
     Spreadsheet.init(win);
 
-    win.on('unresponsive', function () {
-        const options = {
-            type: 'info',
-            title: '応答なし',
-            message: 'プロセスの応答がありません。',
-            buttons: ['再読み込み', '閉じる']
-        };
-        dialog.showMessageBox(options, function (index) {
-            if (index === 0)
-                win.reload();
-            else
-                win.close();
-        });
-    });
-
-    win.webContents.on('crashed', function () {
-        const options = {
-            type: 'info',
-            title: 'クラッシュ',
-            message: 'プロセスがクラッシュしました。申し訳ありません。',
-            buttons: ['再読み込み', '閉じる']
-        };
-        dialog.showMessageBox(options, function (index) {
-            if (index === 0)
-                win.reload();
-            else
-                win.close();
-        });
-    });
-
     win.on('close', function (e) {
         if (!forceQuit) {
             e.preventDefault();
@@ -63,7 +33,6 @@ app.on('before-quit', function () {
 });
 
 app.on('activate', function () {
-    console.log('activate');
     win.show();
 });
 
