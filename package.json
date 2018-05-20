@@ -9,7 +9,8 @@
   "private": true,
   "scripts": {
     "start": "electron .",
-    "package": "electron-packager . azurlanetabulation --version=1.0.0 --icon=./resources/icon --prune --out=releases ."
+    "compile": "gulp compile",
+    "package": "electron-packager . azurlanetabulation --version=1.0.0 --icon=./resources/icon --prune --overwrite --out=releases ."
   },
   "devDependencies": {
     "babel-core": "^6.26.3",

@@ -4,10 +4,14 @@ const webpackConfig = require('./webpack.config');
 const path = require('path')
 const fs = require('fs')
 
-gulp.task('bundle', function() {
+gulp.task('compile', function() {
   return gulp.src('app/**/*.{js,jsx}')
   .pipe(webpack({
     config : webpackConfig
   }))
   .pipe(gulp.dest('build'));
+});
+
+gulp.task('start', ['compile'], function(){
+  gulp.watch('app/**/*.{js,jsx}', ['compile']);
 });
