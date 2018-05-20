@@ -19,9 +19,9 @@ module.exports = {
         filename: "[name].js",
         path: path.resolve(__dirname, './build')
     },
-    // plugins: [
-    //     new UglifyJsPlugin(),
-    // ],
+    plugins: [
+        new UglifyJsPlugin(),
+    ],
     module: {
         rules: [
             {
