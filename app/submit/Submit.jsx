@@ -1,5 +1,6 @@
 import React from 'react';
 import * as fs from 'fs';
+import path from 'path';
 import Header from './Header.jsx';
 import Character from './Character.jsx';
 import Blueprint from './Blueprint.jsx';
@@ -11,7 +12,7 @@ export default class Submit extends React.Component {
     constructor(props) {
         super(props);
 
-        const data = JSON.parse(fs.readFileSync('./app/chapterdata/' + this.props.area + '.json', 'utf8'));
+        const data = JSON.parse(fs.readFileSync(path.join(__dirname, '../app/chapterdata/', this.props.area + '.json'), 'utf8'));
         this.state = {
             popup: false,
             data: {

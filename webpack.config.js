@@ -8,6 +8,10 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 module.exports = {
     target: 'electron-renderer',
     entry: './app/index.jsx',
+    node: {
+        __dirname: false,
+        __filename: false,
+    },
     resolve: {
         extensions: ['*', '.js', '.jsx', '.json']
     },
