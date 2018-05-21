@@ -31,7 +31,7 @@ export default class Confirm extends React.Component {
         if (character)
             itemList.push(
                 <figure className="confirmListItem" key="character">
-                    <img src={"./img/character/" + character + ".png"} />
+                    <img src={"../resources/img/character/" + character + ".png"} />
                     <figcaption>
                         1
                         <hr />
@@ -44,7 +44,7 @@ export default class Confirm extends React.Component {
         if (blueprint && count > 0)
             itemList.push(
                 <figure className="confirmListItem" key="blueprint">
-                    <img src={"./img/blueprint/" + blueprint + ".png"} />
+                    <img src={"../resources/img/blueprint/" + blueprint + ".png"} />
                     <figcaption>
                         {count}
                         <hr />
@@ -57,7 +57,7 @@ export default class Confirm extends React.Component {
         if (boxtech)
             itemList.push(
                 <figure className="confirmListItem" key="box">
-                    <img src={"./img/box/" + boxtech + ".png"} />
+                    <img src={"../resources/img/box/" + boxtech + ".png"} />
                     <figcaption>
                         1
                         <hr />
@@ -84,7 +84,7 @@ export default class Confirm extends React.Component {
                             : null
 
                     }
-                    <img className="confirmButton" src="img/forward.png" width="120px" onClick={this.onSubmit} draggable="false" />
+                    <img className="confirmButton" src="../resources/img/forward.png" width="120px" onClick={this.onSubmit} draggable="false" />
                 </div>
             </div>
         );

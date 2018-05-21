@@ -54,7 +54,7 @@ export default class Blueprint extends React.Component {
 
         const iconList = [];
         for (let k of blueprint[this.state.rarity]) {
-            const icon = <img src={'./img/blueprint/' + k + '.png'} width="75px" alt={k} onClick={() => this._onSelectBlueprint(k)} draggable="false" />;
+            const icon = <img src={'../resources/img/blueprint/' + k + '.png'} width="75px" alt={k} onClick={() => this._onSelectBlueprint(k)} draggable="false" />;
             if (this.state.blueprint === k)
                 iconList.push(
                     <div className="iconListItemSelected" key={k}>
@@ -77,9 +77,9 @@ export default class Blueprint extends React.Component {
                     {rarityList}
                     <li className="rarityItem counter" key="counter">
                         <div className="count">
-                            <img src="./img/arrowleft.png" className="arrow" height="20px" onClick={() => this._onDecrement()} />
+                            <img src="../resources/img/arrowleft.png" className="arrow" height="20px" onClick={() => this._onDecrement()} />
                             {this.state.count}
-                            <img src="./img/arrowright.png" className="arrow" height="20px" onClick={() => this._onIncrement()} />
+                            <img src="../resources/img/arrowright.png" className="arrow" height="20px" onClick={() => this._onIncrement()} />
                         </div>
                     </li>
                 </ul>

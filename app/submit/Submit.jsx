@@ -12,7 +12,7 @@ export default class Submit extends React.Component {
     constructor(props) {
         super(props);
 
-        const data = JSON.parse(fs.readFileSync(path.join(__dirname, '../app/chapterdata/', this.props.area + '.json'), 'utf8'));
+        const data = JSON.parse(fs.readFileSync(path.join(__dirname, '../resources/chapterdata/', this.props.area + '.json'), 'utf8'));
         this.state = {
             popup: false,
             data: {
@@ -111,8 +111,8 @@ export default class Submit extends React.Component {
                     <h3>装備箱</h3>
                     <Box box={box} onSelectBoxTech={this.onSelectBoxTech} />
                 </div>
-                <img className="bottomButton buttonLeft" src="img/back.png" width="120px" onClick={() => this.props.back()} draggable="false" />
-                <img className="bottomButton buttonRight" src="img/next.png" width="120px" onClick={this.next} draggable="false" />
+                <img className="bottomButton buttonLeft" src="../resources/img/back.png" width="120px" onClick={() => this.props.back()} draggable="false" />
+                <img className="bottomButton buttonRight" src="../resources/img/next.png" width="120px" onClick={this.next} draggable="false" />
                 {
                     this.state.popup ?
                         <Confirm character={this.state.character} blueprint={this.state.blueprint} count={this.state.blueprintcount} boxtech={this.state.boxtech} onClose={this.next} onSubmit={this.onSubmit} />
