@@ -1,6 +1,8 @@
+require('babel-polyfill');
 const electron = require('electron');
-const { app, BrowserWindow, Menu } = electron;
-const Spreadsheet = require('./app/Spreadsheets');
+const { app, BrowserWindow, Menu, globalShortcut } = electron;
+const path = require('path');
+const Spreadsheets = require('./app/Spreadsheets');
 
 let win = null;
 let forceQuit = false;
@@ -12,9 +14,9 @@ app.on('window-all-closed', function () {
 
 app.on('ready', function () {
     win = new BrowserWindow({ width: 750, height: 675 });
-    win.loadURL('file://' + __dirname + '/app/index.html');
+    win.loadURL('file://' + path.join(__dirname, '../app/index.html'));
     Menu.setApplicationMenu(null);
-    Spreadsheet.init(win);
+    Spreadsheets.init(win);
 
     win.on('close', function (e) {
         if (forceQuit || process.platform != 'darwin') {
@@ -23,6 +25,10 @@ app.on('ready', function () {
             e.preventDefault();
             win.hide();
         }
+    });
+
+    globalShortcut.register(process.platform === 'darwin' ? 'Alt+Cmd+I' : 'Ctrl+Shift+I', () => {
+        win.toggleDevTools();
     });
 });
 

@@ -2,13 +2,13 @@
   "name": "azurlanetabulation",
   "version": "1.0.0",
   "description": "アズールレーン周回データ集積クライアント",
-  "main": "main.js",
+  "main": "build/main.js",
   "keywords": [],
   "author": "sjcl",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "npm run compile && electron .",
+    "start": "electron .",
     "compile": "gulp compile",
     "package": "electron-packager . azurlanetabulation --version=1.0.0 --icon=./resources/icon --prune --overwrite --out=releases .",
     "build": "npm run compile && npm run package"
@@ -16,6 +16,7 @@
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
