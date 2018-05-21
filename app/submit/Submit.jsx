@@ -39,6 +39,10 @@ export default class Submit extends React.Component {
         this.onSubmit = this.onSubmit.bind(this);
     }
 
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
     shouldComponentUpdate(nextProps, nextState) {
         return !(this.state.popup === nextState.popup);
     }

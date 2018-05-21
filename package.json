@@ -8,9 +8,10 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "electron .",
+    "start": "npm run compile && electron .",
     "compile": "gulp compile",
-    "package": "electron-packager . azurlanetabulation --version=1.0.0 --icon=./resources/icon --prune --overwrite --out=releases ."
+    "package": "electron-packager . azurlanetabulation --version=1.0.0 --icon=./resources/icon --prune --overwrite --out=releases .",
+    "build": "npm run compile && npm run package"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
