@@ -2,7 +2,6 @@
 
 const webpack = require("webpack");
 const path = require("path");
-const webpackMerge = require('webpack-merge');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
