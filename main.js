@@ -16,13 +16,13 @@ app.on('window-all-closed', function () {
 app.on('ready', function () {
     win = Splashscreen.initSplashScreen({
         windowOpts: { width: 750, height: 675 },
-        templateUrl: path.join(__dirname, "../resources/icon.png"),
+        templateUrl: path.join(__dirname, "../resources/icon.svg"),
         delay: 0,
         minVisible: 1500,
         splashScreenOpts: {
-            height: 256,
             width: 256,
-            transparent: true,
+            height: 256,
+            transparent: true
         },
     });
 
