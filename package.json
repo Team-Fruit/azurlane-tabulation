@@ -10,7 +10,7 @@
   "scripts": {
     "start": "electron .",
     "compile": "gulp compile",
-    "package": "electron-packager . AzurlaneTabulation --version=1.0.0 --icon=./resources/icon --prune --overwrite --out=releases . --ignore='(\\.gitignore|\\.gitmodules|\\README.md|\\gulpfile.js|\\.babelrc|\\webpack.config.js|\\package-lock.json)' --ignore='.*/app/app/.*\\.(js|jsx)$'",
+    "package": "electron-packager . AzurlaneTabulation --asar --version=1.0.0 --icon=./resources/icon --prune --overwrite --out=releases . --ignore=\"(.gitignore|.gitmodules|\\README.md|\\gulpfile.js|\\.babelrc|\\webpack.config.js|\\package-lock.json)\" --ignore=\".*app/.*\\.jsx\"",
     "build": "npm run compile && npm run package"
   },
   "devDependencies": {
