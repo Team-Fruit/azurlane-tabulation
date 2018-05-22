@@ -28,7 +28,7 @@ export default class Chapter extends React.Component {
                 <div className={isHard ? "chapter chapterHard" : "chapter chapterNormal"}>
                     {component}
                 </div>
-                <img className="bottomButton" src={isHard ? "img/normal.png" : "img/hard.png"} width="150px" onClick={() => this.toggleHard()} draggable="false" />
+                <img className="bottomButton" src={isHard ? "../resources/img/normal.png" : "../resources/img/hard.png"} width="150px" onClick={() => this.toggleHard()} draggable="false" />
             </div>
         );
     }
