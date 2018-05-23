@@ -44,7 +44,22 @@ const colors = {
         red: 0.4275,
         green: 0.6235,
         blue: 0.9216
-    }
+    },
+    3: {
+        red: 1,
+        green: 0.851,
+        blue: 0.4
+    },
+    2: {
+        red: 0.5569,
+        green: 0.4863,
+        blue: 0.7686
+    },
+    1: {
+        red: 0.4275,
+        green: 0.6235,
+        blue: 0.9216
+    },
 };
 
 let mainWindow;
@@ -120,7 +135,9 @@ exports.submit = async (data, callback) => {
                         null,
                         data.character.name,
                         data.blueprint.name ? data.blueprint.count > 1 ? data.blueprint.name + '*' + data.blueprint.count : data.blueprint.name : null,
-                        data.boxtech
+                        data.boxtech,
+                        data.retrofit1,
+                        data.retrofit2
                     ],
                 ]
             }
@@ -172,6 +189,40 @@ exports.submit = async (data, callback) => {
                                     cell: {
                                         userEnteredFormat: {
                                             backgroundColor: colors[data.blueprint.rarity]
+                                        },
+                                    },
+                                    fields: "userEnteredFormat(backgroundColor)"
+                                },
+                            },
+                            {
+                                repeatCell: {
+                                    range: {
+                                        sheetId: sheetIds.get(data.hard == true ? "H" + data.area : data.area),
+                                        startRowIndex: row - 1,
+                                        endRowIndex: row,
+                                        startColumnIndex: 4,
+                                        endColumnIndex: 5
+                                    },
+                                    cell: {
+                                        userEnteredFormat: {
+                                            backgroundColor: colors[data.retrofit1]
+                                        },
+                                    },
+                                    fields: "userEnteredFormat(backgroundColor)"
+                                },
+                            },
+                            {
+                                repeatCell: {
+                                    range: {
+                                        sheetId: sheetIds.get(data.hard == true ? "H" + data.area : data.area),
+                                        startRowIndex: row - 1,
+                                        endRowIndex: row,
+                                        startColumnIndex: 5,
+                                        endColumnIndex: 6
+                                    },
+                                    cell: {
+                                        userEnteredFormat: {
+                                            backgroundColor: colors[data.retrofit2]
                                         },
                                     },
                                     fields: "userEnteredFormat(backgroundColor)"

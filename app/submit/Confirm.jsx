@@ -2,6 +2,13 @@ import React from 'react';
 import HorizontalInfiniteScroll from './HorizontalInfiniteScroll.jsx';
 import ReactLoading from 'react-loading';
 
+const retrofitNames = {
+    1: "駆逐改造図T",
+    2: "巡洋改造図T",
+    3: "戦艦改造図T",
+    4: "空母改造図T"
+}
+
 export default class Confirm extends React.Component {
     constructor(props) {
         super(props);
@@ -26,7 +33,7 @@ export default class Confirm extends React.Component {
     }
 
     render() {
-        const { character, blueprint, count, boxtech } = this.props;
+        const { character, blueprint, count, boxtech, chapternum, retrofit1, retrofit2 } = this.props;
         const itemList = [];
         if (character)
             itemList.push(
@@ -63,6 +70,34 @@ export default class Confirm extends React.Component {
                         <hr />
                         <HorizontalInfiniteScroll>
                             {"装備箱T" + boxtech}
+                        </HorizontalInfiniteScroll>
+                    </figcaption>
+                </figure>
+            );
+        if (retrofit1)
+            itemList.push(
+                <figure className="confirmListItem" key="retrofit1">
+                    <img src={"../resources/img/retrofit/" + chapternum + '/' + retrofit1 + ".png"} />
+                    <figcaption>
+                        {
+                            retrofit1 === retrofit2 ? 2 : 1
+                        }
+                        <hr />
+                        <HorizontalInfiniteScroll>
+                            {retrofitNames[chapternum] + retrofit1}
+                        </HorizontalInfiniteScroll>
+                    </figcaption>
+                </figure>
+            );
+        if (retrofit2 && (retrofit1 !== retrofit2))
+            itemList.push(
+                <figure className="confirmListItem" key="retrofit2">
+                    <img src={"../resources/img/retrofit/" + chapternum + '/' + retrofit2 + ".png"} />
+                    <figcaption>
+                        1
+                <hr />
+                        <HorizontalInfiniteScroll>
+                            {retrofitNames[chapternum] + retrofit2}
                         </HorizontalInfiniteScroll>
                     </figcaption>
                 </figure>

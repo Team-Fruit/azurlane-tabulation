@@ -5,6 +5,7 @@ import Header from './Header.jsx';
 import Character from './Character.jsx';
 import Blueprint from './Blueprint.jsx';
 import Box from './Box.jsx';
+import Retrofit from './Retrofit.jsx';
 import Confirm from './Confirm.jsx';
 const Spreadsheets = require('electron').remote.require('../app/Spreadsheets');
 
@@ -21,20 +22,25 @@ export default class Submit extends React.Component {
                 description: data.description,
                 box: data.box,
                 blueprint: data.blueprint,
-                character: data.character
+                character: data.character,
+                retrofit: data.retrofit
             },
             character: null,
             characterRarity: null,
             blueprint: null,
             blueprintRarity: null,
             blueprintcount: 0,
-            boxtech: null
+            boxtech: null,
+            retrofit1: null,
+            retrofit2: null
         }
 
         this.onSelectBlueprint = this.onSelectBlueprint.bind(this);
         this.onSelectCharacter = this.onSelectCharacter.bind(this);
         this.onChangeBlueprintCount = this.onChangeBlueprintCount.bind(this);
         this.onSelectBoxTech = this.onSelectBoxTech.bind(this);
+        this.onSelectRetrofit1 = this.onSelectRetrofit1.bind(this);
+        this.onSelectRetrofit2 = this.onSelectRetrofit2.bind(this);
         this.next = this.next.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
     }
@@ -63,6 +69,14 @@ export default class Submit extends React.Component {
         this.setState({ boxtech: tech });
     }
 
+    onSelectRetrofit1(tech) {
+        this.setState({ retrofit1: tech });
+    }
+
+    onSelectRetrofit2(tech) {
+        this.setState({ retrofit2: tech });
+    }
+
     next() {
         this.setState({ popup: !this.state.popup });
     }
@@ -81,7 +95,9 @@ export default class Submit extends React.Component {
                     rarity: this.state.blueprintRarity,
                     count: this.state.blueprintcount
                 },
-                boxtech: this.state.boxtech
+                boxtech: this.state.boxtech,
+                retrofit1: this.state.retrofit1,
+                retrofit2: this.state.retrofit2
             },
             (res) => {
                 this.setState({ popup: false });
@@ -92,7 +108,7 @@ export default class Submit extends React.Component {
 
     render() {
         const { area, isHard } = this.props;
-        const { num, name, description, box, blueprint, character } = this.state.data;
+        const { num, name, description, box, blueprint, character, retrofit } = this.state.data;
 
         return (
             <div className="submit">
@@ -110,12 +126,21 @@ export default class Submit extends React.Component {
                     }
                     <h3>装備箱</h3>
                     <Box box={box} onSelectBoxTech={this.onSelectBoxTech} />
+                    {
+                        isHard ? 
+                        <div>
+                            <h3>改造図</h3>
+                            <Retrofit num={num} retrofit={retrofit} onSelectRetrofit={this.onSelectRetrofit1} />
+                            <Retrofit num={num} retrofit={retrofit} onSelectRetrofit={this.onSelectRetrofit2} />
+                        </div>
+                        : null
+                    }
                 </div>
                 <img className="bottomButton buttonLeft" src="../resources/img/back.png" width="120px" onClick={() => this.props.back()} draggable="false" />
                 <img className="bottomButton buttonRight" src="../resources/img/next.png" width="120px" onClick={this.next} draggable="false" />
                 {
                     this.state.popup ?
-                        <Confirm character={this.state.character} blueprint={this.state.blueprint} count={this.state.blueprintcount} boxtech={this.state.boxtech} onClose={this.next} onSubmit={this.onSubmit} />
+                        <Confirm character={this.state.character} blueprint={this.state.blueprint} count={this.state.blueprintcount} boxtech={this.state.boxtech} chapternum={num} retrofit1={this.state.retrofit1} retrofit2={this.state.retrofit2} onClose={this.next} onSubmit={this.onSubmit} />
                         : null
                 }
             </div>
