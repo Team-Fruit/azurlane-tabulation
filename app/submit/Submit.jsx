@@ -7,7 +7,7 @@ import Blueprint from './Blueprint.jsx';
 import Box from './Box.jsx';
 import Retrofit from './Retrofit.jsx';
 import Confirm from './Confirm.jsx';
-const Spreadsheets = require('electron').remote.require('../app/Spreadsheets');
+const Spreadsheets = require('electron').remote.require('./app/Spreadsheets');
 
 export default class Submit extends React.Component {
     constructor(props) {

@@ -66,4 +66,4 @@ const mainConfig = {
     }
 };
 
-module.exports = [rendererConfig, mainConfig]
+module.exports = [rendererConfig, /*mainConfig*/]

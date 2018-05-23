@@ -82,7 +82,7 @@ exports.init = async (window) => {
             title: "Google認証",
             label: "認証コードを入力してください",
             alwaysOnTop: true
-        }, mainWindow).then((r) => {
+        }).then((r) => {
             this.setCode(r);
         });
     } else {

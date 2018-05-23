@@ -2,7 +2,7 @@
   "name": "azurlanetabulation",
   "version": "1.0.0",
   "description": "アズールレーン周回データ集積クライアント",
-  "main": "build/main.js",
+  "main": "main.js",
   "keywords": [],
   "author": "sjcl",
   "license": "MIT",
