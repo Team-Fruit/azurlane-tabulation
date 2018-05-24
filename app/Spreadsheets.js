@@ -1,9 +1,8 @@
 'use strict';
 
-const { app } = require('electron');
+const { app, shell } = require('electron');
 const fs = require('fs');
 const path = require('path');
-const opn = require('opn');
 const { promisify } = require('util');
 const { google } = require('googleapis');
 const OAuth2Client = google.auth.OAuth2;
@@ -77,7 +76,7 @@ exports.init = async (window) => {
             access_type: 'offline',
             scope: ['https://www.googleapis.com/auth/spreadsheets'],
         });
-        opn(authUrl);
+        shell.openExternal(authUrl);
         prompt({
             title: "Google認証",
             label: "認証コードを入力してください",
