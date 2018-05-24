@@ -67,7 +67,7 @@ let oAuth2Client;
 
 exports.init = async (window) => {
     mainWindow = window;
-    const credentials = JSON.parse(await readFileAsync('./resources/client_secret.json', 'utf-8'));
+    const credentials = JSON.parse(await readFileAsync(path.join(__dirname, '../resources/client_secret.json'), 'utf-8'));
     const { client_secret, client_id, redirect_uris } = credentials.installed;
     oAuth2Client = new OAuth2Client(client_id, client_secret, redirect_uris[0]);
 

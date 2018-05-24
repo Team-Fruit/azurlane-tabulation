@@ -1,4 +1,4 @@
-require('babel-polyfill');
+// require('babel-polyfill');
 const electron = require('electron');
 const { app, BrowserWindow, Menu, globalShortcut } = electron;
 const path = require('path');
@@ -27,7 +27,46 @@ app.on('ready', function () {
     });
 
     win.loadURL('file://' + path.join(__dirname, './app/index.html'));
-    Menu.setApplicationMenu(null);
+    const template = [
+        {
+            label: 'Application',
+            submenu: [
+                {
+                    role: 'about'
+                },
+                {
+                    type: 'separator'
+                },
+                {
+                    role: 'quit'
+                }
+            ]
+        },
+        {
+            label: 'Edit',
+            submenu: [
+                {
+                    role: 'undo',
+                },
+                {
+                    role: 'redo',
+                },
+                {
+                    type: 'separator'
+                },
+                {
+                    role: 'cut'
+                },
+                {
+                    role: 'copy'
+                },
+                {
+                    role: 'paste'
+                }
+            ]
+        }
+    ];
+    Menu.setApplicationMenu(Menu.buildFromTemplate(template));
     Spreadsheets.init(win);
 
     win.on('close', function (e) {
@@ -51,4 +90,3 @@ app.on('before-quit', function () {
 app.on('activate', function () {
     win.show();
 });
-
