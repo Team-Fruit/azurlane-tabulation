@@ -1,6 +1,6 @@
 // require('babel-polyfill');
 const electron = require('electron');
-const { app, BrowserWindow, Menu, globalShortcut, autoUpdater, dialog } = electron;
+const { app, BrowserWindow, Menu, globalShortcut, /*autoUpdater,*/ dialog } = electron;
 const path = require('path');
 const Spreadsheets = require('./app/Spreadsheets');
 const Splashscreen = require('@trodi/electron-splashscreen');
@@ -83,34 +83,34 @@ app.on('ready', () => {
 
     Spreadsheets.init(win);
 
-    const server = 'https://hazel-server-ezczncogdc.now.sh';
-    const feed = `${server}/update/${process.platform}/${app.getVersion()}`;
-    autoUpdater.setFeedURL(feed)
-    autoUpdater.on('update-downloaded', (event, releaseNotes, releaseName) => {
-        const dialogOpts = {
-            type: 'info',
-            buttons: ['Restart', 'Later'],
-            title: 'Application Update',
-            message: process.platform === 'win32' ? releaseNotes : releaseName,
-            detail: 'A new version has been downloaded. Restart the application to apply the updates.'
-        };
+    // const server = 'https://hazel-server-ezczncogdc.now.sh';
+    // const feed = `${server}/update/${process.platform}/${app.getVersion()}`;
+    // autoUpdater.setFeedURL(feed)
+    // autoUpdater.on('update-downloaded', (event, releaseNotes, releaseName) => {
+    //     const dialogOpts = {
+    //         type: 'info',
+    //         buttons: ['Restart', 'Later'],
+    //         title: 'Application Update',
+    //         message: process.platform === 'win32' ? releaseNotes : releaseName,
+    //         detail: 'A new version has been downloaded. Restart the application to apply the updates.'
+    //     };
 
-        dialog.showMessageBox(dialogOpts, (response) => {
-            if (response === 0)
-                autoUpdater.quitAndInstall();
-        })
-    });
-    autoUpdater.on('error', (message) => {
-        console.error('There was a problem updating the application');
-        console.error(message);
-    });
-    autoUpdater.on('checking-for-update', () => {
-        console.log('checking-for-update');
-    });
-    setInterval((function callback() {
-        autoUpdater.checkForUpdates();
-        return callback;
-    }()), 600000);
+    //     dialog.showMessageBox(dialogOpts, (response) => {
+    //         if (response === 0)
+    //             autoUpdater.quitAndInstall();
+    //     })
+    // });
+    // autoUpdater.on('error', (message) => {
+    //     console.error('There was a problem updating the application');
+    //     console.error(message);
+    // });
+    // autoUpdater.on('checking-for-update', () => {
+    //     console.log('checking-for-update');
+    // });
+    // setInterval((function callback() {
+    //     autoUpdater.checkForUpdates();
+    //     return callback;
+    // }()), 600000);
 });
 
 app.on('before-quit', () => {

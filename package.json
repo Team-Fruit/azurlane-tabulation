@@ -10,8 +10,7 @@
   "scripts": {
     "start": "electron .",
     "compile": "gulp compile",
-    "package": "electron-packager . AzurlaneTabulation --asar --version=1.0.0 --icon=./resources/icon --prune --overwrite --out=releases . --ignore=\"(.gitignore|.gitmodules|\\README.md|\\gulpfile.js|\\.babelrc|\\webpack.config.js|\\package-lock.json)\" --ignore=\".*app/.*\\.jsx\"",
-    "signosx": "electron-osx-sign ./releases/AzurlaneTabulation-darwin-x64/AzurlaneTabulation.app --identity=\"Mac Developer: jrhigasinihonn.0601@gmail.com (NM2Q96PDFV)\" --timestamp=none --force",
+    "package": "electron-packager . AzurlaneTabulation --asar --app-version=1.0.0 --icon=./resources/icon --prune --overwrite --out=releases . --ignore=\"(.gitignore|.gitmodules|\\README.md|\\gulpfile.js|\\.babelrc|\\webpack.config.js|\\package-lock.json)\" --ignore=\".*app/.*\\.jsx\"",
     "build": "npm run compile && npm run package"
   },
   "devDependencies": {
