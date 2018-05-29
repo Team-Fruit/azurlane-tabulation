@@ -15,7 +15,7 @@ app.on('window-all-closed', () => {
 app.on('ready', () => {
     let splashWin = new BrowserWindow({
         width: 256,
-        height: 256,
+        height: 262,
         transparent: true,
         frame: false,
         center: true,
@@ -31,11 +31,11 @@ app.on('ready', () => {
         splashWin.show();
     });
     win.loadURL('file://' + path.join(__dirname, './app/index.html'));
-    win.webContents.on("did-finish-load", () => {
-        splashWin.close();
-        splashWin = null;
-        win.show();
-    });
+    // win.webContents.on("did-finish-load", () => {
+    //     splashWin.close();
+    //     splashWin = null;
+    //     win.show();
+    // });
 
     const template = [
         {

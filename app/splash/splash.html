@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>AzurlaneTabulation</title>
+    <style>
+        body {
+            user-select: none;
+            -webkit-user-drag: none;
+            font-family: Whitney, "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, Osaka, "MS PGothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #root {
+            position: relative;
+        }
+
+        #content {
+            color: white;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            bottom: 7px;
+        }
+    </style>
 </head>
+
 <body>
-    <img src="../../resources/icon.svg" height="256px" width="256px" />
-    <div id="root"></div>
+    <div id="root">
+        <img src="../../resources/icon.png" />
+        <div id="content"></div>
+    </div>
     <script>
-        window.onload = function() {
-            require("../build/splash.js");
+        window.onload = function () {
+            require("../../build/splash.js");
         }
     </script>
 </body>
+
 </html>

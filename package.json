@@ -31,6 +31,7 @@
     "googleapis": "^30.0.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
-    "react-loading": "^2.0.2"
+    "react-loading": "^2.0.2",
+    "react-progressbar": "^15.4.1"
   }
 }
