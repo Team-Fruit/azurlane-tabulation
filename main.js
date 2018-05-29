@@ -1,9 +1,8 @@
 // require('babel-polyfill');
 const electron = require('electron');
-const { app, BrowserWindow, Menu, globalShortcut, /*autoUpdater,*/ dialog } = electron;
+const { app, BrowserWindow, Menu, globalShortcut, ipcMain, /*autoUpdater, dialog*/ } = electron;
 const path = require('path');
 const Spreadsheets = require('./app/Spreadsheets');
-const Splashscreen = require('@trodi/electron-splashscreen');
 
 let win = null;
 let forceQuit = false;
@@ -14,19 +13,30 @@ app.on('window-all-closed', () => {
 });
 
 app.on('ready', () => {
-    win = Splashscreen.initSplashScreen({
-        windowOpts: { width: 750, height: 675 },
-        templateUrl: path.join(__dirname, "./app/splash/spash.html"),
-        delay: 0,
-        minVisible: 1500,
-        splashScreenOpts: {
-            width: 256,
-            height: 256,
-            transparent: true
-        },
+    let splashWin = new BrowserWindow({
+        width: 256,
+        height: 256,
+        transparent: true,
+        frame: false,
+        center: true,
+        show: false
+    });
+    win = new BrowserWindow({
+        width: 750,
+        height: 675,
+        show: false
+    });
+    splashWin.loadURL('file://' + path.join(__dirname, "./app/splash/splash.html"));
+    splashWin.webContents.on("did-finish-load", () => {
+        splashWin.show();
+    });
+    win.loadURL('file://' + path.join(__dirname, './app/index.html'));
+    win.webContents.on("did-finish-load", () => {
+        splashWin.close();
+        splashWin = null;
+        win.show();
     });
 
-    win.loadURL('file://' + path.join(__dirname, './app/index.html'));
     const template = [
         {
             label: 'Application',
