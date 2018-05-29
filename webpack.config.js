@@ -35,6 +35,37 @@ const rendererConfig = {
     }
 };
 
+const splashScreenConfig = {
+    target: 'electron-renderer',
+    entry: './app//splash/SplashScreen.jsx',
+    node: {
+        __dirname: false,
+        __filename: false,
+    },
+    resolve: {
+        extensions: ['*', '.js', '.jsx', '.json']
+    },
+    output: {
+        filename: "splash.js",
+        path: path.resolve(__dirname, './build')
+    },
+    plugins: [
+        new UglifyJsPlugin()
+    ],
+    module: {
+        rules: [
+            {
+                test: /\.jsx$/,
+                loader: 'babel-loader',
+                exclude: /node_modules/,
+                query: {
+                    presets: ['react', 'es2015', 'stage-0']
+                }
+            }
+        ]
+    }
+};
+
 const mainConfig = {
     target: 'electron-main',
     entry: ['babel-polyfill', './main.js'],
@@ -66,4 +97,4 @@ const mainConfig = {
     }
 };
 
-module.exports = [rendererConfig, /*mainConfig*/]
+module.exports = [rendererConfig, splashScreenConfig ,/*mainConfig*/]

@@ -16,7 +16,7 @@ app.on('window-all-closed', () => {
 app.on('ready', () => {
     win = Splashscreen.initSplashScreen({
         windowOpts: { width: 750, height: 675 },
-        templateUrl: path.join(__dirname, "./resources/icon.svg"),
+        templateUrl: path.join(__dirname, "./app/splash/spash.html"),
         delay: 0,
         minVisible: 1500,
         splashScreenOpts: {
