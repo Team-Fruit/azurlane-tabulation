@@ -30,7 +30,18 @@ app.on('ready', () => {
         const update = await Updater.updateRequired();
         splashWin.webContents.send('complete');
         if (update) {
+            if (Updater.updateRequired()) {
+                splashWin.webContents.send('status', 'ダウンロード中');
+                splashWin.webContents.send('all', Updater.getDownloadAmount());
+                await Updater.download(() => splashWin.webContents.send('complete'));
+            }
+            if (Updater.deleteRequired()) {
+                splashWin.webContents.send('status', '不要なファイルの消去中');
+                splashWin.webContents.send('all', Updater.getDeleteAmount());
 
+            }
+            splashWin.webContents.send('allDone');
+            splashWin.webContents.send('status', '準備完了');
         } else {
             win.webContents.on("did-finish-load", () => {
                 splashWin.close();
