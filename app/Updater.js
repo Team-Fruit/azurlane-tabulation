@@ -8,8 +8,8 @@ const fse = require('fs-extra');
 
 const baseDir = path.join(app.getPath('userData'), 'data');
 const versionFile = path.join(baseDir, 'version.json');
-const remoteDirUrl = 'https://raw.githubusercontent.com/Team-Fruit/azurlane-tabulation/remote-resources/data';
-const versionFileUrl = 'https://raw.githubusercontent.com/Team-Fruit/azurlane-tabulation/remote-resources/data/version.json'
+const remoteDirUrl = 'https://raw.githubusercontent.com/Team-Fruit/azurlane-tabulation/master/data';
+const versionFileUrl = 'https://raw.githubusercontent.com/Team-Fruit/azurlane-tabulation/master/data/version.json'
 
 const localFiles = [];
 const downloadQueue = [];
