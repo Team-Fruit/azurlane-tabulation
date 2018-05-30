@@ -1,4 +1,8 @@
 import React from 'react';
+import path from 'path';
+import { remote } from 'electron';
+
+const imgDir = path.join(remote.app.getPath('userData'), 'data/img/box');
 
 export default class Box extends React.Component {
     constructor(props) {
@@ -17,7 +21,7 @@ export default class Box extends React.Component {
     render() {
         const iconList = [];
         for (let k of this.props.box) {
-            const icon = <img src={'../resources/img/box/' + k + '.png'} width="75px" alt={k} onClick={() => this._onSelectTech(k)} draggable="false" />;
+            const icon = <img src={path.join(imgDir, k + '.png')} width="75px" alt={k} onClick={() => this._onSelectTech(k)} draggable="false" />;
             if (this.state.tech === k)
                 iconList.push(
                     <div className="iconListItemSelected" key={k}>

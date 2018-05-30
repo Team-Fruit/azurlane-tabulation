@@ -1,4 +1,5 @@
 import React from 'react';
+import { remote } from 'electron';
 import * as fs from 'fs';
 import path from 'path';
 import Header from './Header.jsx';
@@ -7,13 +8,13 @@ import Blueprint from './Blueprint.jsx';
 import Box from './Box.jsx';
 import Retrofit from './Retrofit.jsx';
 import Confirm from './Confirm.jsx';
-const Spreadsheets = require('electron').remote.require('./app/Spreadsheets');
+const Spreadsheets = remote.require('./app/Spreadsheets');
 
 export default class Submit extends React.Component {
     constructor(props) {
         super(props);
 
-        const data = JSON.parse(fs.readFileSync(path.join(__dirname, '../resources/chapterdata/', this.props.area + '.json'), 'utf8'));
+        const data = JSON.parse(fs.readFileSync(path.join(remote.app.getPath('userData'), 'data/chapterdata', this.props.area + '.json'), 'utf8'));
         this.state = {
             popup: false,
             data: {

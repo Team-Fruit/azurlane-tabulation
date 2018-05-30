@@ -1,4 +1,8 @@
 import React from 'react';
+import path from 'path';
+import { remote } from 'electron';
+
+const imgDir = path.join(remote.app.getPath('userData'), 'data/img/character');
 
 export default class Character extends React.Component {
     constructor(props) {
@@ -33,7 +37,7 @@ export default class Character extends React.Component {
 
         const iconList = [];
         for (let k of character[this.state.rarity]) {
-            const icon = <img src={'../resources/img/character/' + k + '.png'} width="75px" alt={k} onClick={() => this._onSelectCharacter(k)} draggable="false" />;
+            const icon = <img src={path.join(imgDir, k + '.png')} width="75px" alt={k} onClick={() => this._onSelectCharacter(k)} draggable="false" />;
             if (this.state.character === k)
                 iconList.push(
                     <div className="iconListItemSelected" key={k}>

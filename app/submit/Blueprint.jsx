@@ -1,4 +1,8 @@
 import React from 'react';
+import path from 'path';
+import { remote } from 'electron';
+
+const imgDir = path.join(remote.app.getPath('userData'), 'data/img/blueprint');
 
 export default class Blueprint extends React.Component {
     constructor(props) {
@@ -54,7 +58,7 @@ export default class Blueprint extends React.Component {
 
         const iconList = [];
         for (let k of blueprint[this.state.rarity]) {
-            const icon = <img src={'../resources/img/blueprint/' + k + '.png'} width="75px" alt={k} onClick={() => this._onSelectBlueprint(k)} draggable="false" />;
+            const icon = <img src={path.join(imgDir, k + '.png')} width="75px" alt={k} onClick={() => this._onSelectBlueprint(k)} draggable="false" />;
             if (this.state.blueprint === k)
                 iconList.push(
                     <div className="iconListItemSelected" key={k}>
