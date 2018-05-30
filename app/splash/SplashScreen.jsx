@@ -18,10 +18,10 @@ class SplashScreen extends React.Component {
             this.setState({ status: arg });
         });
         ipcRenderer.on('all', (e, arg) => {
-            this.setState({ all: arg });
+            this.setState({ all: arg, complate: 0 });
         });
         ipcRenderer.on('complete', (e, arg) => {
-            this.setState({ complate: this.state.complete + 1 });
+            this.setState({ complete: this.state.complete + 1 });
         });
     }
 

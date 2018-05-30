@@ -25,7 +25,11 @@ app.on('ready', () => {
     splashWin.loadURL('file://' + path.join(__dirname, "./app/splash/splash.html"));
     splashWin.webContents.on("did-finish-load", async () => {
         splashWin.show();
-        if (await Updater.updateRequired()) {
+        splashWin.webContents.send('status', 'アップデートを確認中');
+        splashWin.webContents.send('all', 1);
+        const update = await Updater.updateRequired();
+        splashWin.webContents.send('complete');
+        if (update) {
 
         } else {
             win.webContents.on("did-finish-load", () => {
