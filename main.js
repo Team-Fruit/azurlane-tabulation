@@ -16,13 +16,18 @@ app.on('window-all-closed', () => {
 app.on('ready', () => {
     let splashWin = new BrowserWindow({
         width: 256,
-        height: 262,
+        height: 263,
         transparent: true,
         frame: false,
         center: true,
         show: false
     });
     splashWin.loadURL('file://' + path.join(__dirname, "./app/splash/splash.html"));
+    win = new BrowserWindow({
+        width: 750,
+        height: 675,
+        show: false
+    });
     splashWin.webContents.on("did-finish-load", async () => {
         splashWin.show();
         splashWin.webContents.send('status', 'アップデートを確認中');
@@ -30,7 +35,7 @@ app.on('ready', () => {
         const update = await Updater.updateRequired();
         splashWin.webContents.send('complete');
         if (update) {
-            if (Updater.updateRequired()) {
+            if (Updater.downloadRequired()) {
                 splashWin.webContents.send('status', 'ダウンロード中');
                 splashWin.webContents.send('all', Updater.getDownloadAmount());
                 await Updater.download(() => splashWin.webContents.send('complete'));
@@ -38,24 +43,19 @@ app.on('ready', () => {
             if (Updater.deleteRequired()) {
                 splashWin.webContents.send('status', '不要なファイルの消去中');
                 splashWin.webContents.send('all', Updater.getDeleteAmount());
-
+                await Updater.delete(() => splashWin.webContents.send('complete'));
             }
             splashWin.webContents.send('allDone');
             splashWin.webContents.send('status', '準備完了');
-        } else {
-            win.webContents.on("did-finish-load", () => {
-                splashWin.close();
-                splashWin = null;
-                win.show();
-            });
-        }
+            win.loadURL('file://' + path.join(__dirname, './app/index.html'));
+        } else
+            win.loadURL('file://' + path.join(__dirname, './app/index.html'));
     });
-    win = new BrowserWindow({
-        width: 750,
-        height: 675,
-        show: false
+    win.webContents.on("did-finish-load", () => {
+        splashWin.close();
+        splashWin = null;
+        win.show();
     });
-    win.loadURL('file://' + path.join(__dirname, './app/index.html'));
 
     const template = [
         {

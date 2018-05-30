@@ -2,7 +2,6 @@
 
 const { app } = require('electron');
 const path = require('path');
-const Promise = require('Promise')
 const request = require('request-promise-native');
 const fs = require('mz/fs');
 const fse = require('fs-extra');
@@ -23,11 +22,15 @@ let updateRequire = false;
 exports.updateRequired = async () => {
     return new Promise(async (resolve, reject) => {
         try {
+            localFiles.length = 0;
+            downloadQueue.length = 0;
+            deleteQueue.length = 0;
+
             if (!await fs.exists(baseDir))
                 await fs.mkdir(baseDir);
 
             remoteVersionData = await request({
-                uri: versionFileUrl,
+                url: versionFileUrl,
                 json: true
             });
 
@@ -51,8 +54,6 @@ exports.updateRequired = async () => {
                 parse(remoteVersionData.data, '/', allFiles);
                 if (localVersionData)
                     parse(localVersionData.data, '/', localFiles);
-                else
-                    Array.prototype.push.apply(downloadQueue, allFiles);
 
                 allFiles.forEach((line) => {
                     if (!localFiles.includes(line))
@@ -77,7 +78,7 @@ exports.getDownloadAmount = () => {
 }
 
 exports.downloadRequired = () => {
-    return getDownloadAmount !== 0;
+    return this.getDownloadAmount() !== 0;
 }
 
 exports.getDeleteAmount = () => {
@@ -85,25 +86,52 @@ exports.getDeleteAmount = () => {
 }
 
 exports.deleteRequired = () => {
-    return getDeleteAmount !== 0;
+    return this.getDeleteAmount() !== 0;
 }
 
 exports.download = async (onProgress) => {
-    return new Promise((resolve, reject) => {
+    return new Promise(async (resolve, reject) => {
         try {
-            downloadQueue.forEach(async (line) => {
+            for (let line of downloadQueue) {
                 const file = path.join(baseDir, line);
                 await fse.ensureDir(path.dirname(file));
-                await request({
-                    uri: remoteDirUrl + line,
+                const body = await request({
+                    url: remoteDirUrl + encodeURI(line),
                     encoding: null
-                })
-                .pipe(await fs.createWriteStream(file))
-                .on('close', onProgress);
-            });
+                });
+                await fs.writeFile(file, body, 'binary');
+                onProgress();
+            }
+            downloadQueue.length = 0;
+            if (deleteQueue.length === 0)
+                await onFinishUpdate();
             resolve();
         } catch (err) {
-            // reject(err);
+            reject(err);
         }
     });
+}
+
+exports.delete = async (onProgress) => {
+    return new Promise(async (resolve, reject) => {
+        try {
+            for (let line of deleteQueue) {
+                const file = path.join(baseDir, line);
+                await fs.unlink(file);
+                onProgress();
+            }
+            deleteQueue.length = 0;
+            if (downloadQueue.length === 0)
+                await onFinishUpdate();
+            resolve();
+        } catch (err) {
+            reject(err);
+        }
+    });
+}
+
+const onFinishUpdate = async () => {
+    localVersionData = remoteVersionData;
+    await fs.writeFile(versionFile, JSON.stringify(localVersionData));
+    updateRequire = false;
 }
