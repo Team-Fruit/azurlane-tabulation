@@ -2,6 +2,7 @@
 const electron = require('electron');
 const { app, BrowserWindow, Menu, globalShortcut, ipcMain, /*autoUpdater, dialog*/ } = electron;
 const path = require('path');
+const Updater = require('./app/Updater')
 const Spreadsheets = require('./app/Spreadsheets');
 
 let win = null;
@@ -21,21 +22,25 @@ app.on('ready', () => {
         center: true,
         show: false
     });
+    splashWin.loadURL('file://' + path.join(__dirname, "./app/splash/splash.html"));
+    splashWin.webContents.on("did-finish-load", async () => {
+        splashWin.show();
+        if (await Updater.updateRequired()) {
+
+        } else {
+            win.webContents.on("did-finish-load", () => {
+                splashWin.close();
+                splashWin = null;
+                win.show();
+            });
+        }
+    });
     win = new BrowserWindow({
         width: 750,
         height: 675,
         show: false
     });
-    splashWin.loadURL('file://' + path.join(__dirname, "./app/splash/splash.html"));
-    splashWin.webContents.on("did-finish-load", () => {
-        splashWin.show();
-    });
     win.loadURL('file://' + path.join(__dirname, './app/index.html'));
-    // win.webContents.on("did-finish-load", () => {
-    //     splashWin.close();
-    //     splashWin = null;
-    //     win.show();
-    // });
 
     const template = [
         {
