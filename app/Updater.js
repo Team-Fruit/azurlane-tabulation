@@ -83,28 +83,32 @@ exports.deleteRequired = () => {
     return this.getDeleteAmount() !== 0;
 }
 
+const downloadTask = async (line, onProgress) => {
+    const file = path.join(baseDir, line);
+    await fse.ensureDir(path.dirname(file));
+    const body = await request({
+        url: remoteDirUrl + encodeURI(line),
+        encoding: null
+    });
+    await fs.writeFile(file, body, 'binary');
+    onProgress();
+}
+
 exports.download = async (onProgress) => {
-    for (let line of downloadQueue) {
-        const file = path.join(baseDir, line);
-        await fse.ensureDir(path.dirname(file));
-        const body = await request({
-            url: remoteDirUrl + encodeURI(line),
-            encoding: null
-        });
-        await fs.writeFile(file, body, 'binary');
-        onProgress();
-    }
+    await Promise.all(downloadQueue.map(line => downloadTask(line, onProgress)));
     downloadQueue.length = 0;
     if (deleteQueue.length === 0)
         await onFinishUpdate();
 }
 
+const deleteTask = async (line, onProgress) => {
+    const file = path.join(baseDir, line);
+    await fs.unlink(file);
+    onProgress();
+}
+
 exports.delete = async (onProgress) => {
-    for (let line of deleteQueue) {
-        const file = path.join(baseDir, line);
-        await fs.unlink(file);
-        onProgress();
-    }
+    await Promise.all(deleteQueue.map(line => deleteTask(line, onProgress)));
     deleteQueue.length = 0;
     if (downloadQueue.length === 0)
         await onFinishUpdate();
