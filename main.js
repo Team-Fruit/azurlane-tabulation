@@ -1,6 +1,6 @@
 // require('babel-polyfill');
 const electron = require('electron');
-const { app, BrowserWindow, Menu, globalShortcut, ipcMain, /*autoUpdater, dialog*/ } = electron;
+const { app, BrowserWindow, Menu, globalShortcut, ipcMain, dialog, /*autoUpdater*/ } = electron;
 const path = require('path');
 const Updater = require('./app/Updater')
 const Spreadsheets = require('./app/Spreadsheets');
@@ -28,29 +28,47 @@ app.on('ready', () => {
         height: 675,
         show: false
     });
-    splashWin.webContents.on("did-finish-load", async () => {
-        splashWin.show();
-        splashWin.webContents.send('status', 'アップデートを確認中');
-        splashWin.webContents.send('all', 1);
-        const update = await Updater.updateRequired();
-        splashWin.webContents.send('complete');
-        if (update) {
-            if (Updater.downloadRequired()) {
-                splashWin.webContents.send('status', 'ダウンロード中');
-                splashWin.webContents.send('all', Updater.getDownloadAmount());
-                await Updater.download(() => splashWin.webContents.send('complete'));
-            }
-            if (Updater.deleteRequired()) {
-                splashWin.webContents.send('status', '不要なファイルの消去中');
-                splashWin.webContents.send('all', Updater.getDeleteAmount());
-                await Updater.delete(() => splashWin.webContents.send('complete'));
-            }
-            splashWin.webContents.send('allDone');
-            splashWin.webContents.send('status', '準備完了');
-            win.loadURL('file://' + path.join(__dirname, './app/index.html'));
-        } else
-            win.loadURL('file://' + path.join(__dirname, './app/index.html'));
-    });
+    const update = async () => {
+        try {
+            splashWin.show();
+            splashWin.webContents.send('status', 'アップデートを確認中');
+            splashWin.webContents.send('all', 1);
+            const update = await Updater.updateRequired();
+            splashWin.webContents.send('complete');
+            if (update) {
+                if (Updater.downloadRequired()) {
+                    splashWin.webContents.send('status', 'ダウンロード中');
+                    splashWin.webContents.send('all', Updater.getDownloadAmount());
+                    await Updater.download(() => splashWin.webContents.send('complete'));
+                }
+                if (Updater.deleteRequired()) {
+                    splashWin.webContents.send('status', '不要なファイルの消去中');
+                    splashWin.webContents.send('all', Updater.getDeleteAmount());
+                    await Updater.delete(() => splashWin.webContents.send('complete'));
+                }
+                splashWin.webContents.send('allDone');
+                splashWin.webContents.send('status', '準備完了');
+                win.loadURL('file://' + path.join(__dirname, './app/index.html'));
+            } else
+                win.loadURL('file://' + path.join(__dirname, './app/index.html'));
+        } catch (err) {
+            console.error(err);
+            splashWin.webContents.send('error');
+            splashWin.webContents.send('status', 'エラーが発生しました');
+            dialog.showMessageBox(splashWin, {
+                type: 'error',
+                message: 'エラーが発生しました',
+                detail: err.stack,
+                buttons: ['リトライ', '終了']
+            }, (res) => {
+                if (res === 0)
+                    update();
+                else
+                    app.exit(1);
+            });
+        }
+    }
+    splashWin.webContents.on("did-finish-load", update);
     win.webContents.on("did-finish-load", () => {
         splashWin.close();
         splashWin = null;

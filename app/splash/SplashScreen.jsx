@@ -10,7 +10,8 @@ class SplashScreen extends React.Component {
             status: null,
             all: 0,
             complete: 0,
-            allDone: false
+            allDone: false,
+            error: false
         }
     }
 
@@ -27,14 +28,17 @@ class SplashScreen extends React.Component {
         ipcRenderer.on('allDone', (e, arg) => {
             this.setState({ allDone: true });
         });
+        ipcRenderer.on('error', (e, arg) => {
+            this.setState({ error: true });
+        });
     }
 
     render() {
-        const progress = this.state.allDone ? null : "("+this.state.complete+"/"+this.state.all+")"
+        const progress = this.state.allDone || this.state.error ? null : "("+this.state.complete+"/"+this.state.all+")"
         return(
             <div>
                 <span>{this.state.status} {progress}</span>
-                <Progress completed={this.state.complete / this.state.all * 100} />
+                <Progress completed={this.state.complete / this.state.all * 100} color={this.state.error ? '#FF0048': '#0BD318'} />
             </div>
         );
     }
