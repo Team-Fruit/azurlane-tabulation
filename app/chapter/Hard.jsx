@@ -10,7 +10,7 @@ export default class Hard extends React.Component {
             <div>
                 <label className="chapterLabel" htmlFor="menu_bar1">第1章  トラ！トラ！トラ！</label>
                 <input type="checkbox" id="menu_bar1" className="accordion" />
-                <ul id="links1">
+                <ul className="accordionShow">
                     <li><a onClick={() => this._onChoose('1-1')}>1-1 近海演習</a></li>
                     <li><a onClick={() => this._onChoose('1-2')}>1-2 トラトラトラ</a></li>
                     <li><a onClick={() => this._onChoose('1-3')}>1-3 軍港燃ゆ</a></li>
@@ -18,7 +18,7 @@ export default class Hard extends React.Component {
                 </ul>
                 <label className="chapterLabel" htmlFor="menu_bar2">第2章  初陣！珊瑚海</label>
                 <input type="checkbox" id="menu_bar2" className="accordion" />
-                <ul id="links2">
+                <ul className="accordionShow">
                     <li><a onClick={() => this._onChoose('2-1')}>2-1 ツラギ支援</a></li>
                     <li><a onClick={() => this._onChoose('2-2')}>2-2 太陽を隠す暗雲</a></li>
                     <li><a onClick={() => this._onChoose('2-3')}>2-3 初陣！珊瑚海</a></li>
@@ -26,7 +26,7 @@ export default class Hard extends React.Component {
                 </ul>
                 <label className="chapterLabel" htmlFor="menu_bar3">第3章  AF決戦</label>
                 <input type="checkbox" id="menu_bar3" className="accordion" />
-                <ul id="links3">
+                <ul className="accordionShow">
                     <li><a onClick={() => this._onChoose('3-1')}>3-1 AF決戦へ</a></li>
                     <li><a onClick={() => this._onChoose('3-2')}>3-2 運命の5分間</a></li>
                     <li><a onClick={() => this._onChoose('3-3')}>3-3 背水の戦い</a></li>
@@ -34,7 +34,7 @@ export default class Hard extends React.Component {
                 </ul>
                 <label className="chapterLabel" htmlFor="menu_bar4">第4章  ソロモン海にて・上</label>
                 <input type="checkbox" id="menu_bar4" className="accordion" />
-                <ul id="links4">
+                <ul className="accordionShow">
                     <li><a onClick={() => this._onChoose('4-1')}>4-1 宵闇の死神</a></li>
                     <li><a onClick={() => this._onChoose('4-2')}>4-2 血染めの暁</a></li>
                     <li><a onClick={() => this._onChoose('4-3')}>4-3 東ソロモンにて</a></li>
@@ -42,7 +42,7 @@ export default class Hard extends React.Component {
                 </ul>
                 <label className="chapterLabel" htmlFor="menu_bar5">第5章  ソロモン海にて・中</label>
                 <input type="checkbox" id="menu_bar5" className="accordion" />
-                <ul id="links5">
+                <ul className="accordionShow">
                     <li><a onClick={() => this._onChoose('5-1')}>5-1 輸送阻止作戦</a></li>
                     <li><a onClick={() => this._onChoose('5-2')}>5-2 聖十字の空</a></li>
                     <li><a onClick={() => this._onChoose('5-3')}>5-3 ホーネット墜つ</a></li>
@@ -50,7 +50,7 @@ export default class Hard extends React.Component {
                 </ul>
                 <label className="chapterLabel" htmlFor="menu_bar6">第6章  ソロモン海にて・下</label>
                 <input type="checkbox" id="menu_bar6" className="accordion" />
-                <ul id="links6">
+                <ul className="accordionShow">
                     <li><a onClick={() => this._onChoose('6-1')}>6-1 夜戦対決</a></li>
                     <li><a onClick={() => this._onChoose('6-2')}>6-2 全面反撃</a></li>
                     <li><a onClick={() => this._onChoose('6-3')}>6-3 巨砲最後の戦い </a></li>
@@ -58,7 +58,7 @@ export default class Hard extends React.Component {
                 </ul>
                 <label className="chapterLabel" htmlFor="menu_bar7">第7章  混沌の夜</label>
                 <input type="checkbox" id="menu_bar7" className="accordion" />
-                <ul id="links7">
+                <ul className="accordionShow">
                     <li><a onClick={() => this._onChoose('7-1')}>7-1 増援阻止</a></li>
                     <li><a onClick={() => this._onChoose('7-2')}>7-2 乱戦</a></li>
                     <li><a onClick={() => this._onChoose('7-3')}>7-3 奇襲</a></li>
