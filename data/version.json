@@ -1,5 +1,5 @@
 {
-    "version": 2,
+    "version": 3,
     "data": {
         "chapterdata": [
             "1-1.json",
@@ -46,7 +46,7 @@
             "11-2.json",
             "11-3.json",
             "11-4.json",
-            "hard.json"
+            "chapter.json"
         ],
         "img": {
             "blueprint": [
