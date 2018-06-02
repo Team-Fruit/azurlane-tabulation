@@ -1,322 +1,1510 @@
 {
-    "version": 3,
     "data": {
         "chapterdata": [
-            "1-1.json",
-            "1-2.json",
-            "1-3.json",
-            "1-4.json",
-            "2-1.json",
-            "2-2.json",
-            "2-3.json",
-            "2-4.json",
-            "3-1.json",
-            "3-2.json",
-            "3-3.json",
-            "3-4.json",
-            "4-1.json",
-            "4-2.json",
-            "4-3.json",
-            "4-4.json",
-            "5-1.json",
-            "5-2.json",
-            "5-3.json",
-            "5-4.json",
-            "6-1.json",
-            "6-2.json",
-            "6-3.json",
-            "6-4.json",
-            "7-1.json",
-            "7-2.json",
-            "7-3.json",
-            "7-4.json",
-            "8-1.json",
-            "8-2.json",
-            "8-3.json",
-            "8-4.json",
-            "9-1.json",
-            "9-2.json",
-            "9-3.json",
-            "9-4.json",
-            "10-1.json",
-            "10-2.json",
-            "10-3.json",
-            "10-4.json",
-            "11-1.json",
-            "11-2.json",
-            "11-3.json",
-            "11-4.json",
-            "chapter.json"
+            {
+                "name": "1-1.json",
+                "size": 503,
+                "integrity": "ghG1KxUebdRNlSFLb/COzXl8bTQGIuqtUPmkS9RU3Q/4cJX07/yFUwX3xLJuKqZ879NQb0JF/0o39EMXPkb/zg=="
+            },
+            {
+                "name": "1-2.json",
+                "size": 607,
+                "integrity": "7df7yYg8tykO0nJSQuXqRzFGwdv2iqVF6erqeEzcg/jdovnVE60mlMhjTKfDZlQ91ZCsDl4jcI/VMqju6fg04Q=="
+            },
+            {
+                "name": "1-3.json",
+                "size": 689,
+                "integrity": "kx8FW0lBzmhWRuk2wqdSre8gPtTxGipeP5FaRqSZ6HzU1WRYqpTXRPfMYL2k0FHc8mXOh4cAi228PB/WuKdsfg=="
+            },
+            {
+                "name": "1-4.json",
+                "size": 1166,
+                "integrity": "gocX8nMCjBACxp1PEb9VJ2T88XH17r00LivrJ3ByJdiyAXk7Cz3ioHA+q2/ftfr0sKyFsXKCozrq+s/72t8V3g=="
+            },
+            {
+                "name": "10-1.json",
+                "size": 1455,
+                "integrity": "vdijAABlesCszo4SuWX4A3HXgthLVSUPA06vrs7VoD/ip2a8t9WIpjMpPYnc/MSUyQ1Zs/oIqKdSTZ9Ytl+UGg=="
+            },
+            {
+                "name": "10-2.json",
+                "size": 1461,
+                "integrity": "CBh2EpW9eeg5pnlUuHAOkQomfB/SnaCMjrQ3XeBc/YrjgPdq/DEfPeQQ0TcHzZwYEJUJxK3GTOXyslrqJ/Mw6w=="
+            },
+            {
+                "name": "10-3.json",
+                "size": 1508,
+                "integrity": "6tjFVsGvvBaCbEgNRaeZMxXhZtrNpIFADVCHuZeQm9Io8/8s0+ZK+D03kf46LeHd8Jr0+38eNoZP0ab68tOliw=="
+            },
+            {
+                "name": "10-4.json",
+                "size": 1502,
+                "integrity": "dqh5Ldtue5zr44/tUzfAKqQocqVDx+8SBHVI7He+T2UTizVl5OEekx5Xv4/G36cr0u9AwArTJZ4kS4C4AtI90Q=="
+            },
+            {
+                "name": "11-1.json",
+                "size": 1389,
+                "integrity": "2ysmuiUHu2Q/4B720WXruI1N+Qt+t/2ezfvmtRW/9+aQz4jERCuf8mbICzpI0I9aL9AnkjgOaLkv8fHZz0ssKA=="
+            },
+            {
+                "name": "11-2.json",
+                "size": 1480,
+                "integrity": "IV0i3i6W2Npkbliq+UbIQ6SbkMoPWhIvk6qH358UPPsU2gLLx8ZGmu0uBu8XAzTZid+75HfGQwfdP0bXa2G54g=="
+            },
+            {
+                "name": "11-3.json",
+                "size": 1444,
+                "integrity": "Z0P2VnnYg7vvn+SOQegI9KYwmjOemiTH1OxOj+zN0L+tGmBFpSBg7Tay298ca+C+JpfDioTIfBVyrhh/mGbvRA=="
+            },
+            {
+                "name": "11-4.json",
+                "size": 1481,
+                "integrity": "KNAyUjJwrBN3038G3YopPCf5LnQ1YExwy0TJ+7lpFkF69V10rOeij1GR+ItqOj9CJJySgQbtFktuZK/+U2TGpw=="
+            },
+            {
+                "name": "2-1.json",
+                "size": 1235,
+                "integrity": "p6AKjtMKwtAJQuPkIPCKkQoKGP8iNTssMB/gffsyDo3n1lMh39TbQPajADYMRHlF7BPQvG65Z2sT3Ol5/MPwnQ=="
+            },
+            {
+                "name": "2-2.json",
+                "size": 1326,
+                "integrity": "oOMdBtV+FgAdVE8TnbVmNNfQtRVDKhRZ9jQdtIaph8LSzMZ5EDHpVWOxF6zUu3ogHX8trlgf/i/GjNWAV4qBBA=="
+            },
+            {
+                "name": "2-3.json",
+                "size": 1338,
+                "integrity": "23iRpH9IXMs0jZY1aOGNjnuS2whVI1edpxd0L1fFZ/MFfCuuLG4d7YV7sSs82274mGCKGFX6SUeFpwWB7mKwLQ=="
+            },
+            {
+                "name": "2-4.json",
+                "size": 1440,
+                "integrity": "hN1KKQA+Fo5bQsPWmBWL9eB5xp1iw46eRCJ9ALzZKGL3knvJvqq2x8shZv5MoHgN/OmpoKekKpqg6xlSGNBTcw=="
+            },
+            {
+                "name": "3-1.json",
+                "size": 1532,
+                "integrity": "GNhwaHQjtX9k7f00CVT3q4u2DEcdkTixr9m/bn9pip1DsElrjDiP/Wfub2mepy/VjJWuOH9bT3BGQblUk8kDZw=="
+            },
+            {
+                "name": "3-2.json",
+                "size": 1482,
+                "integrity": "eMaupl5F0QtJof47KqBqwthBUP5hyBzGtUB8PO+C2KKTslBWJp5RHzX7kIao33NGTB7crlGihb18SHO+kcuzFw=="
+            },
+            {
+                "name": "3-3.json",
+                "size": 1494,
+                "integrity": "GLVlgP8GqJeYqe4ouG7i7yZqWawu5PEJQnD5n1e4kNPUANl/jZX7F2pJfXVhGG0dAy2DRnpP5eYYZVoXLpweRg=="
+            },
+            {
+                "name": "3-4.json",
+                "size": 1589,
+                "integrity": "EhZ2ixeyeCEKAIOWYSwTuXXdUbW8EAFcswica4yhRFicAlZ8CdhgG5aFFg3nyCvdWiRUTXh4zCVI8DWb9BahBw=="
+            },
+            {
+                "name": "4-1.json",
+                "size": 1467,
+                "integrity": "0n6oTDsPNM+b3MZD9QIkjIFPaFgv1lldkPmFQOAODNi3yBxbh+9RAttoeNfE3gBLKut1GnfIviDzwR/PoWXDsg=="
+            },
+            {
+                "name": "4-2.json",
+                "size": 1456,
+                "integrity": "g4ibqxHn2woqvrSgMkkcVkwB8rH+1av0wEeD2Wg2UgRvwVkz2tkEAFZzOBH29mILQPhoAlAXJ1Yh6cCE+u1FGw=="
+            },
+            {
+                "name": "4-3.json",
+                "size": 1400,
+                "integrity": "z6kRB3/31VW512QKFy/E98Vx4UoUy1pD0VB5d2bKkXsPe2namLvObEH5sRQwYsCBjd3ol6NnJBvuVKeUcw1giA=="
+            },
+            {
+                "name": "4-4.json",
+                "size": 1417,
+                "integrity": "xV68DF78Ui0Hag+mO9wr6djG/8BpNJY4eq5WgK7b/vIWCfJ8TTysXp67yjHsWVikyEeaMbiCzr6zjkIg5Jblrw=="
+            },
+            {
+                "name": "5-1.json",
+                "size": 1532,
+                "integrity": "sVtM5L5i0mFAYs2PE2g3tLmnlRsXwyFHQ/pU1sGEUP/E448HG59DRW3i+O/QlKs0RamQpO8r4DCGr0OfunPUBg=="
+            },
+            {
+                "name": "5-2.json",
+                "size": 1530,
+                "integrity": "ORiFNmZGinkRiy6ksNvWDuWolLKAuVjfBIAxDLdbpQlSmDWmNqypwH15Dmj666MQUf/65rAIV3+RFo2feIPQKw=="
+            },
+            {
+                "name": "5-3.json",
+                "size": 1529,
+                "integrity": "IRSeKeqMAiyme315YEyLHr5yO0t9tcAdNerZwkeJal3Kk2n+DuNRnAn84KzknHZSPXX/SY2EKvoxjp5GngE1YQ=="
+            },
+            {
+                "name": "5-4.json",
+                "size": 1565,
+                "integrity": "l3w7UdjHbIcsWgsKepvrBQI09ejlv5A/BGQPB8CbRtCKKa9DOhf4hq6yfIqPAC9e6ad0QX9RGd6rdh6zrLHnJQ=="
+            },
+            {
+                "name": "6-1.json",
+                "size": 1502,
+                "integrity": "rCgBdMjy9mVWI9pv+6wVoACbHUVIBFiRsosiVwHvayme9aO31axmllBeY3DlqzNBsR/AIsxlP/cZ/E6rhf06tA=="
+            },
+            {
+                "name": "6-2.json",
+                "size": 1373,
+                "integrity": "46jexPuu+chrki0rB0xjgvqNupuhXPFtv5vhFDGbBTwgD2yctNlKWO1lxnZ65Sap5MWtIz3Zy3lJH6t9gKCTiA=="
+            },
+            {
+                "name": "6-3.json",
+                "size": 1439,
+                "integrity": "pN94/E45IISK95qoDkwgvWryONhk51V0Kp/Wj5+RjC3Rlq49V5P8CtmirazyH7asl5AXt+lT/Sq+XxJvpKNteQ=="
+            },
+            {
+                "name": "6-4.json",
+                "size": 1569,
+                "integrity": "rZAcQ9vaU4t4BSmVGParQLxdClvN8CLoff+h6dQN9vW/pVydeulHkLYRhUMRQZJsmBgzt0axFpuYi/23MlM9xg=="
+            },
+            {
+                "name": "7-1.json",
+                "size": 1492,
+                "integrity": "rtvtWinNsMbt7xb04fTitpZ2xhuu0ZvrrlSp+0kW4/SfaZlogebNKXw60oAqicZ5mkI3XVHfg9H7v/a6/ycDwQ=="
+            },
+            {
+                "name": "7-2.json",
+                "size": 1487,
+                "integrity": "g4aJydh2xUm1OXBUuT3rZApuSXdpI+J0OxPQFh0JU0+CGtc/BKgTXeimD3Cie3BNYxlSNvbDAsirKjFqoVb8Sw=="
+            },
+            {
+                "name": "7-3.json",
+                "size": 1496,
+                "integrity": "cS0r60CoEQTauWzZdAUiUPTm70NqvPrVr1xCZ0OX3WgZmbDCtzNvq/Z6f4giEMrm9BnigvuZ63fXUAmXFLdQ8A=="
+            },
+            {
+                "name": "7-4.json",
+                "size": 1547,
+                "integrity": "3ZygfQ86pPQ8AwjTxjlt1jH6zENGF76BvZ/dSflNxh+i0nMdPyMPbdDUaQ4HU4gUog/YcY+WfsZcRXvNyxkKKg=="
+            },
+            {
+                "name": "8-1.json",
+                "size": 1484,
+                "integrity": "P/so29yV934fIW55yhTsfewG+PWy+S0YlTVLZ1wrCqBn3Xf9al6Ip6Yn4CJ1rKiyEo7P+QO7FdWUPv3O44UCmA=="
+            },
+            {
+                "name": "8-2.json",
+                "size": 1429,
+                "integrity": "CHENElMC2gk/bLrTelJROb8Ty/vNbBDzM3u1SX1LRa4cSkvcIsw5F96w/qaS1vXY62k/4ct3S2sL+6444PqCUg=="
+            },
+            {
+                "name": "8-3.json",
+                "size": 1457,
+                "integrity": "SEUwd9xS8QST+1W51seDg+bLxquF8YMhtrr32koETXqpAGBfnyFEWZ5Taecm8u5pSWNgqpJVVHHfZR6tQxNSKA=="
+            },
+            {
+                "name": "8-4.json",
+                "size": 1493,
+                "integrity": "tNc/EcwTLD0KryyW4/lxPBH0vDRz5+S4wGrOFF74EGzWDulBc1MwXFx7biuZF6W0gPBHSF2mDi0olNLmtCHUOw=="
+            },
+            {
+                "name": "9-1.json",
+                "size": 1483,
+                "integrity": "H9G13Bf23F0dLoTnq+A8Scoi3Ir84W3Qneu9X5rKCvhkmU9yd+be6iEhMbjGK3tw1rrKcmtJLZgIPU0YHpMnsw=="
+            },
+            {
+                "name": "9-2.json",
+                "size": 1471,
+                "integrity": "CKb0yNK9rMyrqKApJBbO5zdpJZkn/hIYtU7Pok+HCIa0ELRKYAQlXYL563vPVqKfY21rgss/C/kmkiypF5nSDw=="
+            },
+            {
+                "name": "9-3.json",
+                "size": 1462,
+                "integrity": "Q2OAarTX8Qi01vtNVzriUWeKsIAtkj9VD+JO2huKvJ03mEy72hB1FM1CsGJGemOeWXJRsVKA5vbhzUVqHTumQg=="
+            },
+            {
+                "name": "9-4.json",
+                "size": 1453,
+                "integrity": "2vBnUiJXmaj0SIrmYecVsPHZ3ENQM3cdmz/3MhTCuAHtQI4VRuRiORfMVm4Ax/V6zsSVDT7QResKga3rTAddFQ=="
+            },
+            {
+                "name": "chapter.json",
+                "size": 2315,
+                "integrity": "hy77tB1YEGM9p4VC8lRV1wE/l/yCS7X0nthhDQRfbeu9HMtffGwO6XW3LGKSJFD9dc85v/5BAHFwLb977TtzQw=="
+            }
         ],
         "img": {
             "blueprint": [
-                "100mm二連装九八式高角砲T2.png",
-                "100mm二連装九八式高角砲T3.png",
-                "102mm三連装砲(副砲)T3.png",
-                "102mm単装砲(副砲)T3.png",
-                "102mm連装砲(副砲)T3.png",
-                "102mm高角砲T3.png",
-                "105mmSKC連装高角砲T2.png",
-                "105mmSKC連装高角砲T3.png",
-                "113mm連装高角砲T2.png",
-                "113mm連装高角砲T3.png",
-                "12.7mm対空機銃T3.png",
-                "120mm単装砲T3A.png",
-                "120mm単装砲T3B.png",
-                "120mm連装砲T3.png",
-                "127mm単装砲T3A.png",
-                "127mm単装砲T3B.png",
-                "127mm連装両用砲MK12T2.png",
-                "127mm連装両用砲MK12T3.png",
-                "127mm連装砲T3.png",
-                "127mm連装高角砲T3.png",
-                "134mm連装高角砲T3.png",
-                "140mm単装砲T3.png",
-                "140mm連装砲T3.png",
-                "150mmSKC／28三連装砲T3.png",
-                "150mmSKC／28単装砲T3.png",
-                "150mmTbtsKC／36連装砲T3.png",
-                "152mm三連装砲T3A.png",
-                "152mm単装砲T3A.png",
-                "152mm単装砲T3B.png",
-                "152mm連装砲T3A.png",
-                "152mm連装砲T3B.png",
-                "155mm三連装砲T2.png",
-                "155mm三連装砲T3.png",
-                "203mmSKC連装砲T2.png",
-                "203mmSKC連装砲T3.png",
-                "203mm三連装砲T3.png",
-                "203mm三連装砲改T3.png",
-                "203mm連装砲T3A.png",
-                "203mm連装砲T3B.png",
-                "20mmエリコン機関砲T3.png",
-                "20mm二連装エリコン機関砲T3.png",
-                "20mm四連装MG機銃T3.png",
-                "25mm三連装対空機銃T3.png",
-                "25mm対空機銃T3.png",
-                "25mm連装対空機銃T3.png",
-                "356mm三連装砲T3.png",
-                "356mm四連装砲T2.png",
-                "356mm連装砲T3.png",
-                "37mm機銃T3.png",
-                "37mm連装機銃T3.png",
-                "381mm連装砲T3.png",
-                "406mm三連装砲MK6T3.png",
-                "406mm三連装砲T2.png",
-                "406mm三連装砲T3.png",
-                "406mm連装砲MK5T3.png",
-                "410mm連装砲T3.png",
-                "533mm三連装魚雷T3.png",
-                "533mm五連装魚雷T2.png",
-                "533mm五連装魚雷T3.png",
-                "533mm四連装魚雷T3.png",
-                "610mm三連装魚雷T3.png",
-                "610mm四連装魚雷T2.png",
-                "610mm四連装魚雷T3.png",
-                "610mm連装魚雷T3.png",
-                "76mm砲T3.png",
-                "76mm高角砲T3.png",
-                "BTD-1デストロイヤーT2.png",
-                "BTD-1デストロイヤーT3.png",
-                "F2AバッファローT3.png",
-                "F4FワイルドキャットT3.png",
-                "F4UコルセアT3.png",
-                "F6FヘルキャットT2.png",
-                "F6FヘルキャットT3.png",
-                "QF 2ポンド二連装ポンポン砲T3.png",
-                "QF 2ポンド八連装ポンポン砲T2.png",
-                "QF 2ポンド八連装ポンポン砲T3.png",
-                "QF 2ポンド四連装ポンポン砲T3.png",
-                "SB2CヘルダイバーT3.png",
-                "SBDドーントレスT3.png",
-                "SGレーダーT2.png",
-                "SGレーダーT3.png",
-                "TBDデバステイターT3.png",
-                "TBFアベンジャーT3.png",
-                "シーファイアT3.png",
-                "シーファングT2.png",
-                "ジャイロスコープT3.png",
-                "スクアT3.png",
-                "ソードフィッシュT3.png",
-                "バラクーダT2.png",
-                "バルジT3.png",
-                "フルマーT3.png",
-                "九七式艦攻T3.png",
-                "九九式艦爆T3.png",
-                "九六式艦戦T3.png",
-                "二連装ボフォース40mm機関砲T3.png",
-                "四連装28mm対空機銃「シカゴピアノ」T3.png",
-                "四連装ボフォース40mm機関砲T2.png",
-                "四連装ボフォース40mm機関砲T3.png",
-                "天山T3.png",
-                "対空レーダーT3.png",
-                "彗星T2.png",
-                "応急修理装置T3.png",
-                "改良型缶T3.png",
-                "毘式40mm連装機銃T3.png",
-                "油圧カタパルトT2.png",
-                "油圧舵T3.png",
-                "消火装置T3.png",
-                "火器管制レーダーT3.png",
-                "燃料フィルターT3.png",
-                "空母燃料タンクT3.png",
-                "自動装填機構T3.png",
-                "艦艇修理施設T2.png",
-                "艦艇修理施設T3.png",
-                "迷彩塗装T3.png",
-                "零戦21型T3.png",
-                "零戦52型T2.png",
-                "零戦52型T3.png",
-                "電気式揚弾機T3.png"
+                {
+                    "name": "100mm二連装九八式高角砲T2.png",
+                    "size": 13033,
+                    "integrity": "nKMAqWnaDXzJuYzL449flZdW118dLtUriGDOevLZ69RywleKzQtn9USbZ/WDY71fCeF+dD0+7fvI4C5Lr7dxAw=="
+                },
+                {
+                    "name": "100mm二連装九八式高角砲T3.png",
+                    "size": 13106,
+                    "integrity": "Q4Uf0+UrY4K/1b5/kUsswsfLJXM1pnyFWq5uxQwaWyd8GDsL64q6bqyC/KMAFyMy2Xyvmq5ggrlQx5KA1QLUEw=="
+                },
+                {
+                    "name": "102mm三連装砲(副砲)T3.png",
+                    "size": 12330,
+                    "integrity": "g85D0ZocJ0Ax42lqm1+9nAqDEEqYQifOCbKZSta0KbevrlP69ybydvxzIJ1VNnJmto7DoGGTAfpl8SVpct+izQ=="
+                },
+                {
+                    "name": "102mm単装砲(副砲)T3.png",
+                    "size": 13430,
+                    "integrity": "wLffmQx+F1nl+geraWRBwU0W/Gh/M1NDBcjpEPXJ+5zsr0rXFheEKMof6qI3CS9tB/AF4r3IbWQ0aV03TRp58Q=="
+                },
+                {
+                    "name": "102mm連装砲(副砲)T3.png",
+                    "size": 12897,
+                    "integrity": "WuOBJia3IFd1ddOi3tWAPUb+Sx6Qjb2FuBEWBLt8i/56tr1hu1lxeEYvF5EDHKsDwF5Mby6PmombgurQEKN4Ew=="
+                },
+                {
+                    "name": "102mm高角砲T3.png",
+                    "size": 13351,
+                    "integrity": "18kWP+ZmZR/aotb/hED+zN/SIcE0stfmcTJibR8B1LVtZr2TbcOB/KMdF5VZHOlBKF5tlL49xBefI85Ml3MIBQ=="
+                },
+                {
+                    "name": "105mmSKC連装高角砲T2.png",
+                    "size": 12364,
+                    "integrity": "YvDvDYxWdBeh8MDMie4TqnAChjcqgCgwxi+m1o2PTQBAc7aQoiecCXNbaaMRAW8EBhnD4q9x3i149XJC34zhOA=="
+                },
+                {
+                    "name": "105mmSKC連装高角砲T3.png",
+                    "size": 12855,
+                    "integrity": "cn4daSAY7j3vbd31YXqIfIVNECe13BaKa7OBUUNhD0NyX5lDusPRREvTzgnNSJYJ1Bg3T3RmJOe7xFiIVNX3Cg=="
+                },
+                {
+                    "name": "113mm連装高角砲T2.png",
+                    "size": 12842,
+                    "integrity": "+imu7iU0V5VvNES8qwcNEtf6NXwIS/NvjPvyMAUMDHxisI37cswmCn2Dl6L2y50PBmTqR17+UlcFcNm6uU5hFw=="
+                },
+                {
+                    "name": "113mm連装高角砲T3.png",
+                    "size": 13142,
+                    "integrity": "k9K8pLvlYAyTR67h+KgY1bELYb/Y7aSOJTxtc0EoCByLPc55PxaqxfCxsoJ60w3VAI7EjJD/WGNG+4OuMU838w=="
+                },
+                {
+                    "name": "12.7mm対空機銃T3.png",
+                    "size": 12310,
+                    "integrity": "UHu2T94QT2TXBzk7dgaZ0qWZp0jKYEqQcgfRuz4y6JiCuWQyo0YgtIK4dSpY/AM1ZSy5qLj5AK+hlYXLnVl3fg=="
+                },
+                {
+                    "name": "120mm単装砲T3A.png",
+                    "size": 11273,
+                    "integrity": "d/dG1Eu//ztRWgm+R1W1lvOzPzINDP3eHQjdD1eM24rGJWPtaIBl1mTShLVoC1shlKP2vntnST0wJVtCMx4p0w=="
+                },
+                {
+                    "name": "120mm単装砲T3B.png",
+                    "size": 12305,
+                    "integrity": "T5l73Jz9kaKGFytT3+h1u1Fm/Qj/UDJcSq+4tmOsfpDdDho6iiE4jixvuBvtxA5kieYcwi9BP+3dUXui5IWvoA=="
+                },
+                {
+                    "name": "120mm連装砲T3.png",
+                    "size": 12651,
+                    "integrity": "oQ2JLdfpfCo3JoSgVFcumTB6wqQW2vrTwcLf+FmN+Pq430gRCWbTIDLam/95wDdGKW0QBS2zD7iTeskFI9ZndQ=="
+                },
+                {
+                    "name": "127mm単装砲T3A.png",
+                    "size": 12403,
+                    "integrity": "PFOqC3Gt1EW/tTTaXnwkKPH1mjnC6m/O0V4njTbxD4Tqxwd06S4OPOco3WmHXWp4yit/b9pStn6xF8hRu7luig=="
+                },
+                {
+                    "name": "127mm単装砲T3B.png",
+                    "size": 11101,
+                    "integrity": "Hm8TERg2psSPN58OldYmyBEmOOk16kWoDYGNSIIWW+ztyYYoPd/R4F2wDCQmFnCBIkO7q3z0Y9XwUn9ipkG2yg=="
+                },
+                {
+                    "name": "127mm連装両用砲MK12T2.png",
+                    "size": 13477,
+                    "integrity": "kjyomIVrffx1Oa96TOOvu+HcfKO3v82CcME07uRudGLL3g7ESDAfdzL+ftRrYz6vFLQkS48YVPgr1pe1OHghZg=="
+                },
+                {
+                    "name": "127mm連装両用砲MK12T3.png",
+                    "size": 13824,
+                    "integrity": "fzCBAayLbEgOPQALWlnceRkXmhC5tJE9OYyalmXeiwBT9lvK5JFM1pwt2m7NUH7KEW4cK+oJD0WPniwgoGllbg=="
+                },
+                {
+                    "name": "127mm連装砲T3.png",
+                    "size": 13283,
+                    "integrity": "3o8ZkiymcTH5ClbFLetST/mHJQVcdq62MHelCldfYyl6norJDhpc/8heseJLpGMOH3MAE2kh2YnI6rsI64/taw=="
+                },
+                {
+                    "name": "127mm連装高角砲T3.png",
+                    "size": 13134,
+                    "integrity": "LeaHLWvnEhx8mflnkiOGo8XQn6RFWQbqD1La6MYOVd3LGCDBlGoo17bXwN0YjPFV2zF8TrIjxTn3z8K+UIgFAQ=="
+                },
+                {
+                    "name": "134mm連装高角砲T3.png",
+                    "size": 11679,
+                    "integrity": "lidZxfmP1l3uQFFZtOh2VtgjYqVNFr27qwJ5+12w2A2Y5twaqmc7Y3VrzvjDyvp+2GlC5+XOASocaKJISkoPnQ=="
+                },
+                {
+                    "name": "140mm単装砲T3.png",
+                    "size": 12828,
+                    "integrity": "2LAhecZoBupI12rlaf4+AC+aUkZyrecZGqm+qNgqHTmrSqC4SUqMv0khj4ZlUMj2WPCkmMfbyzR4XXPvfR6Hig=="
+                },
+                {
+                    "name": "140mm連装砲T3.png",
+                    "size": 13617,
+                    "integrity": "B3CSdQjn8WnmjIqdr2H+GN2bvKFzHp1/HdC8iF5GRdELgdyXK1Izvi8BY7C6seRlZI7aEIUdC/DAo3jlmpPsvg=="
+                },
+                {
+                    "name": "150mmSKC／28三連装砲T3.png",
+                    "size": 10833,
+                    "integrity": "ZiO63c9PFfC7ZGePYXn+Eu3Nw/UggocGvONSxujiHcgkoABn2ko0qM+1bhlNPwDU5lT65J2QAyk6cfedJBdzVg=="
+                },
+                {
+                    "name": "150mmSKC／28単装砲T3.png",
+                    "size": 11079,
+                    "integrity": "LvsFeBL11AHvyx2/wKxPEJyMxKP3RyEOArJ2BZeApCQAEJCnf6Q1quqoYsz90hztm3s+PdPT+4HKKdAWrjvHMA=="
+                },
+                {
+                    "name": "150mmTbtsKC／36連装砲T3.png",
+                    "size": 11570,
+                    "integrity": "i4PIgKI4PMbavyuddxKt81wSsMsJnFH2YXXfqXt245W2m+OST7abZV6pJQ8A+qJU0/0caTLdDeUs6e37yAtPpw=="
+                },
+                {
+                    "name": "152mm三連装砲T3A.png",
+                    "size": 11742,
+                    "integrity": "tCaTLmrocwFxtUee/jOQxp6TVagauTIW09WlNvXVC0N3Py7OyJ8NYaCx6eXdhNxNRESL00W8crARFqAA2zmIZA=="
+                },
+                {
+                    "name": "152mm単装砲T3A.png",
+                    "size": 11201,
+                    "integrity": "ZvpIEVEYekGuGrl4zA2akHJhQA0FnCOlUGjLJOgiINYRUruPUiaRJ5ryhD/0XB004rHc4OLhf68XOegWC24H2g=="
+                },
+                {
+                    "name": "152mm単装砲T3B.png",
+                    "size": 10988,
+                    "integrity": "XcxUK4dpnnMLdNYvlkyq3sE2RASrjLpJc1vmtOr7h1i498EY5WcOHzGKcNxemJop6TucqZasuhO0QKDzjXLcPA=="
+                },
+                {
+                    "name": "152mm連装砲T3A.png",
+                    "size": 12701,
+                    "integrity": "xnT1xmfFTFhswmb7ZTlF7VFhQjQmWBQkDmz5CKcZgDV7azVLzGtYkwdRpjpeTDGkfRaMux5yZaHzORcuW7jxEQ=="
+                },
+                {
+                    "name": "152mm連装砲T3B.png",
+                    "size": 11476,
+                    "integrity": "+tWPIpCIuqu6uZ1ua99i0P9WV5YALwJGPjviu6FbHpxVDjQkU6d23YLXj0jtldzRGPpipzYkv/S2pCtbjbpIuw=="
+                },
+                {
+                    "name": "155mm三連装砲T2.png",
+                    "size": 13599,
+                    "integrity": "1tEN760qT3LfdVTaVHBYx5uew+tBmWQSsn25cKtiGKF5dNXW2R3W5UI1k1rMS+WZztnzXAJcQ5e6fsiYAC8XQA=="
+                },
+                {
+                    "name": "155mm三連装砲T3.png",
+                    "size": 14080,
+                    "integrity": "Bw9iOX++M2laGOtIqTJAn5sIErf63qwMheWrqFMrVigjTRJ6pAO8MA+GuawiJPMS6bVddu4YE1r2DwK7kgLhJQ=="
+                },
+                {
+                    "name": "203mmSKC連装砲T2.png",
+                    "size": 11994,
+                    "integrity": "5XE9OGedY+tGJ3G2n5Tg62kiwGfJiR8dtjrWnm3TDk1GrU1Zk8FbcYJQymEMu11V6xWf2VuKUjvkWAl2o1eqMA=="
+                },
+                {
+                    "name": "203mmSKC連装砲T3.png",
+                    "size": 12193,
+                    "integrity": "vIIeO8TRNAr+DyHNpiTHJZWKmb/TbO7XSpbG+RGFEulh027xVpv6Tt3tWElvweYpunWiU5Megxd6Ht9aHYaCxQ=="
+                },
+                {
+                    "name": "203mm三連装砲T3.png",
+                    "size": 12815,
+                    "integrity": "VfalP9bGPfoumphJhcnYDS8v0vDLvwb3IK+V1Cu5h5OATxGq12PS+xlfcvmsXZB/pHbg0xDNHtlV8gziry6SHA=="
+                },
+                {
+                    "name": "203mm三連装砲改T3.png",
+                    "size": 11492,
+                    "integrity": "hY1tWVRdK0rRt9EfvhTatahdFDpy+jyW44T06qT9vITrzNIHROIzz6P4vsYOZDGY2jpia2owE+pOkIsaCdpx7g=="
+                },
+                {
+                    "name": "203mm連装砲T3A.png",
+                    "size": 11011,
+                    "integrity": "TCxqKjv1dvdxdx/UiXMKicDOaq6AUSpaNb0PpLrB9TDRex/jvxV/xJq7+6xQbtxcoM4Uch8IiGtvY6cwJ6UHRg=="
+                },
+                {
+                    "name": "203mm連装砲T3B.png",
+                    "size": 13488,
+                    "integrity": "fV9ckgGtR0svAVABK6xUt79zol7ti/v1DhHi7IoKMkq9HZS+mZ/o2RpTK59nEViHfNDaVxUcezs89tc08S06Rw=="
+                },
+                {
+                    "name": "20mmエリコン機関砲T3.png",
+                    "size": 11438,
+                    "integrity": "8dkSFKf9hONLwJnJeRFfZg3642jW9/3nJO/8FqyhpegI1ErPzR3kcGN6uV2hpclElwQT/XgH9us+POsuAfikBQ=="
+                },
+                {
+                    "name": "20mm二連装エリコン機関砲T3.png",
+                    "size": 12317,
+                    "integrity": "n7pZ1NlAuiB59rPkcKPbBhKTvPSwL5lqdHAix4JPl6pu1N7q6sNkZv7SaSbFA9DUx56GbKcOjh/PengGE9DzfA=="
+                },
+                {
+                    "name": "20mm四連装MG機銃T3.png",
+                    "size": 12890,
+                    "integrity": "2opJ3zPXzrNEavAd9GpTNZKmTg6zlbMS2kNqtlpFeywhGgfQYtkUV3TbSuRVkgDYP7NcuzmOk57F9A7RmWryvw=="
+                },
+                {
+                    "name": "25mm三連装対空機銃T3.png",
+                    "size": 13739,
+                    "integrity": "lfpbb9oiB08IVyyUHY1YvFxPGHlHrnc6sccF10u2dBIUArnnOC0cqIE8qWTQW5sYT4ukigqJWdBKyrl4xnNQ4w=="
+                },
+                {
+                    "name": "25mm対空機銃T3.png",
+                    "size": 12011,
+                    "integrity": "TXZ6gxXvATfaemkDRKTRblvFBLS82guCp9JaPh8kESfMoMhnzf9/r/Gu97v+GcF1hf5Cw9Q7r2LIg7YdA+lXXw=="
+                },
+                {
+                    "name": "25mm連装対空機銃T3.png",
+                    "size": 13161,
+                    "integrity": "JS1uhjMY260r6Cwl4gSEnrk4TkouWw1CeopkLFrdQ/gOUqqmGxtAWYes1TJeOwCwj8i75SCyHjc+SdhnGWTeDw=="
+                },
+                {
+                    "name": "356mm三連装砲T3.png",
+                    "size": 11375,
+                    "integrity": "hyfcnWjVM8P1oQjHo5w4mNxhTSlzpduqrPmBps7DbwVxpY8Bz4V6MBxz/Q+KmCuou3g/Uj6TGZVB+304az0SfQ=="
+                },
+                {
+                    "name": "356mm四連装砲T2.png",
+                    "size": 12136,
+                    "integrity": "CdW/xB2RIjSGDqo8Ogz6yYU3kp3J+19fkjTx0X8m25BLGwjO9EJBbnYqpQNKvTjWjBXTsF/tTD6FNimYvfna4A=="
+                },
+                {
+                    "name": "356mm連装砲T3.png",
+                    "size": 12236,
+                    "integrity": "8j1Mzb852WMyomDCHHa0VM4FtUZpjz8N5ELr63zdg3yOOD0DcEwy4Zi1/lKSUwytmLA+4NV2sW5aYJGLDFVFPg=="
+                },
+                {
+                    "name": "37mm機銃T3.png",
+                    "size": 12753,
+                    "integrity": "ghOAg/cGGPmXB2GzDnXTtuSHj2clU8ZKJLl91bE4vKXnso+exajFKhbAsStmsn+zjncpdmkUva01xXTFwV9t9Q=="
+                },
+                {
+                    "name": "37mm連装機銃T3.png",
+                    "size": 13199,
+                    "integrity": "B4kR6mMA6SuTVYllbicRDnj7cjUstjV5tMhw+/dDvxvCoGrkaRcZF/i+YPXaEcSJCiMa42JrfaWc2wfsmMm6Pg=="
+                },
+                {
+                    "name": "381mm連装砲T3.png",
+                    "size": 13153,
+                    "integrity": "PQHPGga+XERzf8KZHi6KPBvIKISHMzjvtHoUxmp/RxyEeFdHtXpQmt6/shDqJtMjepO8IBmXEg5bqQcWbCF/Fw=="
+                },
+                {
+                    "name": "406mm三連装砲MK6T3.png",
+                    "size": 11144,
+                    "integrity": "S45AUWOSGm16a2bGwz4io+I8AyIZeqBPybH5NkNJ1RLsVDyXdV4I+7V6tOiEtH2sUM+C0WDM33QrzGD0DXSlxA=="
+                },
+                {
+                    "name": "406mm三連装砲T2.png",
+                    "size": 12154,
+                    "integrity": "nN/IIkdvTjYcn+FBC3QRQPYq+ss7xb09jaCvWDHvcefxqkspE8wWybGUji/CeMhKXyW0/f2Pb8ITkigTu4ksVw=="
+                },
+                {
+                    "name": "406mm三連装砲T3.png",
+                    "size": 12261,
+                    "integrity": "hvuNLK3cl4rA5k1/Zj/Q/K2o+/M8K8vePy18CDwCGuLlrpczTwVbSK6I09uJMu3l7/JZoUA5JfVTMo5PzugXJg=="
+                },
+                {
+                    "name": "406mm連装砲MK5T3.png",
+                    "size": 10763,
+                    "integrity": "pUU/xGcuyqGwkUIsAt0gcYfHnXSSniScRpBfmqX9XOMjN8cw446513XZOTdLfPYWzDOxUbq8hFQuOAqCdCl4oQ=="
+                },
+                {
+                    "name": "410mm連装砲T3.png",
+                    "size": 13033,
+                    "integrity": "X+HV3mL661W+8xPonU++lJKbfW25ne1KXdKI8vMiZHMOybiT9Orh0e7MGt3kDbwaUkxf/FoK3j9Fg9Mjj6FEoA=="
+                },
+                {
+                    "name": "533mm三連装魚雷T3.png",
+                    "size": 13329,
+                    "integrity": "2HzqK99FFWXdiXgf+UtM+lFgtBvVwvZ5QZFQuazdt1iQoMwx9QsJn+H01tXN3cvgRhOySLIs57Uz09RX3qk0GA=="
+                },
+                {
+                    "name": "533mm五連装魚雷T2.png",
+                    "size": 12578,
+                    "integrity": "hwLpvM5hdBBr6wHQ5dLflmL38ev+gcavUEfH/JnBoqidCi2MU/iU8N4xqOE7jysJA+TBRnI+9F7HUOkKJvHxFw=="
+                },
+                {
+                    "name": "533mm五連装魚雷T3.png",
+                    "size": 13236,
+                    "integrity": "z/ZKkcNBgRlQgRJPzp487mh1GJZT/toTWawyf9rBdzjfkyNL+cKuPC4v1xE7kHOvbSNFUXYX22N7sNl1uFFOzg=="
+                },
+                {
+                    "name": "533mm四連装魚雷T3.png",
+                    "size": 12821,
+                    "integrity": "CiF+RrcEEz7sq9wC+geiP7DCqODvQH2b+eFpZqJ0Q+lsFndi1AUmrZnd6nlYu7n+p54kY4ay+2uTJtf2j/ddJA=="
+                },
+                {
+                    "name": "610mm三連装魚雷T3.png",
+                    "size": 13908,
+                    "integrity": "oyWZmpXxtUkEHjNhZPesj21HD2EtS7olVzwYFsUM8jTVNvSaUdi8yXsb9w7YQn601RZvahy22zBQD/B6yIzFVw=="
+                },
+                {
+                    "name": "610mm四連装魚雷T2.png",
+                    "size": 13888,
+                    "integrity": "Ax+fXwH/7+ifuWe5KvzbvsgAdGSYeCRSwIfEb8WKpxyJQLlSovz/5TnyGmjOJJKrJKkX28SZGKrm+RiKsnfuuQ=="
+                },
+                {
+                    "name": "610mm四連装魚雷T3.png",
+                    "size": 14341,
+                    "integrity": "sh2/9fK60OUEb4OXFgy/KS3aMKk5x2YEdDDD7/iyluv7kcdyVDsROgwZHQWn4UPpCu2S+kaLrIegZ1wZCvyiuw=="
+                },
+                {
+                    "name": "610mm連装魚雷T3.png",
+                    "size": 12752,
+                    "integrity": "bJS+mA3DYgpOKyhi/gT1MNRmX+Lcmo5w666NemNO0B/hy34cICV1MyhWL8nRGsyd7W45h9t6dxEur5IWEmj0vA=="
+                },
+                {
+                    "name": "76mm砲T3.png",
+                    "size": 11321,
+                    "integrity": "VBWxl8Icwfj1HMVGaw0jddNGb0JFVUqEt3TDPCA2dUKDzEKvLvuAqKSUl3oqBvQD6+k1B+aG11z66zX9q580Ig=="
+                },
+                {
+                    "name": "76mm高角砲T3.png",
+                    "size": 11845,
+                    "integrity": "M2zLjj4Fyrb0r/zas+HJsPCjfMK6gO6SXOh8/2mFoGL6zJhXBeO+Mz122cUM/Yc/xHJDv8qYXASseO9xAJCYbg=="
+                },
+                {
+                    "name": "BTD-1デストロイヤーT2.png",
+                    "size": 12756,
+                    "integrity": "Cfgy8IRLcdHozHw/jY4y/952ImMOk674GFSBg35HdM5I0YjKAAosJSnISBQOLhlBrtVF+pdtS2qkopFAZBLQgQ=="
+                },
+                {
+                    "name": "BTD-1デストロイヤーT3.png",
+                    "size": 13112,
+                    "integrity": "ufVI/U08zLqHCGvdOb8Xe+fax58QIbnhLPZVF9pEwY1BRxnSpT0TDH5/GV1qFQqz18kv375mXRbyVF1e+Bx4oA=="
+                },
+                {
+                    "name": "F2AバッファローT3.png",
+                    "size": 12581,
+                    "integrity": "Z501rT5boMmb9sO2JaxBHUdKzkz/dEGcDiymYPKLV9FzC/4SwUqS3j3f/sQJWZGgMAetDdAuj4PcaVMds8xsrg=="
+                },
+                {
+                    "name": "F4FワイルドキャットT3.png",
+                    "size": 11991,
+                    "integrity": "FF5tIU9723BfDFCQOuKvfRb4szAMInHXGf/HL3s65Yvq9cMr3bBYsQRzKOZTnyDM6Ds60HuDDzR8U5G625niJQ=="
+                },
+                {
+                    "name": "F4UコルセアT3.png",
+                    "size": 12094,
+                    "integrity": "aRHMzlkvvivn625zdYbTG1ueuon/H6ci8NzY/FAyhIW6EJLMvCD5kNSy0ZWZ6XgTjcjbtf0k6tOX+btEhQO9jA=="
+                },
+                {
+                    "name": "F6FヘルキャットT2.png",
+                    "size": 11595,
+                    "integrity": "KRf/gpIn+uzSKWoR75f4b2bZMtkN/l5emMva2wEoN0eGkD9hqPuFVxVE/+Aa/dZZ7odfT4gklOBVwFA/4K0uig=="
+                },
+                {
+                    "name": "F6FヘルキャットT3.png",
+                    "size": 12049,
+                    "integrity": "GQQvPEAhw1GUUr002bAvXsEcJwa0T6jS06wseVTv2jhRgCZGcpHH9I/TGWWEDLYn1jN559LisoSpQLyJRR4Bxg=="
+                },
+                {
+                    "name": "QF 2ポンド二連装ポンポン砲T3.png",
+                    "size": 12423,
+                    "integrity": "qP/fAXHz2NKWHGu8J65CH3q5rLJGJvb041EWYmA/bFRQDHFu2NpFtNiOc+JmS1ZNPwI0rUwu/S++ZA12v9jO6w=="
+                },
+                {
+                    "name": "QF 2ポンド八連装ポンポン砲T2.png",
+                    "size": 13922,
+                    "integrity": "ugPyt0t1U6KGzh5w1DJfm5IUGU2orFhzc+phAUch5p9VA7lOrkZ/noe1zT2HoXMxG+Ici1vhTnLsV/ZudoMQCQ=="
+                },
+                {
+                    "name": "QF 2ポンド八連装ポンポン砲T3.png",
+                    "size": 14494,
+                    "integrity": "p2pF4ccsYJSiBr31xOwjshYfvIJg8xouj3Va7JB5KF5TDOQ+g2jtD0e64Q9wagqBpFEid6nO+DMm1DW4Mts/2Q=="
+                },
+                {
+                    "name": "QF 2ポンド四連装ポンポン砲T3.png",
+                    "size": 13926,
+                    "integrity": "WmyFPX2XolJ8SW+vtg4AsvEuu2AtrUuPEvJiNePb9Pqj/QF7HJpQcEEWgSLNFL7uFZ+e46+sjf+IvchnsZMemg=="
+                },
+                {
+                    "name": "SB2CヘルダイバーT3.png",
+                    "size": 12289,
+                    "integrity": "nVsJGgIGa9oG3Cxu90Nq6i6EeWdzYTB6JfgcNoz/F0CgSoBvVyrqH7Z4aSADqaMmuRZuhOvfpFJTqmugQpHLwQ=="
+                },
+                {
+                    "name": "SBDドーントレスT3.png",
+                    "size": 11630,
+                    "integrity": "hqzXr7k+RX4cTYspYKLLHZyf5cjeUpcmhpj3gZTP75ZZ6nLr9VvvrJbBwz8vZP966q+39NB3E6UDoJczA4jTTA=="
+                },
+                {
+                    "name": "SGレーダーT2.png",
+                    "size": 12983,
+                    "integrity": "YLcunPIvgmKly+PG5FlovPUm5NxEwDIjS4vaOmVWuFqh0+PRU69dbb7PyIyvmT08mA9wHSqIZ/4pzp+rwCY0Bw=="
+                },
+                {
+                    "name": "SGレーダーT3.png",
+                    "size": 13290,
+                    "integrity": "WvbvWPQLGV9toPXPoxKzrgRxTM6zSjCyRCgbo/gZz458VSgoLbjK8GgOxYfgirSwQnOahwjDFoRsdGPGj37SKA=="
+                },
+                {
+                    "name": "TBDデバステイターT3.png",
+                    "size": 11761,
+                    "integrity": "f+LBAOfHDW+hN8tW0TRG0Ubvykt3Ti8xflSUzjCvauaQiVFgvi7LGzFqu5EK8O22JcJ6ynPzrt5nf2vKVn9exw=="
+                },
+                {
+                    "name": "TBFアベンジャーT3.png",
+                    "size": 12161,
+                    "integrity": "pl0BHoGyJUHLq3gwn4zijRPWmwU5Vf0+v1pBcho1qH/7Jr9fwrcpNRzvzF23OYOgTkZpiJqonGjK6BZw1fAd1g=="
+                },
+                {
+                    "name": "シーファイアT3.png",
+                    "size": 11861,
+                    "integrity": "qDDgAM7nfIjJPn2yWSwHvVNI6o0bsWi/54PkIRnN5TonicG91Jz8yeK/4Z35f53hWUhcuvM0mJOvsjk2OvzwIQ=="
+                },
+                {
+                    "name": "シーファングT2.png",
+                    "size": 12222,
+                    "integrity": "yp8p6LKJr9guS7pZBp/B5lrR+LmHrxzeCKipNEBXydps1ieZHVy4cPLedMLgOpXxCb3fkrbPIJWMuPhATNZM8g=="
+                },
+                {
+                    "name": "ジャイロスコープT3.png",
+                    "size": 13481,
+                    "integrity": "Kybb9Xr8oHQpOCnwIFwOD3cmZXpMJEQ8m6P5ihoTFpRMfnqjy3ELGTUQmVm3IL0pXbPuUfJgRreRHvSbs9Ey+w=="
+                },
+                {
+                    "name": "スクアT3.png",
+                    "size": 12172,
+                    "integrity": "mKw0QqPEC8z+If/E0XUZ/oPvKib2j5tkiyfIsOJel8DxdK9uZkBg/4XZ3ei7lsau4qHDCstpYoZPnbNL5I8GbA=="
+                },
+                {
+                    "name": "ソードフィッシュT3.png",
+                    "size": 12557,
+                    "integrity": "j1Hyxk1pw68iaIzlgQM1/koc/Qbupr5yP+PxxrAIrCKMQ+jijY5t6AXM9AE5/Sn5qyqvHP7vZQgM4FdD6NoCAQ=="
+                },
+                {
+                    "name": "バラクーダT2.png",
+                    "size": 12182,
+                    "integrity": "WS5lz1qNkxPRuDeoMPTfLkyOnzbctnOG1lov8LmK0stPTp4Lx+CnIbeKq2F9oX1YfflRXgCUnjlg3jXrz3tn0A=="
+                },
+                {
+                    "name": "バルジT3.png",
+                    "size": 12697,
+                    "integrity": "fYvxZ9k8mINv5li5Fs1QBwCqQfMlJ2Z8Ypq6vgE7UH/nPnJyIUajev1ruUL2Br1jjStmi+YIHu7/q03wewJykA=="
+                },
+                {
+                    "name": "フルマーT3.png",
+                    "size": 12211,
+                    "integrity": "WKGhdmOzQbAsDpU3bG8Cn2Vu79aKJC7tDSi1D4dllhnU2biy3CrkRA4rAv7ZrmP6LnLOlvdMesxWa4l/+EEUsA=="
+                },
+                {
+                    "name": "九七式艦攻T3.png",
+                    "size": 11018,
+                    "integrity": "1473C5KgVQtbmwEazcBs9bFuECrl6bNhcaebcw7XYK5lPRzTH34/+AETNCRqIFRpAebvvKmNWC5sQAk8axxhfw=="
+                },
+                {
+                    "name": "九九式艦爆T3.png",
+                    "size": 11804,
+                    "integrity": "Kr5uz0WbeoT2ij4FKuT4BltJwMD13Mng7O3zJ2YdiacaTCnAD367nznuuNDoDshoCeJ44bbOJYffNVFZCY1n3w=="
+                },
+                {
+                    "name": "九六式艦戦T3.png",
+                    "size": 12065,
+                    "integrity": "rOXlP4yjQVKMldjFsBT20eypkty7uvftOJ5vBgIKRllUQ+ZckwgfWQBl06fAUqgpFccmJ3u68qBPucP65mHoww=="
+                },
+                {
+                    "name": "二連装ボフォース40mm機関砲T3.png",
+                    "size": 13723,
+                    "integrity": "t8JsK3Ad+PzHV1FtF5f/h5UP0TmMi4bC7kWXHCEiP+5BezBtg6HS/aTtWSY4SPz5/GKHouNJlR1+18gzniQj+g=="
+                },
+                {
+                    "name": "四連装28mm対空機銃「シカゴピアノ」T3.png",
+                    "size": 14312,
+                    "integrity": "cPLW32B91utSlYSK2Yofb0gbdCdiZIBd8/bDqvrOd81LGgwow4tGLzCVC+VLdcXTaqDNVsk/NoNu1n70hmTCQg=="
+                },
+                {
+                    "name": "四連装ボフォース40mm機関砲T2.png",
+                    "size": 13729,
+                    "integrity": "hp2e2gw+REvQn+xJKD1kRJC5sj9YUpkekGK8HyrdnZjvj7yndc8QUhyJ5ftkJYRQ6X3bzWFZ4zCxfX7iRSp0fw=="
+                },
+                {
+                    "name": "四連装ボフォース40mm機関砲T3.png",
+                    "size": 14227,
+                    "integrity": "01rK/S0EOIeEeeXSftJypbvwoPcMdFzB3xe56iUNb6TB4VDia4wZaX3xERTb9swk8mZ57ybLS0zymi87eD6l0w=="
+                },
+                {
+                    "name": "天山T3.png",
+                    "size": 11264,
+                    "integrity": "9BQme5qVMW6NO4LUV2dx3we0KXdgnSc4w708x2lOfoCRLDZ7qCkmuIQ43I5NIoH6LDT+3u+jeK6X3i0Pn/XYJg=="
+                },
+                {
+                    "name": "対空レーダーT3.png",
+                    "size": 13045,
+                    "integrity": "qTq0AHp1MNo6T4Z+vuPjop1p7OW2b2GWBvYSHKQb+kmAQwG86deW0VsH9SbuA7bPKQP5ImzaJhraSqFi4Y0u2Q=="
+                },
+                {
+                    "name": "彗星T2.png",
+                    "size": 11848,
+                    "integrity": "JjYYjF3yxn86OixvmmhQQsnACaqED01P+lhPgYm8M+ar8Up/2OK8kdJ5iddZuuDjoTShWpvmUTs0SqIb+0gbdg=="
+                },
+                {
+                    "name": "応急修理装置T3.png",
+                    "size": 13313,
+                    "integrity": "lFIskm6JG8uV9TC4Qe/fv7hPY7PvuZUUjB447fdcYUZScD8F/qCipf7GkisM2W9ooCb49Pw5lU1JBQdv6vG6jA=="
+                },
+                {
+                    "name": "改良型缶T3.png",
+                    "size": 14251,
+                    "integrity": "B/KaZ4TgzGuFz34ROz1kI0APRMjPICZA8/eOM5eLrOiQQQz4akbxMqyLF6S5QlaiATWpYmlzE6sTSTQ7lXhPSA=="
+                },
+                {
+                    "name": "毘式40mm連装機銃T3.png",
+                    "size": 13132,
+                    "integrity": "oJGkk8wefw76CSXXK6XIBfG7ChEPSciCrk5pLjmOg/OPHQyMRyeAV9q9yNCBnAQRB6lftSiKRQqWKxgQPAmQQQ=="
+                },
+                {
+                    "name": "油圧カタパルトT2.png",
+                    "size": 12734,
+                    "integrity": "m6K6tgmLDYCRKH+NslGFxFip0fSkGj7GuTj+VqSxzNC0x5fsgbgXk6tuShPeSWEvhVLyQfJKDkDSRtSPxSE8DQ=="
+                },
+                {
+                    "name": "油圧舵T3.png",
+                    "size": 13609,
+                    "integrity": "klV5q8DxOZqZwxYaxKjrEL9DjTZHxfT9Dw2zH6VvWEbn57d8WEOEJRWCy9UmCJX+arxs3UnmgROrhha1zYwAJg=="
+                },
+                {
+                    "name": "消火装置T3.png",
+                    "size": 11969,
+                    "integrity": "z1B6nT8slw06xOSlQ8SVzqzW1pJaI4pT0zfaFwH3OYEbWFRshO8fSYRUC+s4wYFq4P3f6Nrj7A0DaBq0PulEGQ=="
+                },
+                {
+                    "name": "火器管制レーダーT3.png",
+                    "size": 13697,
+                    "integrity": "xzq7a5tWSNopUGWXuSP0Y+I62rMJfpDAF5R9eKnr0jly0g8w5GdDTIzKzYtaGgVaELKmBLu1eWZtYkBF84SUTQ=="
+                },
+                {
+                    "name": "燃料フィルターT3.png",
+                    "size": 14626,
+                    "integrity": "1pWCRxqLGXzmPlXUktVju8HZqWJk6EE4nVNsp8zb7i+xOWE2rtjp98pP4FyIlwurwjEPhUIarALhIfVoyv16qw=="
+                },
+                {
+                    "name": "空母燃料タンクT3.png",
+                    "size": 11918,
+                    "integrity": "FUnDgUdqiuEmj/UNF1a3i3nnak4Zqq4qia1ce86qNd+zbU9GRqVE4ffpNT95o4XN/IfwlIWGSKKR9s66g7aUhA=="
+                },
+                {
+                    "name": "自動装填機構T3.png",
+                    "size": 13556,
+                    "integrity": "5daKmWjF+RA1i3DIbpYyd7M1O/Crm+NBiexcyEOQ3E6xSvweWmriGIVsoZO9TRiQTPUZ2L3S8cabOFts7L5IeA=="
+                },
+                {
+                    "name": "艦艇修理施設T2.png",
+                    "size": 14212,
+                    "integrity": "QTnVjfagYgaDXkQqEiJqkY50nVdvGsLtf5AfgkTI3UpuB7CXGeevGudN1d5Xdq1pLK38yxXrh7B28DSzl8coSw=="
+                },
+                {
+                    "name": "艦艇修理施設T3.png",
+                    "size": 14473,
+                    "integrity": "3n6r09IxXDxKP5b5R7JVD/n7WKYrBwSahKSVWRyIBCbzmIPk8IxI0ZfysYsVYXOL4eDIfSuw4bPhdQlulo6Teg=="
+                },
+                {
+                    "name": "迷彩塗装T3.png",
+                    "size": 13127,
+                    "integrity": "RiTsy9lqBJJYnZsptmG2wndL0NFNVdw4kKsG4S6XWnijYAUUaQQqWAGAYNlPi0WuwmhfnkrPJTrn2KYBqPCE1w=="
+                },
+                {
+                    "name": "零戦21型T3.png",
+                    "size": 12678,
+                    "integrity": "D6jWlq8oRaI99VzaUUyW2LX1eZnF7JQhW2vYNUQNnTN3gwG8dPm+8jGE5V9HWXWYvp/4YPldKrtwXRs+/t3Zqw=="
+                },
+                {
+                    "name": "零戦52型T2.png",
+                    "size": 11879,
+                    "integrity": "SEYgF3thdY/Z1AekkbxORdx+5jV4Ax/2NwxySVkl3XYBYDElpQ0h7WupJeO66W0ZMgaJF2sVARhL2bHMlfBXig=="
+                },
+                {
+                    "name": "零戦52型T3.png",
+                    "size": 12154,
+                    "integrity": "rWkqwFIcIKpPtUeGhmecQFyWEfpn+39A6aEP/rSAHIEhCtlAp/js45kNh+Lu821PKQJjj78S3cu3jjnm9DLOdA=="
+                },
+                {
+                    "name": "電気式揚弾機T3.png",
+                    "size": 12821,
+                    "integrity": "GZE6tadlF6rOqmrtJE7ceeRHl5B8j6umCmFsr0XcDo7Ux8jSFky56pd91OS+sISPc25dPbYH3y+Z2QKlO88RUw=="
+                }
             ],
             "box": [
-                "1.png",
-                "2.png",
-                "3.png",
-                "4.png"
+                {
+                    "name": "1.png",
+                    "size": 14897,
+                    "integrity": "ypb3er5H0Lm7pb+kGOiB0M+ZEn04FbVgz/2xz/vZzX8GDTi+PvTMbLpK5UjHt3psE1FekAXibUto2Am3XAapqg=="
+                },
+                {
+                    "name": "2.png",
+                    "size": 15009,
+                    "integrity": "GZYRYDdKQj2+hNlxHKu3KoPoaywTEeIMdxR9E86Ce/pD2sKUkXD2Wk03GkfXbbCqTBGd++dzYVIN0wPhigi6yQ=="
+                },
+                {
+                    "name": "3.png",
+                    "size": 14867,
+                    "integrity": "aMny++i6DJpjJ1zkznOy8oQ7lZKlKJpm6/yATN6NFDkl7M4qV7WUnZHYTaqUvKG+yMqEA66d5NSJW3E4VRrTVA=="
+                },
+                {
+                    "name": "4.png",
+                    "size": 15064,
+                    "integrity": "c5eAmK0a/cvuEtCMFnvoiuEU/me5zac79pcK2ltRTjSVrF7SMM4YCZ7sNDKxggGi3rpxktGHKYy4ATR9uAoDIQ=="
+                }
             ],
             "character": [
-                "Z1.png",
-                "アキリーズ.png",
-                "アトランタ.png",
-                "アマゾン.png",
-                "アリシューザ.png",
-                "アリゾナ.png",
-                "アーク・ロイヤル.png",
-                "インディアナポリス.png",
-                "エイジャックス.png",
-                "エクセター.png",
-                "エレバス.png",
-                "オクラホマ.png",
-                "オマハ.png",
-                "オーリック.png",
-                "カッシン.png",
-                "カリフォルニア.png",
-                "カールスルーエ.png",
-                "ガラティア.png",
-                "クイーン・エリザベス.png",
-                "クリーブランド.png",
-                "クレイヴン.png",
-                "クレセント.png",
-                "グリッドレイ.png",
-                "グローウォーム.png",
-                "ケルン.png",
-                "ケント.png",
-                "ケーニヒスベルク.png",
-                "コメット.png",
-                "コロンビア.png",
-                "サッチャー.png",
-                "サフォーク.png",
-                "サラトガ.png",
-                "シカゴ.png",
-                "シグニット.png",
-                "シムス.png",
-                "シュロップシャー.png",
-                "ジェンキンス.png",
-                "ジャベリン.png",
-                "ジュノー.png",
-                "ジュノー（軽巡）.png",
-                "スペンス.png",
-                "セントルイス.png",
-                "ソルトレイクシティ.png",
-                "ダウンズ.png",
-                "チャールズ・オースバーン.png",
-                "テネシー.png",
-                "テラー.png",
-                "ニコラス.png",
-                "ネバダ.png",
-                "ネルソン.png",
-                "ノーザンプトン.png",
-                "ノーフォーク.png",
-                "ハムマン.png",
-                "ハーミーズ.png",
-                "ヒューストン.png",
-                "ビーグル.png",
-                "フェニックス.png",
-                "フォックスハウンド.png",
-                "フォーチュン.png",
-                "フレッチャー.png",
-                "フート.png",
-                "ブルックリン.png",
-                "ブルドッグ.png",
-                "ヘレナ.png",
-                "ペンサコーラ.png",
-                "ペンシルベニア.png",
-                "ホノルル.png",
-                "ホーネット.png",
-                "ボーグ.png",
-                "ポートランド.png",
-                "マッコール.png",
-                "ユニコーン.png",
-                "ヨーク.png",
-                "ヨークタウン.png",
-                "ラドフォード.png",
-                "ラフィー.png",
-                "ラングレー.png",
-                "リアンダー.png",
-                "リッチモンド.png",
-                "レキシントン.png",
-                "レナウン.png",
-                "レパルス.png",
-                "レンジャー.png",
-                "ロドニー.png",
-                "ロング・アイランド.png",
-                "ロンドン.png",
-                "ローリー.png",
-                "ヴェスタル.png",
-                "三日月.png",
-                "不知火.png",
-                "五十鈴.png",
-                "加古.png",
-                "加賀.png",
-                "古鷹.png",
-                "夕立.png",
-                "妙高.png",
-                "山城.png",
-                "川内.png",
-                "扶桑.png",
-                "摩耶.png",
-                "新月.png",
-                "時雨.png",
-                "水無月.png",
-                "白露.png",
-                "神通.png",
-                "祥鳳.png",
-                "綾波.png",
-                "蒼龍.png",
-                "赤城.png",
-                "那智.png",
-                "阿武隈.png",
-                "阿賀野.png",
-                "陽炎.png",
-                "雷.png",
-                "電.png",
-                "青葉.png",
-                "飛龍.png",
-                "鳳翔.png"
+                {
+                    "name": "Z1.png",
+                    "size": 14555,
+                    "integrity": "I28wCbnDjYXgrk/7imVAlqkfc2zPuseXzzEEi/SFzB2n/c3FNpeqrq4O4ppx8YurYLwrT4Xl0pIxb9G5O+2csg=="
+                },
+                {
+                    "name": "アキリーズ.png",
+                    "size": 15369,
+                    "integrity": "2VfQH8VwRXHyoYfoyMubrljYN4sk1y8Rwt6H4NkOS1cRg+ya4xmvTJG73qekt38lKCjc/Qd2pXYN80/OdULoeA=="
+                },
+                {
+                    "name": "アトランタ.png",
+                    "size": 14952,
+                    "integrity": "k4J0Rc4dwBikQk3svVpN0mhEXIK2tOZwaKLiqKLZu2qJki+7+zDVOAUJo0SWPxomx6ZXGMpTRSuzTatkoV4G7Q=="
+                },
+                {
+                    "name": "アマゾン.png",
+                    "size": 16060,
+                    "integrity": "IDN3bYkycn2R5vf4LBbupLlQx8EuAKYg+LdBvAhNWrHgc4z/3d1FHkr3dCHgeBbwg/5xsYkstiqQizYdfCtESA=="
+                },
+                {
+                    "name": "アリシューザ.png",
+                    "size": 15395,
+                    "integrity": "zTey/RLH1Ym7vt+YIHtCyP1mcZTAQv0+cVvnNDSEMbFrdsbYPQR0jPeSFyzhB9LWbi/d7GBjiFfqgNiivB5dTw=="
+                },
+                {
+                    "name": "アリゾナ.png",
+                    "size": 14744,
+                    "integrity": "inCcwasntTbSWHirq7ih48FMrTtP0kyqG2H/5bW9rOsznWIZ0/MPplT8BwU9MCpMwiIEDPxUGCvU3yAZoN8adw=="
+                },
+                {
+                    "name": "アーク・ロイヤル.png",
+                    "size": 14882,
+                    "integrity": "LOF7aFE/oUmkOuDQfasB+YF1ng5R2lxQA3fhkXbltbDqrDILFkSFbxqK6Ye8ItxvHJGouJrbP6rfSdMuc6ckGg=="
+                },
+                {
+                    "name": "インディアナポリス.png",
+                    "size": 15731,
+                    "integrity": "IYaYZCDdkuxppgHaW7qmmcBARTEXoSm+m/d7LzkZazAXhwaxFGp6rYruLvmkEbOUBJNaosViWfRNFD9ato9ZZA=="
+                },
+                {
+                    "name": "エイジャックス.png",
+                    "size": 14932,
+                    "integrity": "jbo6ANrIQJE20G6mPFiF3yBVox6f8hVA6WQH66OhmV+vpQK/71kyGQzdSrd+zBoWOw07h0EtFW+UJ1L+zCop/g=="
+                },
+                {
+                    "name": "エクセター.png",
+                    "size": 15953,
+                    "integrity": "ZnzGEdUYZ1MQwa8zmh6U6PwQcRRInWHaJxGbn/0iYFDxvIKq/bHb+jb/1pEfsLXY3aXluOuU01HS8TkhU2Tt4g=="
+                },
+                {
+                    "name": "エレバス.png",
+                    "size": 14557,
+                    "integrity": "caKdJxU4plpBSDn8CXEjXqLAbvLuOonKz2OTkLg67ll7enMSzWQuIOZ9s0ovCweOV473vOhiUAyrCaJX4EThoQ=="
+                },
+                {
+                    "name": "オクラホマ.png",
+                    "size": 15159,
+                    "integrity": "mnYPryLV0cWk6TYJ5OkURYeu28LqeXAbAzlz47m+BqR/TOqp1BcWeG2UmaqHo3vYkodicZypNnkuD1W3d5i3gw=="
+                },
+                {
+                    "name": "オマハ.png",
+                    "size": 15280,
+                    "integrity": "bMi0+GQ5TvH0P7jXR7VS8aoqde8yMmD2V+hW7tZGsOgCovLfZTir47zudUdEt7jEukfw2Q9Jr+mcuxFKx6jyuw=="
+                },
+                {
+                    "name": "オーリック.png",
+                    "size": 15116,
+                    "integrity": "c1WZVdR3edavwUkvkslV12+xDUE+Y/1M7/D0e4WWA4ecfwec0R65TYx11Qsx6yOfS0lJgolz5JVU8LPNLxP8QA=="
+                },
+                {
+                    "name": "カッシン.png",
+                    "size": 14376,
+                    "integrity": "Ao4h0TLT2QJYdQddlVSAgZ8/zQb0+LvUbILAsmJJsIYzrzSQWMBwExLb1zeRcQTyDLQmTouqJ3LxCTlwSO0oog=="
+                },
+                {
+                    "name": "カリフォルニア.png",
+                    "size": 14834,
+                    "integrity": "HvMD01o+znD02K6ea2pu6ypxosp8VolcoVUA8rs7VhQ+e+p/x/sW+gfElwkEEvLZoB52LITM91+iqVT00W//5g=="
+                },
+                {
+                    "name": "カールスルーエ.png",
+                    "size": 14260,
+                    "integrity": "6E+ueFwDgUcozV59V5t7EMRvWwdVKMn5OrlcNlKJcKoNspqxtW6rL2lDAyLfjGtyuLZWzR4zAeyARMttFx3Sdg=="
+                },
+                {
+                    "name": "ガラティア.png",
+                    "size": 14570,
+                    "integrity": "A0FS+THvwcb5U+ClrHc4XZ/YP57qnHz8TL0Pp7uaKB7vzEemUeDU0VbWvJ5j2wzVtintSrdtbY5rDEKTU04Czg=="
+                },
+                {
+                    "name": "クイーン・エリザベス.png",
+                    "size": 15558,
+                    "integrity": "7+zYPjAG1gJo95IezIEVEuj+CIsYSpMTvq/kz2V0qDmomTXGDYac8nkfyimGT+GPR6DFEv+USbf4qUM2tuPSUQ=="
+                },
+                {
+                    "name": "クリーブランド.png",
+                    "size": 15048,
+                    "integrity": "oYy1Cs2nzy8MU5thangTpKwobRfNcWKvtVfLm+QunT3O6SBDLPU3hw+7t5Dh4rq07BI4UjDy2Y1GE+xdCBu/7g=="
+                },
+                {
+                    "name": "クレイヴン.png",
+                    "size": 15328,
+                    "integrity": "C5NVshczPi0xa6aRkViC3NdPk7NiSq7m7+atfuS4+l8UnfrKohTz3a4pf5UgEO4rN+xz+9MycWI4J+NtUPKaHg=="
+                },
+                {
+                    "name": "クレセント.png",
+                    "size": 13975,
+                    "integrity": "ceXCebVTTWPJXI+EyeMKcGwcvliftqiusHTWLWV1pY3loB5InAeOOVMccp6dq8FrTg0/DiS9DB15e2LKayL4uQ=="
+                },
+                {
+                    "name": "グリッドレイ.png",
+                    "size": 16175,
+                    "integrity": "Yu4el4NzJscnm5ojwCj1LliMTdtwwT3OlWUx5DnqJ8rVA35gf4skpTgSy7XQUQrguboWo4enP7NaYNgBwLPZdw=="
+                },
+                {
+                    "name": "グローウォーム.png",
+                    "size": 14998,
+                    "integrity": "xKSncyLxTm8nXU/CijGpazF+vP5HaBdhuCWMytG9EVr1Owx2aof0MQmUQTnN7JwyLqpj/ZB2sAkRTVXsRC9tGw=="
+                },
+                {
+                    "name": "ケルン.png",
+                    "size": 14584,
+                    "integrity": "JwlbDgY/S9nDfsp10qwIvjl6+41kpMyJuiTrAybnFd7f1uZ5Zc+3ymmUHhfAeBxRmTI2GlerQQnYP2viT5K4QQ=="
+                },
+                {
+                    "name": "ケント.png",
+                    "size": 15787,
+                    "integrity": "1T0OiGE0LGLbrH2iwfde1DBcm4WjL6tsb637XonoRgBMsmmZfjAxH2vh71YQkYK7oywTS9+AfgEdzXdFU34uLw=="
+                },
+                {
+                    "name": "ケーニヒスベルク.png",
+                    "size": 14578,
+                    "integrity": "KNG7bZnmQc/Thy6WU0ZtxDKKB51Zij9AgBEQxN+9i281fYXAe6S9QL4qVLrikkDJZBkhjYkbcUhGYCq7jXdHXw=="
+                },
+                {
+                    "name": "コメット.png",
+                    "size": 14967,
+                    "integrity": "ma+IU/3UZPKPFFpFgIOVP84RXRoriziP2/ArhWUcjHR96veBtm6bLpoo0O7ua1DyKScJW7AAB/3YoD4UoI9GJQ=="
+                },
+                {
+                    "name": "コロンビア.png",
+                    "size": 14338,
+                    "integrity": "thCQ/OaC9Kx9JYlH3NHeLr/X3fuLsyrouNyQI+BCaJhhmgiaQW59nezvkv1hGwxia4i/yiNRidT3+mKkP2lSGw=="
+                },
+                {
+                    "name": "サッチャー.png",
+                    "size": 14362,
+                    "integrity": "VR622siLJlqggl+y7Nn5brxLxVv/aOBjCz7hAcsi4matfsZ3HbieVEsGMeBcpEtogvsXOVWnru2qKLY/7mnbLg=="
+                },
+                {
+                    "name": "サフォーク.png",
+                    "size": 15054,
+                    "integrity": "YIsTjEfSRmm2hx+iszjJUIelEkKHYjEs4ifBw8mNX+oPUx8hX95qFGqqTYCKVlKQWpjoyXCPXfcu7UqT3Vu9nA=="
+                },
+                {
+                    "name": "サラトガ.png",
+                    "size": 15166,
+                    "integrity": "Sf+2bP+OmJYWF81AhwyRscrRYikdbEYBm4l9W1zGCGbOtdE7+MzGbtx4AXZ+9+ZnXcl9Xp6SuNJgq4H8OSjWYA=="
+                },
+                {
+                    "name": "シカゴ.png",
+                    "size": 14949,
+                    "integrity": "thfx6SJshGVlKC28+l1O+KDq11ej70fDaUNOtBMiMNfQj+q6QrWnjCHaQtgbfSrksjVPEhgIgMOVvMxpKu9N5w=="
+                },
+                {
+                    "name": "シグニット.png",
+                    "size": 14629,
+                    "integrity": "+03yPWCGpEsYrbxUkZkqvJC51PAuCAoigOfiuy7eNPAOfJPcnULHAeCYP0wQMTK1VOyHQhCdix/WVk4q7ySCwQ=="
+                },
+                {
+                    "name": "シムス.png",
+                    "size": 14766,
+                    "integrity": "6NAxsmhvMMRxzgTWPrvEkwqBCrU3nHyg05DYLdlTqRGzQqgbTKCCKECR02hqF46F2dJlw1Be/eQOPaC/MmXQ+g=="
+                },
+                {
+                    "name": "シュロップシャー.png",
+                    "size": 16323,
+                    "integrity": "ate/rdnLa2p7+FoRV5t6o/M+OyA1hUm4ak2AJLOuJwIxl6snL+/uTIm8a1gPUPiYAa8uGWRWYHTrGUiYfZ4Wog=="
+                },
+                {
+                    "name": "ジェンキンス.png",
+                    "size": 15074,
+                    "integrity": "ARuXnmVu5zqBaIIZ3DtwpEFsA0c2iKLd0nYkYcICQWIkp0kEG7lWAb4wQwv/oV+/uAdm81CbDDjX9TdQAY3SsQ=="
+                },
+                {
+                    "name": "ジャベリン.png",
+                    "size": 16107,
+                    "integrity": "G7xeE834q2so+akoKbGIgkMPgTZFELbnn1Ve2F8Sfn4ILN7rDLTnrple6WXdTHGO2pWURuoeFWJDKnMIJJY7Iw=="
+                },
+                {
+                    "name": "ジュノー.png",
+                    "size": 15397,
+                    "integrity": "9QK8+m2Mlb8r/bXjoIklca0536Lun3Lmu9+z0Z0/dSWGhuh8UmaToqjUfFjXiCi4aQ5hrUd7BgdE0/xanBuLyA=="
+                },
+                {
+                    "name": "ジュノー（軽巡）.png",
+                    "size": 14784,
+                    "integrity": "EQINGFPSTlcjAd8h3foNCoINMy9JY5pHkpui5X6N3Ai5HVC6WjLhesKgn+h9pMHVjrqHFvA8MG6yzY4Vm8QTFg=="
+                },
+                {
+                    "name": "スペンス.png",
+                    "size": 14830,
+                    "integrity": "tCAmNQZFBiCcNga1/l37q7BDaSh76Yb8yV1P3rvnjcTLuhzmht+ouYFJcTwr4XVucJJIGkDIjIOMSieqSuSQ9g=="
+                },
+                {
+                    "name": "セントルイス.png",
+                    "size": 16360,
+                    "integrity": "PKQwvPpjNR20RQJVvks6Lnh/HiDnkUmSNeqlV/7wzvnm0z+I7Qv9bl0IQGXwkE37YnTVPaBJB2j4VDYZYa7tcA=="
+                },
+                {
+                    "name": "ソルトレイクシティ.png",
+                    "size": 14489,
+                    "integrity": "c0N6V8SSO6KiEISf39Py1gUseJEpDQfIpTQh0WpWsB+PAhmpjLQ5RuzfLg1t/KB+wUZVn2fXS6zFUz/rh5NY1Q=="
+                },
+                {
+                    "name": "ダウンズ.png",
+                    "size": 15233,
+                    "integrity": "Kz+e0TJUv3SKjSMiqFldJISbg4MB1nQdv/rKUmfAkIiKxqkWe/ZEc4zEbhSqVhAMttPTRaV5OAYvZqgLSn8CuA=="
+                },
+                {
+                    "name": "チャールズ・オースバーン.png",
+                    "size": 14702,
+                    "integrity": "UCdgLrcOVRJWoZVaUjRMSW45zWi/EbokhAWyMXKlcGgZxU2KvQJoxxW/c+4y2KKOthwVAthzYL1HKhaA1+yKaQ=="
+                },
+                {
+                    "name": "テネシー.png",
+                    "size": 14835,
+                    "integrity": "HLdRm4n+lfjofDcEqkrPb0vTrnoRMBOucT16KnG371GXk6b0akV/rmM+Z8XwHybCE8eF2nAAhL3v3sGqKXCCDw=="
+                },
+                {
+                    "name": "テラー.png",
+                    "size": 13886,
+                    "integrity": "NeFmQNaMMIbDz4vjEiYEeHnBnEfSRA9pAx4wQZl3EiAKo0DZwfMhqmi858b05G7qkKkf3i3nmAcZM0yyS4G/uw=="
+                },
+                {
+                    "name": "ニコラス.png",
+                    "size": 15222,
+                    "integrity": "URoLJAP1X9z7XL3M2s87af7ebupIBg/BroCyIHAfxkPLN1dn8e19TcTadjrRzpoCBY8rPCKxIfm2jGRCmahDQQ=="
+                },
+                {
+                    "name": "ネバダ.png",
+                    "size": 14877,
+                    "integrity": "icFMjOVLwRAsSrMR35N/EwZSUsdoDTh8UMHDwWU2AaBV9O3rg9kEwZNjaYNmPbMEi8ckYnuMAH7M5elGBT/uzA=="
+                },
+                {
+                    "name": "ネルソン.png",
+                    "size": 15283,
+                    "integrity": "bWPjDkJXnFO4i/rf079NTJIgn9NYGxZdW1d5nIu26a4UsatkfOYDBXZDjoKji+AYgg+iscJnDhU4RqZphc/DCQ=="
+                },
+                {
+                    "name": "ノーザンプトン.png",
+                    "size": 13983,
+                    "integrity": "C1kp35zMOiUrPFFVfOQHVrvn/pq3y1wXBxCuwKFpC3gjXubYk4CM6joeyymD5dt4ygIQmNjqzeb5wFb6oPg4lQ=="
+                },
+                {
+                    "name": "ノーフォーク.png",
+                    "size": 15865,
+                    "integrity": "QWZm6rHPw0r3yoyGo1iFfuOW1P7x0M6aLJeAoFbYOLeXsv87FZViOw7IuL37HilCmOr8xY1K2qPLdfCzVVzLeA=="
+                },
+                {
+                    "name": "ハムマン.png",
+                    "size": 15548,
+                    "integrity": "RQEd+mw/NxbyzDF6TaesqQ0+V8zszWIZr5bzaLQzT5pybN//dOMZ5nbQhoJcQ4tw9Zj3G/2pGSjA7HfiZbdv8g=="
+                },
+                {
+                    "name": "ハーミーズ.png",
+                    "size": 14893,
+                    "integrity": "RYgC3TlMEmvGX5og75eo9CFsfFqwh9xCj8QHHPbXEYBKg3NwjABvQOSE41gmbFwnKpUSad1XK4vYwjwfvNTr0g=="
+                },
+                {
+                    "name": "ヒューストン.png",
+                    "size": 15067,
+                    "integrity": "GodXhpff95KHmRNpsM3qj1doIEVkNZnw13InNNLWWtM0vYbNAVcb9+R/uT0j2Z9vEAXXiMKeOsa/1mXdIIzMEA=="
+                },
+                {
+                    "name": "ビーグル.png",
+                    "size": 15804,
+                    "integrity": "gH/LWvoEqFUeSn79MgkST9ldeNgDSgKtw8rtStmCx8GYvSXiWF+skK143J+++XIr5/yF7zz6yfZ/o/WZtuEY4A=="
+                },
+                {
+                    "name": "フェニックス.png",
+                    "size": 14675,
+                    "integrity": "H8pdMIpptcf4wowgg/Y4HGIBcYdnxBuCCwRqOyAClR0s7KXyqk3Xf763Onb0j8SWoi7o9ZqD8PukcLu9q4f+Rw=="
+                },
+                {
+                    "name": "フォックスハウンド.png",
+                    "size": 15527,
+                    "integrity": "/ykoSo4BDfR6F5Bvm5drTirHITPTBslUrqAFpa5VBCKgAfQjl8vJhxf4YFPYK14xCIzLM2guAuMvbalHuX4IQQ=="
+                },
+                {
+                    "name": "フォーチュン.png",
+                    "size": 16042,
+                    "integrity": "5KuUSrR4kuD5tvZkdw/2wGaKno/oanXjvsunRFIwZuLKfy0rG2bN9MNUG5X7cP9ZZ4bgsUNIKo+ZjHGc9lPicA=="
+                },
+                {
+                    "name": "フレッチャー.png",
+                    "size": 13932,
+                    "integrity": "FSc2WIXwH5Q63l7OiBkI/0dBvqBGY12uvqPWUY9MwYAzPIKPkV67WMHJcRf22z3Q9xITGpn/2opV4UkdFEOInQ=="
+                },
+                {
+                    "name": "フート.png",
+                    "size": 14347,
+                    "integrity": "ERa2sfysyA4d2eTfipadmfUW9Y8T8AeqB/JkhcHwBVS4Jd1vb7WUE1sJ9ltlLos2j6XRyKzT8LnPGO04OcJFrg=="
+                },
+                {
+                    "name": "ブルックリン.png",
+                    "size": 14469,
+                    "integrity": "RKL6uRIySlrzPO/Z+T9oXScBjjISxEXEkRHvRGbf3KGVC43zG0BjaAiKWN80yaV/HRmWbeEQQJL2E8We5g0zdg=="
+                },
+                {
+                    "name": "ブルドッグ.png",
+                    "size": 15958,
+                    "integrity": "SSrOQd91aOxd25+UFVN73ffkTRukoZkjOGGXiUg+ZfJYbCP98uF26c6F/deUetPjdH23NimOU5pTpvEcop9Z3g=="
+                },
+                {
+                    "name": "ヘレナ.png",
+                    "size": 15270,
+                    "integrity": "PPDRfaypfd50BhUqJG6XjWX/FGMByUfND1XcvHaibrtoFcA9R0A0xHfW7kOiSPa361KIO6Gxk3FYKRbYe0d9LQ=="
+                },
+                {
+                    "name": "ペンサコーラ.png",
+                    "size": 15548,
+                    "integrity": "0zILp4MXv6FXeSixes4UoxQvYjJ689yG2NcBzfD5Icndxlsm8umR02Vl7oWH+JNdwNDb2Drsidp1HMopm/5BAw=="
+                },
+                {
+                    "name": "ペンシルベニア.png",
+                    "size": 14690,
+                    "integrity": "mNdakuFW3W48zjJgA0/wlpj5lNeMflXkAFyT782tatJd6dbgkBAqpkCcCX9aHgpKEULOL+7Wr5e+wpBplo6SRg=="
+                },
+                {
+                    "name": "ホノルル.png",
+                    "size": 16725,
+                    "integrity": "iLu5tiHjP854Fgg2zZVsI+O2Bu4xrW0/3GHNYGE0XQhWGoTh3tfzdb7nWfHyx7hAXS10/5H7svSVrVO7kXIcbw=="
+                },
+                {
+                    "name": "ホーネット.png",
+                    "size": 14512,
+                    "integrity": "0gLQak0stCpFP12jcSSxe+uY2bIql1QLb98dYZtbva3OZ8LgG2EQSt3x5m0qDUbVGIsLCyiq8v97xizveV+8dQ=="
+                },
+                {
+                    "name": "ボーグ.png",
+                    "size": 13743,
+                    "integrity": "rWqcdfCRTE6AiWRjS1lSqcPT6qndRtffcouHTehU+WzVWEEywJatHWTyU9rVAZcJOxlBTVVyUKd2/yo9JErf6A=="
+                },
+                {
+                    "name": "ポートランド.png",
+                    "size": 14703,
+                    "integrity": "dMLHB23MJn+g9RJ6ci03Kq8vhzDlARDifCm1MoPw9CvoyUyBafmfwAvGRbNnZXEtVdqmVQV2ouLbnaUy7IsPhw=="
+                },
+                {
+                    "name": "マッコール.png",
+                    "size": 15760,
+                    "integrity": "Ng2KzDxzWZCLsfq/snvBz35Fs6cwio0Z8GdUm4iL9K8OXX46OBh9aQfdqTQuC+WSJoW0fVcgAiaPVgpcS1TSoA=="
+                },
+                {
+                    "name": "ユニコーン.png",
+                    "size": 13940,
+                    "integrity": "WHGFAVNQKYmAVps/QIqRNQM8LC7X+CSnhUg4fZk5qRrxf6B3DZwQYGgogbLRAJnbml08IUMMlgVZxXwNdJNjqA=="
+                },
+                {
+                    "name": "ヨーク.png",
+                    "size": 15672,
+                    "integrity": "LxO5KWyFq6Fo9rH2+nnvX1b2WQkwxdFhzJheSBUaXUiIw9krcH8gSZiJo7TBxLbxjDmTj31HIPoU8a8tPDWq1Q=="
+                },
+                {
+                    "name": "ヨークタウン.png",
+                    "size": 13924,
+                    "integrity": "L14fLfEF6qCisZwrkqPUyD74iLHQLgy+Si3yAtbRFmEtHhm0H8DC4OUbOHdTz/lAhMA7SC0FwGo/DxvlN5sZbg=="
+                },
+                {
+                    "name": "ラドフォード.png",
+                    "size": 15756,
+                    "integrity": "SQrqbuMHTxsW7MlQiuP8d+vTq6j6+F6UyIpt5t/oDpe8pj49CYhPd8VEbkrYilmP6hsJ4zei/kbWA785vnsMyA=="
+                },
+                {
+                    "name": "ラフィー.png",
+                    "size": 15366,
+                    "integrity": "Lw2GycbrH/gyKq7ZN6c3X6LVmDpU0JNoXn+h6V0ptUgi3OBv3qMrpYQnFEf2FxfTQ9ETucWRrH6JNR809q7zng=="
+                },
+                {
+                    "name": "ラングレー.png",
+                    "size": 15666,
+                    "integrity": "L3e5xRw4KQs306ge8yNhMI0IDCN5cTyqThGjD9vXPomFKGgkRkFRGSCwImqaUUP7lqt9Ft5BQFqNjo88LXe71g=="
+                },
+                {
+                    "name": "リアンダー.png",
+                    "size": 15278,
+                    "integrity": "HToThUHAmGXukTCeFj2S8jFsDNQcD70uqFjtSkhQUUyggGvF3flkMWyvlbP1vH5NMjX07WH6V3ixa+nOOHie7g=="
+                },
+                {
+                    "name": "リッチモンド.png",
+                    "size": 15654,
+                    "integrity": "eXkzbknSjxD1TI0r6wuZqegrGrGbH6tptt1dsTbCk6OeVlIxumO7xtvSS2plKU3HEMmdZQepnrnmcyIFKzKCeg=="
+                },
+                {
+                    "name": "レキシントン.png",
+                    "size": 14133,
+                    "integrity": "b4X93S/Z848cq1BVnQGb3MEK6twktJKIYaLY89jnexVZtUvjfmJSDygjjgBtZCO3xbaj7N37yv8P2vT6cwHGqg=="
+                },
+                {
+                    "name": "レナウン.png",
+                    "size": 15958,
+                    "integrity": "f8A4GCVE31ombGO6/OcYQvySx20m3uklYRJWHeBqN1AxoYJJyyd6ebtZw+TF7oOAZgU6LyhvA3wiS9243+DOHg=="
+                },
+                {
+                    "name": "レパルス.png",
+                    "size": 16143,
+                    "integrity": "RlkuZ9dREu/Li62c+5OK+lNpExIH6517pbfgMaabPhQTv1LL7a3If9800iNbI290bFUT1B75qWuGF9sfx2Hecw=="
+                },
+                {
+                    "name": "レンジャー.png",
+                    "size": 15678,
+                    "integrity": "MAUhj8yj+9SyuKcyy2Otq+IhyM1Smfd74RnrlOJQwXc4zQU7so6n9JB8hIr/EuC0PT/yPg/wgBBwod4OuCrxVQ=="
+                },
+                {
+                    "name": "ロドニー.png",
+                    "size": 15487,
+                    "integrity": "BXLoxLM36uL94zNv37ZLvtj3xpTPx7xdPn75d1uYt/US2YCZvCX+V6DZe/YjjLs8NxZWtloXTzeghKh+dL0NIg=="
+                },
+                {
+                    "name": "ロング・アイランド.png",
+                    "size": 15463,
+                    "integrity": "hmHvS6rswRKTjkn30++YmMQEAPKJ/7HUNIKYCVnfQ1OOv8tPgWGL91/H9E+syGG5L9Ih4EQySJiad/WvIfLbVw=="
+                },
+                {
+                    "name": "ロンドン.png",
+                    "size": 15695,
+                    "integrity": "aggKw4A1yIHlNSpEkrNd4A3WjTbvH8/R7pqZwAbHjZdg4YsN9kh+HCv3SmuKpNVZSOAyhuInKADjv+x3OJpotQ=="
+                },
+                {
+                    "name": "ローリー.png",
+                    "size": 15779,
+                    "integrity": "gG3pzUwKZYC07riIzyKEj5iPxkr7urPAAqlS6KQHSGj60PMYoSam2Uc4J1mGwS8ss0B+5lMM1IqUEHEPgjkWVA=="
+                },
+                {
+                    "name": "ヴェスタル.png",
+                    "size": 15213,
+                    "integrity": "kw+8uDjabUyZgI2UXmZzupOOg5Si41Eauz8xje2pAaudqupNCEAzEvlruaWcLmfjBc5zyWPY6Qc8p38X9gVK2w=="
+                },
+                {
+                    "name": "三日月.png",
+                    "size": 14596,
+                    "integrity": "JxPPozU//rUxFgCJNuBgzoQSre5MdvOWrTdHiuxiwzLil410l43zC1mBDG5lawkrFZMr1NoK4WDVseO/N9vVPA=="
+                },
+                {
+                    "name": "不知火.png",
+                    "size": 14868,
+                    "integrity": "t4ACN3Uen9XofJIXviDjwM67RoFLh8IXtU6Qr7de3gxrcKvK+vytTXGf612m8wNOoHo2L56xCIz0p9m0ndMGTw=="
+                },
+                {
+                    "name": "五十鈴.png",
+                    "size": 14921,
+                    "integrity": "UZE6KvmGPYe9qF41rN1GO+G/fKhl76tWBruBBn4qF3QBVvuzM5TMpIHo9eG6cVysPrzmefMymy/yj9uD9UugyQ=="
+                },
+                {
+                    "name": "加古.png",
+                    "size": 14769,
+                    "integrity": "n6n+jO6ixvTWozesk6J/cycpF/EeEC13nDHjIWZU5syhi0IzOuW4WpSEzj6i3djdBfIjCsRtPYe5YMhq27Yn4w=="
+                },
+                {
+                    "name": "加賀.png",
+                    "size": 14862,
+                    "integrity": "gKpNpGqXyjnuqsh4oQpCPUFkD6qLtQwit++S7LI0sEicUbRa0AmY9djjr+K2n9i75HMOzYwWt9Jy42TP76Co5Q=="
+                },
+                {
+                    "name": "古鷹.png",
+                    "size": 15051,
+                    "integrity": "RQKQeUhQP/81iCjkhbBi5R/eJ+nmkvUVitusdhzhYaotF/p3agwRvuv/axQxgNmsbC1viQpurVrDlcgspZxrzw=="
+                },
+                {
+                    "name": "夕立.png",
+                    "size": 14597,
+                    "integrity": "y3LVYviGJXaXXWZAVYugR+hsx5pavKpZ/TAczVm2RMpDYmG68a8quAXf7JBGs6Ck32VBWJI2JI0GHB92OgdclQ=="
+                },
+                {
+                    "name": "妙高.png",
+                    "size": 15880,
+                    "integrity": "ErxOsqR1R0FpP9h9EuxZNcWYgh5kSbOn8St2xymmrj5d83fRA+estglvmdQPzbD6iIuXOr3cr7sdc5jwNFZpFQ=="
+                },
+                {
+                    "name": "山城.png",
+                    "size": 14606,
+                    "integrity": "yDXdWvDxUUVQOtdrGhRQCtCi1qiNAFuq8QfkjFbjWHMJOyYhlHkA69cRR1LcYSek/d7tPjuUXo8ljiRmd28Oow=="
+                },
+                {
+                    "name": "川内.png",
+                    "size": 16065,
+                    "integrity": "xOE253BwxerfbS2AbNcWgvLrEiebAwNVimcQ8YQIusPqP9zUCVsgtkmjkn5W2PjY2Z312XLRBC4vo0oSgI3b8w=="
+                },
+                {
+                    "name": "扶桑.png",
+                    "size": 14564,
+                    "integrity": "HtoSk/U+YrcBI4Dx7uIgc45av4kO+NibfvgYqENsH5SRJdAyXEpCdRtYd0SUjZ5dOUE/NMvGDrG8ORRW68dUHg=="
+                },
+                {
+                    "name": "摩耶.png",
+                    "size": 15484,
+                    "integrity": "uRj8oo1tpl98SuAFB2OUDtFs1zIzebOKz0ttImhey88Uzc6tDV42H1Qzen94NC72VlDiBqFZwXe5yHp95PKysA=="
+                },
+                {
+                    "name": "新月.png",
+                    "size": 16148,
+                    "integrity": "0XtF2ITXBmmVVX/2E/nTt9gPaDhCjk9BxhLjSqQS/E3jNo3eRCght2N7p63BvRcdNBRL2V4C84RuNzPjH3oJsw=="
+                },
+                {
+                    "name": "時雨.png",
+                    "size": 14287,
+                    "integrity": "tE2NcsZm52DZY6gQBwYAz8dCYfeTCepERMiyQwtW1Qrhwyyt43YD6i9ATcxU9CJjDW/hFpF7ekErAf9/vRn5og=="
+                },
+                {
+                    "name": "水無月.png",
+                    "size": 15416,
+                    "integrity": "+VU4jAyFW0pUaXGsIni4MHkBaM0jLSJ2ngeYFSMfRZGfEDxsDLEYibvsAkxjRHO4hkiwGsSrcHxH6pOGrmxgJg=="
+                },
+                {
+                    "name": "白露.png",
+                    "size": 14748,
+                    "integrity": "eMKSOvcyXBevwv2rdl7QexKfaZ82t9wx8E9IAG/dvFVmruwUs4YGO8rl43G4TdGUODHLZAJkMu0d4b0bGwXF3w=="
+                },
+                {
+                    "name": "神通.png",
+                    "size": 16712,
+                    "integrity": "pYqaxS7gnJs+gfibJqzZJnd0LzraeBdwpKd2fOZkgUXbUis/i7fjoPjTBd815AXWZ4toORTM5AzxZ7xQOBj9rg=="
+                },
+                {
+                    "name": "祥鳳.png",
+                    "size": 15370,
+                    "integrity": "FiSI/cSB4t0yp+aD9yuAh2/WK9VOtrI6PmF9elqNw4nXYAiT8n4IEuxpUOluiwvLcTZQP7O6cTUewHxJLyt06A=="
+                },
+                {
+                    "name": "綾波.png",
+                    "size": 15682,
+                    "integrity": "KpQiZXhMQtpZRfKV0J5tABjFwFVSkMn8gCK8LO6tKWTOvxl7vaC9BXODom0DV4BajHh0yudWuTDs0sIi3/kf4Q=="
+                },
+                {
+                    "name": "蒼龍.png",
+                    "size": 14515,
+                    "integrity": "PoSt3csTGXay56R5v/OnEsMOynQAUWVrtw67L2fxLu+8xvMVH9nE0sUC9V0L9/ph3QouYk6TUH+yeF9tZOZrfg=="
+                },
+                {
+                    "name": "赤城.png",
+                    "size": 14200,
+                    "integrity": "nGRlPhk44YVMMypCdXd5Cw5RJMFtIB95gO2a1B/zu+4X0oAru+NeeOF+OhUpccxXs10mU7AM3Qa61wejtzxnnw=="
+                },
+                {
+                    "name": "那智.png",
+                    "size": 14063,
+                    "integrity": "osJ+TdYtAgo7HaZ4lupj72p6QDGMsPVXkbWen2EGVQqi1IxBbI75w012ic3NUXkGqZwMM7s2n2BE1vXUxjaISQ=="
+                },
+                {
+                    "name": "阿武隈.png",
+                    "size": 15901,
+                    "integrity": "Z802QiB413HEBsfjdTx9/8EOAeJSDFtIfqk20d3VSF3iGkSyk1OnMcF4cJRISnsMLK2fvnIuaWMZH6dtAeen2w=="
+                },
+                {
+                    "name": "阿賀野.png",
+                    "size": 14871,
+                    "integrity": "2ttkq8mUE7EI6Bsh/PbOpRM/jo0W56utrwvrMkI68m65Q1tB222Gy1J03DzC6HYktiXQd6z0j8GuMnJJCop3JA=="
+                },
+                {
+                    "name": "陽炎.png",
+                    "size": 16022,
+                    "integrity": "cYZBT+O5rDriSvIVexBncl92WGdd2XGDCBrIDHJGx6QsF3X8O7ykwJqNxKOfb403ZqJUeyHHJVflL5jBnVTmRQ=="
+                },
+                {
+                    "name": "雷.png",
+                    "size": 15958,
+                    "integrity": "dj665rcC63MKjlrW2qKg/7+A+BU4lmS/w3sCeXWeyROfWkLQCgVust+d/lrmtVP12AjAF9f08b6wwSHMkPIZ9g=="
+                },
+                {
+                    "name": "電.png",
+                    "size": 15916,
+                    "integrity": "4RH2jirPIFCT06QNbdMZkzQLUiB/zzDzAJVAUTMKg8fIv3nY9x51g+Xq11PzaJcdzIACcW7xE9jc5E4D/EbSCw=="
+                },
+                {
+                    "name": "青葉.png",
+                    "size": 15000,
+                    "integrity": "2HsjooJpI8G9YVbEf6qb8DZXARLKpBFYrDrifhxMSbKgC2CHWPAku2ypFWf5axlemKvtf7vhqS7ew/UGyEQJLQ=="
+                },
+                {
+                    "name": "飛龍.png",
+                    "size": 14615,
+                    "integrity": "WmulCgwWA3JkWdOi9xQVPchaTTj5C1Ho18Wfl5lkL8eEU4+77KMGLTVsh+CTa19gguJJ5jfTSj+YwlaG5OLzag=="
+                },
+                {
+                    "name": "鳳翔.png",
+                    "size": 15784,
+                    "integrity": "1EZrYFZxks7aSUGDwbBRVHvFL7DmaX7/syRanon/nzSLMRycVCvvnRzEbdCjeINLdWF4ztZBZngw9r90JycTOQ=="
+                }
             ],
             "retrofit": {
                 "1": [
-                    "1.png",
-                    "2.png",
-                    "3.png"
+                    {
+                        "name": "1.png",
+                        "size": 9585,
+                        "integrity": "iyBhGpcRyRUEFhIdOo+BAXec/rFWRz4v+0rzewDW784uQ12n5mY7oC9E7fCqtjGz1c6Fz4yRFIFg9NKE2hVLWQ=="
+                    },
+                    {
+                        "name": "2.png",
+                        "size": 9528,
+                        "integrity": "CqZXRP0CawrFhIeyTTlQnSrWuVutT2Nm4tPmDLcoDt59Z0Nf2QDRFhPwsnk5cwthjTF4HoeFJouccL9IQwoItg=="
+                    },
+                    {
+                        "name": "3.png",
+                        "size": 20150,
+                        "integrity": "Moie42i+/EpAJ0r4x+XOCSeI3exN7L5IXfsnjAeIFiYu1ylkIWurICbT0Y9u4uf+4ct0+2qNfcGR1GC5GY29Og=="
+                    }
                 ],
                 "2": [
-                    "1.png",
-                    "2.png",
-                    "3.png"
+                    {
+                        "name": "1.png",
+                        "size": 9722,
+                        "integrity": "Kb1tXC4m8TSb6aE7yygXfp9aN7mKvDEj+c+55udKc87cWYoYkgLx25v4MWzXq2IGZC9gUV3QJrCefq0JbUtrYw=="
+                    },
+                    {
+                        "name": "2.png",
+                        "size": 9660,
+                        "integrity": "jQm3UED9C3B5xXv4wmjc7Kp1SbGnvCz/ODw/9ZIrqWJn6xUbshnM4A4cTwAhv6V+HmGjpqOH1MZTX+MC5N9f0A=="
+                    },
+                    {
+                        "name": "3.png",
+                        "size": 20288,
+                        "integrity": "bAwPkWxVUkFSIsgcFeKZCe3B6fpFW7lpxp3MMmUxlfGCqYdP/OlOTDYvvRXw1YAmXVRrT62EG0GIE8qgkvBqCw=="
+                    }
                 ],
                 "3": [
-                    "1.png",
-                    "2.png",
-                    "3.png"
+                    {
+                        "name": "1.png",
+                        "size": 9846,
+                        "integrity": "XgQUm2A74Gs2fllyTBvbLZS/MCbStW9RdLvl2a/hFESDvr08+FEa5zkjFHay/O+Qyi3FRx6S9o1NiVf6QLD+LQ=="
+                    },
+                    {
+                        "name": "2.png",
+                        "size": 19158,
+                        "integrity": "xlkqWAJUt2knc6snJueF/bB7k+e12wK0U558wd+hv7SC62T8RNyVpl57P1gM7mZtDGWmyVuhQEHzgAbFmNSIbw=="
+                    },
+                    {
+                        "name": "3.png",
+                        "size": 20692,
+                        "integrity": "EDEzv6mAXiMXaHFYV7S5j7dowB6mnY0uBKlXr3ET+z5mgfZ9SuwT0Ewq8Wks02GwxYV+LDo5Gx1108LJX4zNvQ=="
+                    }
                 ],
                 "4": [
-                    "1.png",
-                    "2.png",
-                    "3.png"
+                    {
+                        "name": "1.png",
+                        "size": 9753,
+                        "integrity": "NbKcO4R7KpvDNa3fzaqez0EA3k+u+BIXEYZuomxnx/KfE5tWIMBoIOW6o55qkXRXL2v4ztB/15xrxhV03bzvwA=="
+                    },
+                    {
+                        "name": "2.png",
+                        "size": 18905,
+                        "integrity": "5M5b7AZbdUflYNNGWUXZFxgfh4wub2wDFP1/6lp7lyJSsa6hB1DKbLduMWIXeIx8F8EQ1VwyutbDEIbBs475Yg=="
+                    },
+                    {
+                        "name": "3.png",
+                        "size": 20383,
+                        "integrity": "9YQTgoXYA7m0VvXXKzAijsQtVzo8THD/107J501eTZ+KkO7qzGhFuwHlCdN8dJ9rco9kabJlgTdLZZ7/EjtfgQ=="
+                    }
                 ]
             }
         }
-    }
+    },
+    "version": 4
 }
