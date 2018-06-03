@@ -53,45 +53,34 @@ exports.init = async (window) => {
             scope: ['https://www.googleapis.com/auth/spreadsheets'],
         });
         shell.openExternal(authUrl);
-        this.setCode(await prompt({
+        await this.setCode(await prompt({
             title: "Google認証",
             label: "認証コードを入力してください",
             alwaysOnTop: true
         }));
     } else {
         oAuth2Client.setCredentials(JSON.parse(await fs.readFile(credentialsPath)));
-        fetchSheetIds();
+        await fetchSheetIds();
     }
 }
 
-exports.setCode = (code) => {
-    oAuth2Client.getToken(code, async (err, token) => {
-        if (token) {
-            oAuth2Client.setCredentials(token);
-            await fs.writeFile(credentialsPath, JSON.stringify(token));
-            await fetchSheetIds();
-        }
-    });
+exports.setCode = async (code) => {
+    const res = await oAuth2Client.getToken(code);
+    oAuth2Client.setCredentials(res.tokens);
+    await fs.writeFile(credentialsPath, JSON.stringify(res.tokens));
+    await fetchSheetIds();
 }
 
 const fetchSheetIds = async () => {
     const sheets = google.sheets({ version: 'v4', oAuth2Client });
-    await sheets.spreadsheets.get(
-        {
-            auth: oAuth2Client,
-            spreadsheetId: '1rTlsLRcEveAwA8-AdE_Slz4h_bje3ceh7628dnv_9rg',
-            includeGridData: false
-        },
-        (err, res) => {
-            if (err) {
-                console.error(err);
-                return;
-            }
-            res.data.sheets.forEach((line) => {
-                sheetIds.set(line.properties.title, line.properties.sheetId);
-            });
-        }
-    );
+    const res = await sheets.spreadsheets.get({
+        auth: oAuth2Client,
+        spreadsheetId: '1rTlsLRcEveAwA8-AdE_Slz4h_bje3ceh7628dnv_9rg',
+        includeGridData: false
+    });
+    res.data.sheets.forEach((line) => {
+        sheetIds.set(line.properties.title, line.properties.sheetId);
+    });
 }
 
 exports.submit = async (data, callback) => {

@@ -46,11 +46,13 @@ app.on('ready', () => {
                     splashWin.webContents.send('all', Updater.getDeleteAmount());
                     await Updater.delete(() => splashWin.webContents.send('complete'));
                 }
-                splashWin.webContents.send('allDone');
-                splashWin.webContents.send('status', '準備完了');
-                win.loadURL('file://' + path.join(__dirname, './app/index.html'));
-            } else
-                win.loadURL('file://' + path.join(__dirname, './app/index.html'));
+            }
+            splashWin.webContents.send('status', '初期化中');
+            splashWin.webContents.send('all', 1);
+            await Spreadsheets.init(win).then(() => splashWin.webContents.send('complete'));
+            splashWin.webContents.send('allDone');
+            splashWin.webContents.send('status', '準備完了');
+            win.loadURL('file://' + path.join(__dirname, './app/index.html'));
         } catch (err) {
             console.error(err);
             splashWin.webContents.send('error');
@@ -128,8 +130,6 @@ app.on('ready', () => {
     globalShortcut.register(process.platform === 'darwin' ? 'Alt+Cmd+I' : 'Ctrl+Shift+I', () => {
         win.toggleDevTools();
     });
-
-    Spreadsheets.init(win);
 
     // const server = 'https://hazel-server-ezczncogdc.now.sh';
     // const feed = `${server}/update/${process.platform}/${app.getVersion()}`;
