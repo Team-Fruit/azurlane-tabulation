@@ -131,6 +131,22 @@ app.on('ready', () => {
         win.toggleDevTools();
     });
 
+    const updateChecker = setInterval(async () => {
+        if (await Updater.updateRequired()) {
+            dialog.showMessageBox({
+                type: 'info',
+                buttons: ['再起動', '後で'],
+                title: 'アップデートがあります'
+            }, (res) => {
+                if (res === 0) {
+                    app.relaunch();
+                    app.exit();
+                }
+            });
+            clearInterval(updateChecker);
+        }
+    }, 600000);
+
     // const server = 'https://hazel-server-ezczncogdc.now.sh';
     // const feed = `${server}/update/${process.platform}/${app.getVersion()}`;
     // autoUpdater.setFeedURL(feed)
