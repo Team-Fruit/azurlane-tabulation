@@ -10,6 +10,7 @@
   "scripts": {
     "start": "electron .",
     "compile": "gulp compile",
+    "version": "cd data && babel-node Version",
     "package": "electron-packager . AzurlaneTabulation --app-version=1.0.0 --icon=./resources/icon --asar --prune --overwrite --out=releases . --ignore=\"(.gitignore|.gitmodules|\\README.md|\\gulpfile.js|\\.babelrc|\\webpack.config.js|\\package-lock.json)\" --ignore=\".*app/.*\\.jsx\" --ignore=\".*/data/\"",
     "build": "npm run compile && npm run package"
   },
