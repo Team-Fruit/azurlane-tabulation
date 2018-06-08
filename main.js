@@ -1,6 +1,6 @@
 // require('babel-polyfill');
 const electron = require('electron');
-const { app, BrowserWindow, Menu, globalShortcut, ipcMain, dialog, /*autoUpdater*/ } = electron;
+const { app, BrowserWindow, Menu, globalShortcut, dialog, /*autoUpdater*/ } = electron;
 const path = require('path');
 const Updater = require('./app/Updater')
 const Spreadsheets = require('./app/Spreadsheets');
