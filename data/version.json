@@ -755,6 +755,11 @@
                     "integrity": "JjYYjF3yxn86OixvmmhQQsnACaqED01P+lhPgYm8M+ar8Up/2OK8kdJ5iddZuuDjoTShWpvmUTs0SqIb+0gbdg=="
                 },
                 {
+                    "name": "彗星T3.png",
+                    "size": 11853,
+                    "integrity": "uL1A3khcJE9RZc1UAJN1Rq3SmR3bMkVU6EnR9N1xjw3glMIxaq7Zrqpd1a18e1HGLvQ20dZJgTC7E0CZoAedlw=="
+                },
+                {
                     "name": "応急修理装置T3.png",
                     "size": 13313,
                     "integrity": "lFIskm6JG8uV9TC4Qe/fv7hPY7PvuZUUjB447fdcYUZScD8F/qCipf7GkisM2W9ooCb49Pw5lU1JBQdv6vG6jA=="
@@ -1541,5 +1546,5 @@
             }
         }
     },
-    "version": 6
+    "version": 7
 }
