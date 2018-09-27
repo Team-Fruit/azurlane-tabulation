@@ -33,11 +33,11 @@
     "google-auth-library": "^1.5.0",
     "googleapis": "^31.0.2",
     "mz": "^2.7.0",
-    "react": "^16.4.0",
-    "react-dom": "^16.4.0",
-    "react-loading": "^2.0.2",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-loading": "^2.0.3",
     "react-progressbar": "^15.4.1",
-    "request": "^2.87.0",
+    "request": "^2.88.0",
     "request-promise-native": "^1.0.5"
   }
 }
