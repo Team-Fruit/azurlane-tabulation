@@ -55,7 +55,7 @@ const run = async () => {
 
     json.version = currentVersion + 1;
     console.log(currentVersion)
-    await fs.writeFile('version.json', JSON.stringify(json));
+    await fs.writeFile('version.json', JSON.stringify(json, null, 4));
     console.log('done');
 }
 
