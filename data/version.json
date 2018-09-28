@@ -203,23 +203,23 @@
             },
             {
                 "name": "8-1.json",
-                "size": 1427,
-                "integrity": "NVOH1PgtJ4vlbccE+tbpPSDm8CM/AKRlaIh3qQ9jnVMyXFo0bnnHTdpIFhKgsrrLD8X8B7NlA8NWbfUZ0bjB9Q=="
+                "size": 1490,
+                "integrity": "VG9K61ckjh935QpvRj0LCiLOVjBeITm3tTZHvS45Rh3J6jaJ4TIKuy5/hlvpmXBgafvBeZzNTgml0cUqoNabFQ=="
             },
             {
                 "name": "8-2.json",
-                "size": 1375,
-                "integrity": "HmmqrruORQexYaOk8onTOMikQ3WORLsfd/o8p7lXOgRj8m8FLSviHOWYrwUnSHCIRLxBrJLHu2aJ+vD6bjxugg=="
+                "size": 1438,
+                "integrity": "x14S1Ll6gmso04GRiJc2xq4KlkJBo8TqExB32WGR1rpiz7SbG5unCBZ3R+n4bhyO6nEC4AhvKnorJGPVJtNO7g=="
             },
             {
                 "name": "8-3.json",
-                "size": 1403,
-                "integrity": "J+hPNpslHbX1L/8VnrSuLFogLBAQp34kyWcBRzOCSGvOj0socuPjmKCdo1H74widFyxmNO4F5GWza1yPoV9+7g=="
+                "size": 1466,
+                "integrity": "D8fQdlCF1iYiklbg42tsPtjiHJaxA6VXRXRCe7p0Clu6TbSrvF/2i0hCFzpDMb5Ark5w5SERR44gbwLI352/AQ=="
             },
             {
                 "name": "8-4.json",
-                "size": 1435,
-                "integrity": "TAaomBKv/L9Pj8B4qSuQJaQKn76NKpFqIiqLeAysY05Ho1/UaDts3bPTC6lix8MVldEN9cwlu9tMs7p/h1HAUQ=="
+                "size": 1498,
+                "integrity": "5hWWv3Vn9bJZEedGsKzs81Z3+Vr61ps242ZXyqq8lRjdlNM0kFWtKwtq2PxOW8uJ7+J58uH+KcFiJvsZt9XduQ=="
             },
             {
                 "name": "9-1.json",
@@ -243,8 +243,8 @@
             },
             {
                 "name": "chapter.json",
-                "size": 2413,
-                "integrity": "+QES1Z15+377Teyir5nkEXZlHgJe9EeImSu12ACFNKMUSwIuHlRKrXxlUmhSPVaYbURnc7lDSmkfShbEclFXgA=="
+                "size": 2412,
+                "integrity": "LlFZ7lvmZJz+Me87ju6ygt05v/3tj/jT4FnYMrUC7sFskVXszX6lU9EnI6t9aLWzhWPD4LvlJXKiLwuVNLTYkA=="
             }
         ],
         "img": {
@@ -756,8 +756,8 @@
                 },
                 {
                     "name": "彗星T3.png",
-                    "size": 11853,
-                    "integrity": "uL1A3khcJE9RZc1UAJN1Rq3SmR3bMkVU6EnR9N1xjw3glMIxaq7Zrqpd1a18e1HGLvQ20dZJgTC7E0CZoAedlw=="
+                    "size": 10005,
+                    "integrity": "F8lAJHEtS3ruCwAWHNikothfefzzRaJxYUq43eTReQQ1CNvaEYOYH2XsiSjPaIsoo/Vy7F/HHe13EOW3FNmmIA=="
                 },
                 {
                     "name": "応急修理装置T3.png",
@@ -1546,5 +1546,5 @@
             }
         }
     },
-    "version": 7
+    "version": 8
 }
